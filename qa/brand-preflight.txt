@@ -1,0 +1,6 @@
+Quantsera logo preflight: PASS
+Policy: quantsera-logo/v1.1
+Master SHA-256: 512fd32c1a782f7cae6d69078c007664621c3f8d696ee606bf7cbb01d35edd8b
+Approved manifest SHA-256: b1dbb0466b0b281a4550dd989e72b30c6d04d701ff23e5726b005c404e37dec9
+Pack validator: pass
+Approved logo usages: 2; files scanned: 100

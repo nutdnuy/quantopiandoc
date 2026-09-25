@@ -1,0 +1,28 @@
+{
+  "sourceIntegrity": {
+    "originalFilesCompared": 183,
+    "result": "identical"
+  },
+  "offlineFileProtocol": {
+    "homeOpened": true,
+    "searchWorked": true,
+    "externalRequests": 0
+  },
+  "responsiveHome": {
+    "widths": [
+      320,
+      768,
+      1440
+    ],
+    "horizontalOverflow": false
+  },
+  "targetedAxeContrast": {
+    "mobileDark": 0,
+    "mobileLight": 0
+  },
+  "limitations": [
+    "Original notebooks were not executed or migrated.",
+    "No external market data was fetched.",
+    "Historical source HTML is retained unchanged as a download."
+  ]
+}

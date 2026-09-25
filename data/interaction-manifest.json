@@ -1,0 +1,11 @@
+{
+  "designSystem":"Quantsera / QuantCorner shared Material 2 foundation",
+  "source":"React Bits local pinned source",
+  "commit":"8d1c5fa9ebee6e077e70c9e5c63b44e87dbeaecc",
+  "sourcingReason":"The user explicitly prohibited Internet research; the local pinned sources were inspected and adapted offline.",
+  "components":[
+    {"family":"Stepper","location":"Homepage: learning path explorer","purpose":"Select one of seven ordered study stages and open its first lesson; stage selection never means lesson completion.","trigger":"Click/keyboard Previous, Next or numbered stage buttons","fallback":"Static selected stage content and normal buttons; no movement with reduced motion"},
+    {"family":"AnimatedList","location":"Search dialog","purpose":"Keep search result identity while the filtered result list changes; real links preserve native keyboard navigation.","trigger":"Change the search query","fallback":"Same result links without positional transition"},
+    {"family":"CountUp","location":"Lesson completion control","purpose":"Communicate the change in the actual locally recorded read count after a deliberate Mark as read action.","trigger":"Toggle the completion control","fallback":"Final exact count is immediately available as accessible text; static count under reduced motion"}
+  ]
+}

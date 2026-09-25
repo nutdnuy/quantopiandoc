@@ -1,0 +1,922 @@
+{
+  "repository": "nutdnuy/quantopiandoc",
+  "commit": "b1faf19ba390d6aa74429e759c3acc1ab8779932",
+  "fileCount": 183,
+  "files": [
+    {
+      "path": "Quantopian Lecture - Part1/ARCH_GARCH_and_GMM/notebook.ipynb",
+      "bytes": 588053,
+      "sha256": "15795bf8185922ae0c4740dfe8536dd0e5f6a0f381fb6a6def1969f862a74e32"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/ARCH_GARCH_and_GMM/preview.html",
+      "bytes": 876135,
+      "sha256": "c35768ab95d56df223abd0848c98c645c35ee0dff47228662e8646ee717881c0"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Arbitrage_Pricing_Theory/notebook.ipynb",
+      "bytes": 259178,
+      "sha256": "eb12d163829c527dc37ddf510a660180ebac8020520bf6f4ac1074a145c1c1ae"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Arbitrage_Pricing_Theory/preview.html",
+      "bytes": 530322,
+      "sha256": "79ee548a271cca370a1364e4c21d38606fd70868e8ed5a6501a9c6fc2855a9a9"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Autocorrelation_and_AR_Models/notebook.ipynb",
+      "bytes": 185163,
+      "sha256": "e23c51881f6816d5a280b88616f123d23eba99cd543ebe0dc3261234733d0ef4"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Autocorrelation_and_AR_Models/preview.html",
+      "bytes": 461085,
+      "sha256": "32573a891e02a10459c750045e9c26f1094e5a8abbe7d139a4ab3f3b3bd1db6a"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Beta_Hedging/notebook.ipynb",
+      "bytes": 470695,
+      "sha256": "8883e4dbae3f2f196b2504b20ff24354e13fd3f72417999d5b8b5edd129e1f67"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Beta_Hedging/preview.html",
+      "bytes": 730074,
+      "sha256": "3d9c735e77067695fc323ce5a3dc6777ce34cecd3c5e11b75164b5672e225998"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/CAPM_and_Arbitrage_Pricing_Theory/notebook.ipynb",
+      "bytes": 823279,
+      "sha256": "5f62da2bcb918486b97d6e14ef576bf7945a8222485ba0b6fe126b37f90e1eee"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/CAPM_and_Arbitrage_Pricing_Theory/preview.html",
+      "bytes": 1124855,
+      "sha256": "b326069386390752f7645b4f4bec25b43e85af0914692b4c3eed4e9d6c0bffc5"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Case_Study_Comparing_ETFs/answers/notebook.ipynb",
+      "bytes": 78420,
+      "sha256": "dabb0acfd83b2db34b13b1c006b402794bbef9b5ed68ffd7847bee399a8d50ce"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Case_Study_Comparing_ETFs/answers/preview.html",
+      "bytes": 353090,
+      "sha256": "9e0f060b0bf46e133c3232872a3c199779e2bc54f025b8002862c0119aa51bc3"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Case_Study_Comparing_ETFs/questions/notebook.ipynb",
+      "bytes": 9901,
+      "sha256": "015040f0a6e92a9cb5ed2a56f3d4c5a0f05a32a939db3504a6ffc4adbb4bc3eb"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Case_Study_Comparing_ETFs/questions/preview.html",
+      "bytes": 281775,
+      "sha256": "0604179bb6976b22fcae7f57470b3ac765189f87ff40d1fe823923546a18b3c0"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Case_Study_Traditional_Value_Factor/notebook.ipynb",
+      "bytes": 53673,
+      "sha256": "7c5fcfb29dd6e12a2b18e6ec82df2c76b1a92ecc4e6549faf1819c06d7c2c5a5"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Case_Study_Traditional_Value_Factor/preview.html",
+      "bytes": 315532,
+      "sha256": "a285ad368dd4109345dcd7c0c68fa325e34607753cf712a046ae71e80d682e29"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Confidence_Intervals/answers/notebook.ipynb",
+      "bytes": 70235,
+      "sha256": "951882328d26e392105bd2ca2c97ec102be68800493913032c752fa8d60c98ec"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Confidence_Intervals/answers/preview.html",
+      "bytes": 353690,
+      "sha256": "81b4848339798f01cbeac4cec12ea5c5de936b50d6537c9b2f95d723a9ca3954"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Confidence_Intervals/notebook.ipynb",
+      "bytes": 173873,
+      "sha256": "58df2cdaa763f0ef78ca508ac30383c66eeab4c1d6718ddf96e9b5fc51159d2a"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Confidence_Intervals/preview.html",
+      "bytes": 452655,
+      "sha256": "d6327f7cfb85d57814983db28829be492f01c6d0d139fd8065c907794d5a9a6d"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Confidence_Intervals/questions/notebook.ipynb",
+      "bytes": 15314,
+      "sha256": "fe9a5528b0e4093969d3403741b4b7dae1075b29b97f0a5b4312b1fda01835e4"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Confidence_Intervals/questions/preview.html",
+      "bytes": 282418,
+      "sha256": "e63c7411cc1d321fb2d65fdcdf5654939f0f893f22a2e3d6136e9c37774f962f"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Estimating_Covariance_Matrices/notebook.ipynb",
+      "bytes": 188243,
+      "sha256": "0214bba9f97a362c03903becc83791e7ee38192ce87e742a4c4e232e80243a33"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Estimating_Covariance_Matrices/preview.html",
+      "bytes": 460579,
+      "sha256": "4fba11c5abee46ae48c73e382019b28d8cec86726b6fcbbc49b9015b2a4e1feb"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Factor_Analysis/notebook.ipynb",
+      "bytes": 3951024,
+      "sha256": "4308e2a748c9b4cee278e8afe34aca3eae0e2b0accd618de0c9cc4c01a03eac6"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Factor_Analysis/preview.html",
+      "bytes": 4147328,
+      "sha256": "9ba6694189cc4c179448881c06f9535ee4de3173993ed8fa061708a5905a1f52"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Factor_Based_Risk_Management/notebook.ipynb",
+      "bytes": 723308,
+      "sha256": "5185815e54f833b72b6aab460f2b20af8f415ff043472e7f219d17238b0f2291"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Factor_Based_Risk_Management/preview.html",
+      "bytes": 993337,
+      "sha256": "d25b005c2bb77bd12441ae38e94dbf37d774fdcbebca30d73cc749e4469486b6"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Factor_Risk_Exposure/notebook.ipynb",
+      "bytes": 272880,
+      "sha256": "b24067cf32d7902284a2b4716ef7c836d8866144d3231ec1f80fe1e4cafad614"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Factor_Risk_Exposure/preview.html",
+      "bytes": 544901,
+      "sha256": "36a5bf7cb0fd34eb4c3c2cea0fbf49c1d64053d2ec71d5fdb2c8d58cc6d1e535"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Fundamental_Factor_Models/notebook.ipynb",
+      "bytes": 552449,
+      "sha256": "db178421d93bb121640682634f32a3a2a4fd90398a634b84ad6d3416a9cc67a4"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Fundamental_Factor_Models/preview.html",
+      "bytes": 824090,
+      "sha256": "b27a69014c4f379c5c8ceea6ed5456b29d61e6d551191e2d6e9b0eeadde93b5a"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Futures_Trading_Considerations/notebook.ipynb",
+      "bytes": 434154,
+      "sha256": "e0428cb204f887cac665e45b16ede6f879714536071f461bc8a2fc96d9d1c611"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Futures_Trading_Considerations/preview.html",
+      "bytes": 686462,
+      "sha256": "e3d871e91d32099d1e9dbcff266cdab5b1b208ee4b5b0b551e83ed9a04d02d3a"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Hypothesis_Testing/answers/notebook.ipynb",
+      "bytes": 183559,
+      "sha256": "d9687000d4f0f730967b911d15544d5ae0b68c914fd68807dd40ae606842ed9a"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Hypothesis_Testing/answers/preview.html",
+      "bytes": 464145,
+      "sha256": "65a5a8c71df46e08eb3839843a2a6240745f4ba95a5a3553bd175b39fab6a49b"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Hypothesis_Testing/notebook.ipynb",
+      "bytes": 511379,
+      "sha256": "74aa3baf6e38926f49bc43f7da113f97f75f1d08be450c7f1c9f5a27f98544f2"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Hypothesis_Testing/preview.html",
+      "bytes": 780824,
+      "sha256": "167d9733d421ccfa11258366886ca2307a9a4d2f15aab597959a776ada0f07b2"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Hypothesis_Testing/questions/notebook.ipynb",
+      "bytes": 17156,
+      "sha256": "884c9c425d2d26076daeb9d6ae1514a4232535d21b6a7611c07aeb0b5aa520d8"
+    },
+    {
+      "path": "Quantopian Lecture - Part1/Hypothesis_Testing/questions/preview.html",
+      "bytes": 282422,
+      "sha256": "3fcc7730970a503310f9dd8997f368275f56949c335de41c06f297e35ea9b2fd"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Instability_of_Estimates/answers/notebook.ipynb",
+      "bytes": 308655,
+      "sha256": "f029b2ce32c8d470d21a5fd679337d76136e2c55e7500e03bb1139637257cb4f"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Instability_of_Estimates/answers/preview.html",
+      "bytes": 593427,
+      "sha256": "e81fbd1aebed913ee1e942af41f34b51618171be9b32c0e43fa346b3d1d6f310"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Instability_of_Estimates/notebook.ipynb",
+      "bytes": 454865,
+      "sha256": "ece659b193fab2b577dc0f5c5949c923bb16574158135e9d4703ca07b23ee7cf"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Instability_of_Estimates/preview.html",
+      "bytes": 723322,
+      "sha256": "dc44e0d73945de300f488fb605c7d888f6086c9763f8e279666c95b18ff1b54a"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Instability_of_Estimates/questions/notebook.ipynb",
+      "bytes": 11175,
+      "sha256": "f1b9f84fb515306a86285ee7ad1cec022f6dbe94be1b5bc9759602b0849b3ce1"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Instability_of_Estimates/questions/preview.html",
+      "bytes": 285347,
+      "sha256": "b37d245e489846ff66a09419a4b2cbb4b34d53d4413d189cbc7f7055ce35c6ef"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Integration_Cointegration_and_Stationarity/answers/notebook.ipynb",
+      "bytes": 346084,
+      "sha256": "aa340e9c51e8988575314b5941c9878dcbba4596a4c2eebd78192687ef5bd223"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Integration_Cointegration_and_Stationarity/answers/preview.html",
+      "bytes": 602990,
+      "sha256": "86de80113ee416bfe65b384ca6e43f2ffc2ad37b153af711923689c9b2cf8c72"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Integration_Cointegration_and_Stationarity/notebook.ipynb",
+      "bytes": 1094560,
+      "sha256": "1d037b2c8c9733e967cbd0e4f1c90389744e7f742d032d4a8e76446446823fa3"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Integration_Cointegration_and_Stationarity/preview.html",
+      "bytes": 1361473,
+      "sha256": "5128d1266485b8596140ae5c28864a15f07655074d4cf57b469179f6ce4d65cf"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Integration_Cointegration_and_Stationarity/questions/notebook.ipynb",
+      "bytes": 9539,
+      "sha256": "35ddeadc992bc99b8243cf17573d0a38cf45184a8b59b8376712ac17995b5550"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Integration_Cointegration_and_Stationarity/questions/preview.html",
+      "bytes": 265581,
+      "sha256": "81cf696ca3e8668f3748facb7725cbafa7866e0dc2365f64ec067d17663d4c14"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Futures/answers/notebook.ipynb",
+      "bytes": 182048,
+      "sha256": "8d2fef19af50cf03d5b033111c343a78f0d97839c3b13ed1ca03b9818181e36d"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Futures/answers/preview.html",
+      "bytes": 439743,
+      "sha256": "37832e01e0653b965122a3e927ad1167738201c00e4077b3f3b5b407969a0626"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Futures/notebook.ipynb",
+      "bytes": 770444,
+      "sha256": "4c11ce3f925c510de6bf92eb139ef9c16559437f7f3cc906f9d68683390ff68a"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Futures/preview.html",
+      "bytes": 1041278,
+      "sha256": "a50612e316df465850ce598ea624850794b73822a629a2888b04defe2591e8d0"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Futures/questions/notebook.ipynb",
+      "bytes": 10019,
+      "sha256": "77ea287810be1f1b6b8c5dca5b11a83af094875c4c6f9041eff5c7b61643035b"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Futures/questions/preview.html",
+      "bytes": 269201,
+      "sha256": "63806b1806442c03a89d2ce9c0d7b4fcb141bb0de9091827684e265f3da788c7"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_NumPy/notebook.ipynb",
+      "bytes": 55325,
+      "sha256": "103d4208dce8e119ca832426904b33f2b417fb962738e46af996766ad4177a9b"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_NumPy/preview.html",
+      "bytes": 330301,
+      "sha256": "522beeb3a0b131054544c55d2a6ff5b2c4db3ab20d9200a811edc36d90ff4ad3"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pairs_Trading/answers/notebook.ipynb",
+      "bytes": 473591,
+      "sha256": "868e60b9f795499437dd10ed60573c675621d92ce1c830c3d887be38abff4a60"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pairs_Trading/answers/preview.html",
+      "bytes": 741257,
+      "sha256": "7e4459c674be5d84d6c45e64fda741a7aad1d2a7400724b20b7a266d0cd6c54e"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pairs_Trading/notebook.ipynb",
+      "bytes": 838049,
+      "sha256": "459de9b8001268c5cf93d7dd679cb8c8576742cadbfa84b71d139e64cc8abf99"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pairs_Trading/preview.html",
+      "bytes": 1108820,
+      "sha256": "87c7f86a366690a89a9e283ee3dd600ceb1381134a478116a41ebe30c4728290"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pairs_Trading/questions/notebook.ipynb",
+      "bytes": 11833,
+      "sha256": "4de8bb89c7b0321920fbd4bd224aed635456237f3f66b06e788992599cd23a5a"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pairs_Trading/questions/preview.html",
+      "bytes": 275500,
+      "sha256": "2e6412e0b45eba21c86a4c415fecf6961110576d8bc71ac7f4f9ce431ab26299"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pandas/answers/notebook.ipynb",
+      "bytes": 372914,
+      "sha256": "04600017b195bfbb7e00ae82eb4ccadc0cef7eadc965f990d2ee105c7b6d5680"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pandas/answers/preview.html",
+      "bytes": 633046,
+      "sha256": "7e1d0511d73068c70dfa9b4a436d91c2bdfe7f2486d3039bf0d3908a77091c2c"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pandas/notebook.ipynb",
+      "bytes": 848751,
+      "sha256": "1f521cc8e75f9ea2f714fd6215ee143bb3c79a95d1b9861068c63ad5423a79f6"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pandas/preview.html",
+      "bytes": 1128687,
+      "sha256": "37eabc5f34127a128a2ec9fe66213d0c8c3cf2f0909c2e30ba5144e27e8ca969"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pandas/questions/notebook.ipynb",
+      "bytes": 17989,
+      "sha256": "fe79e95b19030fcde3df04582961a2227d8d85ce80f9ff8e2f18f7b3d11b6c42"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Pandas/questions/preview.html",
+      "bytes": 280362,
+      "sha256": "06be0b8c6ea219b097cd2ae20dadd9d38d60bcfd8381923e8b08afe70003064d"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Python/notebook.ipynb",
+      "bytes": 65274,
+      "sha256": "6b5dff645b16bccf5203451802e4d6b94e845b1621c30f89b837086d27004f24"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Python/preview.html",
+      "bytes": 409862,
+      "sha256": "993053d6e9e500824a3652d9b19e71bdf16152aa3f4d5c9a51c5e7fc464c87c7"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Research/notebook.ipynb",
+      "bytes": 14579,
+      "sha256": "8be9114a12ee441a14ec326080f19df070626b59347f978728a45cfcbf353b27"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Research/preview.html",
+      "bytes": 278461,
+      "sha256": "7d719de4b8e196c21a8f3df796ddd1ce7f446ae97673c74ff355751807a469b5"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Volume_Slippage_and_Liquidity/notebook.ipynb",
+      "bytes": 401367,
+      "sha256": "edd6fd1556457f401383e044e3d74ed595742b2cacfb308c41abe071abf8d9cf"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Introduction_to_Volume_Slippage_and_Liquidity/preview.html",
+      "bytes": 656918,
+      "sha256": "0bf4fe45ec9022bc08b9c207166c021c883e6d6dfeccb5f090066cec3b1e6ee7"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Kalman_Filters/notebook.ipynb",
+      "bytes": 1220816,
+      "sha256": "b2cdead376af5d19021f553b10138cc78f309d7859e362bce5640cdb962c5777"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Kalman_Filters/preview.html",
+      "bytes": 1489641,
+      "sha256": "0799a4a86a421e7ee8d715d3adfa2b0e32bc976f1f235c2b4f930ecb4b35e703"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Leverage/notebook.ipynb",
+      "bytes": 212184,
+      "sha256": "3dc9a9daa65009a92c71760632cbf59a0e1e710c48b7306b65bf1d22cde505e2"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Leverage/preview.html",
+      "bytes": 468970,
+      "sha256": "7f2c9d8f960d52f2ec8b5dc7a70cf7ec30de1b62ea2b3d0ccf73daabd6db9f08"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Correlation_Analysis/answers/notebook.ipynb",
+      "bytes": 108931,
+      "sha256": "cb4bf149c5a728db84be43c0f8ee3faace38e51d2cee29c9abfad0bf3095a187"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Correlation_Analysis/answers/preview.html",
+      "bytes": 378153,
+      "sha256": "f5be0cf06f846cd6ee9c1b3c07f0192ea68269536456507eb76b9c1ec90ad2e4"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Correlation_Analysis/notebook.ipynb",
+      "bytes": 193216,
+      "sha256": "4fe4fd8643ccbf21bb511d7c91781377ece0ac21d2186e513b27018798d4357f"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Correlation_Analysis/preview.html",
+      "bytes": 457683,
+      "sha256": "c6e68a61ff5bcae77df88998cf1b24cb84036db6ed6636e0b026374b65a775ea"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Correlation_Analysis/questions/notebook.ipynb",
+      "bytes": 11227,
+      "sha256": "d455c458f435f98ad3536238076cd8d0d0f6a4db61e14d3f1bc08811305c23a1"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Correlation_Analysis/questions/preview.html",
+      "bytes": 271786,
+      "sha256": "9317b2bc8de86ed4e5a11a105136c994041e3680639dded9c09873b9f0de5312"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Regression/answers/notebook.ipynb",
+      "bytes": 174589,
+      "sha256": "b2f9fa85c202b7b73e84a2f6e6de101441bf027b89e00e41935d60ed225be72c"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Regression/answers/preview.html",
+      "bytes": 446563,
+      "sha256": "fc4043c06f5466b96a9d977b6d800515846d614b497bde7827f8a064c1108a58"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Regression/notebook.ipynb",
+      "bytes": 146364,
+      "sha256": "78fa59579fcbf8a9e2981d97f723ee1e21ab74b21e3f69abab2ee319f5a8fd00"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Regression/preview.html",
+      "bytes": 394645,
+      "sha256": "3961de3b856e35885176f953a77d395307ae0b72436c574a25e4f73b8a6954ef"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Regression/questions/notebook.ipynb",
+      "bytes": 15957,
+      "sha256": "83e32389173cc512a0f914bd4c08e7b05ea8a436d113d30ad47712a8bff71c36"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Linear_Regression/questions/preview.html",
+      "bytes": 287692,
+      "sha256": "9157f97c30dba1698d7052f35987ec627ae228b6ed43f6bcdcb2cef79a53267b"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Long-Short_Equity/notebook.ipynb",
+      "bytes": 34753,
+      "sha256": "17a444ceacc1cb3aa14a880bc85d4e43bb365ceaebdd15251eb61acf45021970"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Long-Short_Equity/preview.html",
+      "bytes": 293150,
+      "sha256": "0732872438932a2a83fd30d72a0e0949484b63f4ecdc0a531c4fa7efca53a9cc"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Market_Impact_Model/notebook.ipynb",
+      "bytes": 1055265,
+      "sha256": "8039b06e154d610dbb1d87fdfdfeacbf1d5e00b0286be35149eca0a2729f8f5e"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Market_Impact_Model/preview.html",
+      "bytes": 1385144,
+      "sha256": "2461610664758531e73122fc60e0a69002dc02f28247d885783542d7442c4261"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Maximum_Likelihood_Estimation/answers/notebook.ipynb",
+      "bytes": 122258,
+      "sha256": "5034b61a816c233fec70dd983e9f72ce0b8f6c4d1d248d97f83b10948ae0b88f"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Maximum_Likelihood_Estimation/answers/preview.html",
+      "bytes": 383015,
+      "sha256": "7df21a9ca02e1209c805757f5507ab0fcace7fb9d22c386a7ca846ccc8aea008"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Maximum_Likelihood_Estimation/notebook.ipynb",
+      "bytes": 102569,
+      "sha256": "d50429db2b9a4ffc1a1d9936ada256f2637d3bc2b5e35e309b0785664c703d47"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Maximum_Likelihood_Estimation/preview.html",
+      "bytes": 363359,
+      "sha256": "b1781b2ed2ad322fa1f74d109183ebd04f0a12b1aff1fc914023f490047ff61e"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Maximum_Likelihood_Estimation/questions/notebook.ipynb",
+      "bytes": 12137,
+      "sha256": "b1492a6c72673fa332a123f8cee50b98b338d4d7c4406f410f13f62e2ef13eb2"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Maximum_Likelihood_Estimation/questions/preview.html",
+      "bytes": 270630,
+      "sha256": "b38dfa2df4970fac02a0145fd5ca81647480578bfdc8f89e6e76bf2932c07bf0"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Mean_Reversion_on_Futures/answers/notebook.ipynb",
+      "bytes": 398657,
+      "sha256": "382a18da9c88d6b5284b56316cb3f19cb24e316421b6891e95cfe8755bf3815e"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Mean_Reversion_on_Futures/answers/preview.html",
+      "bytes": 663700,
+      "sha256": "863852c4aebad20d40ca770eb18593a0b97adb105cea107043d927fe3ab834ca"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Mean_Reversion_on_Futures/notebook.ipynb",
+      "bytes": 359277,
+      "sha256": "e9f4ec479d1c177ee6ae560b3acede0ced393b6b6aa0265093097b8118406070"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Mean_Reversion_on_Futures/preview.html",
+      "bytes": 619761,
+      "sha256": "425d3c1a5d3fc188e69fbd686e1f0a8f7b9c553e7984c88c5d1b2773a67c1108"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Mean_Reversion_on_Futures/questions/notebook.ipynb",
+      "bytes": 12147,
+      "sha256": "c2237fd0cdea9bbce1d6d3dbc66baeb0bff4d68facfaff6bf7f3a57bc5e3e126"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Mean_Reversion_on_Futures/questions/preview.html",
+      "bytes": 273801,
+      "sha256": "88529081f8db3ca53ad33f74b9a38ff32c98dbffaaa861dc6b7e1590146d6787"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Means/answers/notebook.ipynb",
+      "bytes": 31733,
+      "sha256": "654d80529e43fa7d09415410aa910f39b392ee6b7755c3add81034f1d37fe100"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Means/answers/preview.html",
+      "bytes": 322181,
+      "sha256": "65820c4d9cd8203e030e518ccecce8418de4b6b7ad1e15af16456dacecf81603"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Means/notebook.ipynb",
+      "bytes": 14609,
+      "sha256": "6fbc8c291b8d32372c8461de72c300363446638a2526facf16d3afc9665dfbf2"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Means/preview.html",
+      "bytes": 298575,
+      "sha256": "dd13de097e6b4f3481faf4edaeb225833fb83f5f1e0f751c5f7acc6dcb0456bc"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Means/questions/notebook.ipynb",
+      "bytes": 11203,
+      "sha256": "51fcc6d0f925b5239f1ab14b06d0f6d66cab927dccee31ded689c53bcb2199d1"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Means/questions/preview.html",
+      "bytes": 295334,
+      "sha256": "8876cc281903c1adf57ed3497996e40e2e658f2707570e1acad948314400d879"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Model_Misspecification/notebook.ipynb",
+      "bytes": 1446024,
+      "sha256": "5c6055594780f74aaf8d2e4c9c71fff1447a4f9c4f41d5deb8bd1337920ee022"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Model_Misspecification/preview.html",
+      "bytes": 1715402,
+      "sha256": "a5e2bd0ebb183156d6e46083e9c97a736a834e2953061559e82799317d0bded7"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Multiple_Linear_Regression/notebook.ipynb",
+      "bytes": 290601,
+      "sha256": "f79903c05323dd0c6e3d7b295ed10ec37a3229514f277b34ff57c5462320a27d"
+    },
+    {
+      "path": "Quantopian Lecture - Part2/Multiple_Linear_Regression/preview.html",
+      "bytes": 550959,
+      "sha256": "61c66dcb1b709034d715ea9c803cec58dbe48ea9f5d79d452d8b77c8daba6694"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/PCA/notebook.ipynb",
+      "bytes": 298782,
+      "sha256": "0abb7f57d9ed8cf8d987e0dd88507fb163c8f07f1b46bffbb18e33407abd32bf"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/PCA/preview.html",
+      "bytes": 572907,
+      "sha256": "7808a9efa1d813a1225ec1d487088ee49ab457f182ac47c5151c13bfe805c9c8"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Plotting_Data/answers/notebook.ipynb",
+      "bytes": 281812,
+      "sha256": "85a701b0b5c3825805dcf85ba3b614416935f06d9d7840150c37b1afdb0833af"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Plotting_Data/answers/preview.html",
+      "bytes": 537489,
+      "sha256": "effa478a97e51ca489bd6dddfc1653ae79e152b476085465d6c59a6bb5ef0846"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Plotting_Data/notebook.ipynb",
+      "bytes": 320582,
+      "sha256": "201d341f4f12f2cddca1efaef7699c0e04738af845c5e7322de77270f6872a7a"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Plotting_Data/preview.html",
+      "bytes": 574082,
+      "sha256": "817adaf36e60462d81b3efca0e1fa2e71b9b02f297c433f327aed7d8bd02101e"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Plotting_Data/questions/notebook.ipynb",
+      "bytes": 10172,
+      "sha256": "ae247feddc60aeabbe67f5d7e6e68b26c711b8b0645dc378cf1de7789d80083f"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Plotting_Data/questions/preview.html",
+      "bytes": 264975,
+      "sha256": "0cba94eb0beb2f9f32606f2017291478903aae874a759cdcce4738b93f2042df"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Portfolio_Analysis/notebook.ipynb",
+      "bytes": 1101535,
+      "sha256": "ea9ad48116dbcb6a29fafcb34262c01f6fe0adc745476dd31f6da308082b0d1c"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Portfolio_Analysis/preview.html",
+      "bytes": 1325750,
+      "sha256": "8cc85836324813837f7beb450edfaea9fa66e4782fa2f0e411f715ee6ef1443b"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Position_Concentration_Risk/answers/notebook.ipynb",
+      "bytes": 464564,
+      "sha256": "3bd599ecf24084b3d123b328e1ffb5e33e78a0fef301d12cd531613518d71d75"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Position_Concentration_Risk/answers/preview.html",
+      "bytes": 732639,
+      "sha256": "f83383f6c33eb5eafa111cb864a56fd503ae22b3eaeba947885f96b54eafb1c7"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Position_Concentration_Risk/notebook.ipynb",
+      "bytes": 354236,
+      "sha256": "5562dcdda06f3f4e36ec6e8c19e1d763d795ccac397da34b9f75b84becb0bad9"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Position_Concentration_Risk/preview.html",
+      "bytes": 634214,
+      "sha256": "3dca7bf1ebe4e9ad9ee6882d0dea8489ca0721f9b0504a8f2eb6f91b070a4ab3"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Position_Concentration_Risk/questions/notebook.ipynb",
+      "bytes": 13993,
+      "sha256": "75afed100945ef4911ac1e63a1f88e64e554dce6437a8d808e6056c37313299f"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Position_Concentration_Risk/questions/preview.html",
+      "bytes": 277236,
+      "sha256": "09a62d5c3a84794e2676d543ba786219bc1cb197ba27dfceda94aaf2c687d477"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Random_Variables/answers/notebook.ipynb",
+      "bytes": 191504,
+      "sha256": "c44460070f577fa13c7ca2f74be41b9f33c3e122a7d41222160d7a952dc58a4f"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Random_Variables/answers/preview.html",
+      "bytes": 462236,
+      "sha256": "9f970e8300805962701e3fa9fbd3a31a5727c03b1a3b9413eac30eff7d03710e"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Random_Variables/notebook.ipynb",
+      "bytes": 487120,
+      "sha256": "64474110affc8bce035ac11901d4e0c5e747b64c90c182c27c17fdd2491ed598"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Random_Variables/preview.html",
+      "bytes": 765395,
+      "sha256": "44ac237e68e1b16430becf2b7404886ef9e0583137c5a8fa9069d4e8e3abed18"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Random_Variables/questions/notebook.ipynb",
+      "bytes": 12917,
+      "sha256": "ae3bdc1c79b076445b6ac8183d1d123a79b33d54a8b9962b18601476d6fab7ff"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Random_Variables/questions/preview.html",
+      "bytes": 273541,
+      "sha256": "c4e1dcc74de3058917f7162e313d1b8e9e7382d673da6a3cd3788677af5a4938"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Ranking_Universes_by_Factors/notebook.ipynb",
+      "bytes": 381141,
+      "sha256": "7a6c5835ef1bfe49b3310c5c6b02c03f2c5acbe70c1147d215f5ed1158227718"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Regression_Model_Instability/notebook.ipynb",
+      "bytes": 322761,
+      "sha256": "ff6985b734548440fe3b161b07c4d92f4707fe43096a1af629cb2e0a41f0b8de"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Regression_Model_Instability/preview.html",
+      "bytes": 586299,
+      "sha256": "e5df413045494de7388584f99c4202092b6dc39c5cdcc894d374f9ae85851d0a"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Residuals_Analysis/notebook.ipynb",
+      "bytes": 284196,
+      "sha256": "87e6efd36ffd76625698e05e1518b52786d241be04506adb7dcecd2f4b9a0498"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Residuals_Analysis/preview.html",
+      "bytes": 571672,
+      "sha256": "594121732334b471997fdc6856f332a605894f5f7a5512cc566c92e6dc4f93e3"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Spearman_Rank_Correlation/answers/notebook.ipynb",
+      "bytes": 105219,
+      "sha256": "2662d635a0f3e6886e2b61722c25faeb2bc2c2688021da0da86ae6cbc3b33ad0"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Spearman_Rank_Correlation/answers/preview.html",
+      "bytes": 368378,
+      "sha256": "102e19334447d3c04a9774b2fb3bc421d1e3ec87bcad46d48dafd69f0bde303c"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Spearman_Rank_Correlation/notebook.ipynb",
+      "bytes": 118732,
+      "sha256": "15966220c85188b24220732136ee516bb48963dce18d176574432327a5c541c3"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Spearman_Rank_Correlation/preview.html",
+      "bytes": 387610,
+      "sha256": "9ea3b198e22c422a508c820832bc89469361a773462aa07deb9d2713d484acd8"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Spearman_Rank_Correlation/questions/notebook.ipynb",
+      "bytes": 11668,
+      "sha256": "0f910eec8f46c88e96e4e5d570421867d172d5756c3ae90b9f792dc06aec6874"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Spearman_Rank_Correlation/questions/preview.html",
+      "bytes": 269293,
+      "sha256": "d1856a4f7c12c27dbada8bd0d6fb10f20733c835a154726759c46a140300b95b"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Statistical_Moments/answers/notebook.ipynb",
+      "bytes": 215395,
+      "sha256": "0b03bec202ba6d2a44cb09018e79bf2e174aa64b8aea065e7166a92681e647a6"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Statistical_Moments/answers/preview.html",
+      "bytes": 480024,
+      "sha256": "5c149a947512f5228a3d6cac06e30f0265e130a3e55fe557624d231bcd56e07a"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Statistical_Moments/notebook.ipynb",
+      "bytes": 169300,
+      "sha256": "943cf5c69925b64b7d8ee3c5fa1b1dbd301eb87c4dbb306dc2f1ca9b432f14b6"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Statistical_Moments/preview.html",
+      "bytes": 427325,
+      "sha256": "cf88fb527a6d4281587a8dc7354613a64a7771ea28c13ba2c79eb0831af02882"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Statistical_Moments/questions/notebook.ipynb",
+      "bytes": 12663,
+      "sha256": "4eaaf85a8a57ab50ce85087e3bd0cce2f6eed802675e6dffedca6e083259ae17"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Statistical_Moments/questions/preview.html",
+      "bytes": 273622,
+      "sha256": "035b835389b3b32ee35351ad60775400388e9bfc187bfdcec9d344c96316776c"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/The_Dangers_of_Overfitting/notebook.ipynb",
+      "bytes": 459990,
+      "sha256": "ca03e084cdfd106d3c4925334f92f8fa25716e073cb8886de5bda4fb7e6953ec"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/The_Dangers_of_Overfitting/preview.html",
+      "bytes": 730456,
+      "sha256": "86b6220def3822e14fd7575ddc63382360504a8ba7711d84928ef3ce3e1e6ca7"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Universe_Selection/answers/notebook.ipynb",
+      "bytes": 282306,
+      "sha256": "2fa0a2c1ed493f2c8cf622e55dc95764739c64402001c4f2f4e2cf1ce566a300"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Universe_Selection/answers/preview.html",
+      "bytes": 525820,
+      "sha256": "43c57ead830654480fe6932220de4c5ab17cc503613be5d22243c255e0b2b215"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Universe_Selection/notebook.ipynb",
+      "bytes": 320122,
+      "sha256": "7875a4957aa20ceaf9c413a2e12dc0490fd6aa3a15e43b95174c5d27f6e76903"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Universe_Selection/preview.html",
+      "bytes": 578459,
+      "sha256": "305584c256069019af57ee656c8b77d3f0aa2a0693963f5ffedd34db6adf770d"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Universe_Selection/questions/notebook.ipynb",
+      "bytes": 11841,
+      "sha256": "2ca0140da3fa006a855e12e19915f6b637323a6faab4961e83c16b0dce13fd25"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Universe_Selection/questions/preview.html",
+      "bytes": 268745,
+      "sha256": "50a688df8476eb51677b511bc1c1e98716120be591c2d15e973dad59e2908b45"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/VaR_and_CVaR/notebook.ipynb",
+      "bytes": 933959,
+      "sha256": "fa860e7dbd8c99e86a97bc0f6d0bf2984e579dfc4790e471c17dd5ea2ef64feb"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/VaR_and_CVaR/preview.html",
+      "bytes": 1207058,
+      "sha256": "c1650284e6222ed39496490d4f905be179fcacc1a67c385c21b17d68df22c91a"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Variance/answers/notebook.ipynb",
+      "bytes": 10115,
+      "sha256": "486fdf91fd58a89c1ffea7c4f4ab8c075bb8828d11de5dc164614cf542ee8963"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Variance/answers/preview.html",
+      "bytes": 268472,
+      "sha256": "248dfc4a162f67c8e11e6dffcbbcbe0ed43b351577d9b51ea3a50ef1a4478b86"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Variance/notebook.ipynb",
+      "bytes": 10745,
+      "sha256": "ea70632300018d5212ddbbb3fa27d0e8d673ce0e19ba126fff4dcbaccc3a3be5"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Variance/preview.html",
+      "bytes": 268397,
+      "sha256": "c3c07f6c64c6f2a26cc72cc26f8787132325c7a965878e4efa9ac3747d3d2ebf"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Variance/questions/notebook.ipynb",
+      "bytes": 8917,
+      "sha256": "4b5d26ef77c4b48a007adc486a2618670a07f8375c0ae13edf99bfd240f7fb1e"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Variance/questions/preview.html",
+      "bytes": 263220,
+      "sha256": "aec5864265738e5bd0f8c779887680beb192fd78a2ae1367dac5ac56a72c138f"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Violations_of_Regression_Models/notebook.ipynb",
+      "bytes": 393236,
+      "sha256": "eccb20caa21f1f10800827099b1549e4e36b297c4c2a35c0817c751f6d0c8495"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Violations_of_Regression_Models/preview.html",
+      "bytes": 667001,
+      "sha256": "10bff6f625f5dd17eeb860762de4b0b587f62500b81453e3222df24645f19dc8"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Why_Hedge_I/notebook.ipynb",
+      "bytes": 569553,
+      "sha256": "4097a27443e158fe3cfa25fb2be7cf49c2cfc36dbb39e02b97a555cd49d32c89"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Why_Hedge_I/preview.html",
+      "bytes": 835740,
+      "sha256": "cd88fdd45d3f731b00c478eca2fc317a4b6030e47e8a20536680ebb34d3c016a"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Why_Hedge_II/notebook.ipynb",
+      "bytes": 72477,
+      "sha256": "31d93e1cfe3bcfb747f09ab8d83ec2bc93a88b0405b3d090394366981c2b7a0b"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/Why_Hedge_II/preview.html",
+      "bytes": 359319,
+      "sha256": "f3e2c73f2c4dcec119bc98e42978252819fea9f0cd2ea376b7da8fd7709e7faa"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/p-Hacking_and_Multiple_Comparisons_Bias/notebook.ipynb",
+      "bytes": 85021,
+      "sha256": "3aaf426a9820feb09896de598bf938dcf963b53b3be049a949ca881ce5b06010"
+    },
+    {
+      "path": "Quantopian Lecture - Part3/p-Hacking_and_Multiple_Comparisons_Bias/preview.html",
+      "bytes": 358023,
+      "sha256": "d9d2750b4a7aeb5b395188e8493e81801c446a371a274562c9f88439c47c8877"
+    }
+  ]
+}

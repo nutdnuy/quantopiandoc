@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "checks": [
+    "Stepper stage navigation",
+    "Thai/English search, empty state, keyboard shortcut and Escape",
+    "Mark read, CountUp and persistence",
+    "Library filters and empty results",
+    "All 53 lesson pages: desktop, headings, math and overflow",
+    "Original notebook views, image outputs and download",
+    "390px mobile, dark/light themes, seven representative lessons",
+    "Reduced-motion stage navigation"
+  ],
+  "externalRequests": [],
+  "runtimeErrors": [],
+  "accessibilityViolations": []
+}

@@ -1,0 +1,3 @@
+# Preserve whitespace in unchanged upstream assets and source archives.
+public/assets/katex/** -whitespace
+sources/quantopian/** -whitespace

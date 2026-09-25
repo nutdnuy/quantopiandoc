@@ -1,0 +1,34 @@
+const path=require('node:path'),fs=require('node:fs'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..');
+const toolRoot=process.env.QRL_TOOLING_ROOT||root;
+const {chromium}=require(require.resolve('playwright',{paths:[toolRoot]}));
+const axeFile=require.resolve('axe-core/axe.min.js',{paths:[toolRoot]});
+const base=process.env.QRL_URL||'http://127.0.0.1:8765';
+const ids=JSON.parse(fs.readFileSync(path.join(root,'data/curriculum.json'))).flatMap(g=>g.topics);
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:process.env.QRL_CHROMIUM||undefined});
+ const errors=[],external=[],checks=[],violations=[];
+ const context=await browser.newContext({viewport:{width:1440,height:1000}});
+ await context.route('**/*',route=>{const u=new URL(route.request().url());if(!['127.0.0.1','localhost'].includes(u.hostname)&&u.protocol!=='data:'){external.push(u.href);route.abort()}else route.continue()});
+ const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
+ page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`)});
+ async function overflow(label){const x=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:innerWidth}));assert.ok(x.scroll<=x.width+1,`${label}: overflow ${JSON.stringify(x)}`)}
+ async function axe(label){await page.evaluate(fs.readFileSync(axeFile,'utf8'));const r=await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));violations.push(...r.violations.map(v=>({page:label,id:v.id,impact:v.impact,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))})))}
+ await page.goto(base);await page.locator('.step-indicator').first().waitFor();await overflow('home desktop');
+ await page.screenshot({path:path.join(root,'qa/home-desktop-dark.png'),fullPage:false});await axe('home dark desktop');
+ await page.getByRole('button',{name:'Next part →',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.stepper-content h3')?.textContent.includes('สถิติ'));assert.match(await page.locator('.stepper-content h3').innerText(),/สถิติ/);await page.locator('.step-indicator').nth(6).click();await page.waitForFunction(()=>document.querySelector('.stepper-content h3')?.textContent.includes('ตรวจงานวิจัย'));assert.match(await page.locator('.stepper-content h3').innerText(),/ตรวจงานวิจัย/);checks.push('Stepper stage navigation');
+ await page.keyboard.press('/');await page.locator('#search-input').fill('ความเสี่ยง');await page.locator('#search-results a').first().waitFor();assert.ok(await page.locator('#search-results a').count()>0);await page.locator('#search-input').fill('regression');assert.ok(await page.locator('#search-results a').count()>0);await page.locator('#search-input').fill('zzzznomatching1234');await page.waitForTimeout(100);assert.equal(await page.locator('#search-results a').count(),0);await page.keyboard.press('Escape');assert.equal(await page.locator('#search-dialog').evaluate(e=>e.open),false);checks.push('Thai/English search, empty state, keyboard shortcut and Escape');
+ await page.goto(base+'/introduction-to-python.html');await page.locator('#read-count').waitFor();await page.getByRole('button',{name:'Mark as read',exact:true}).click();assert.equal(await page.locator('#mark-complete').getAttribute('aria-pressed'),'true');await page.waitForTimeout(500);assert.equal(await page.locator('#read-count [aria-hidden=true]').innerText(),'1');await page.reload();assert.equal(await page.locator('#mark-complete').getAttribute('aria-pressed'),'true');checks.push('Mark read, CountUp and persistence');
+ await page.locator('#theme-toggle').click();assert.equal(await page.locator('html').getAttribute('data-theme'),'light');await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await page.screenshot({path:path.join(root,'qa/lesson-desktop-light.png'),fullPage:false});await axe('lesson light desktop');
+ await page.goto(base+'/library.html');await page.locator('#library-filter').fill('Python');assert.equal(await page.locator('.library-row:visible').count(),1);await page.locator('#library-filter').fill('zzzznomatch');assert.equal(await page.locator('.library-row:visible').count(),0);checks.push('Library filters and empty results');
+ for(const id of ids){await page.goto(base+'/'+id+'.html');await overflow('lesson '+id);assert.equal(await page.locator('h1').count(),1);assert.equal(await page.locator('.prose .math-fallback').count(),0)}checks.push('All 53 lesson pages: desktop, headings, math and overflow');
+ await page.goto(base+'/source-factor-analysis-lecture.html');assert.ok(await page.locator('.source-cell').count()>0);assert.ok(await page.locator('.notebook-output').count()>0);const download=page.waitForEvent('download');await page.getByRole('link',{name:'Download original .ipynb',exact:true}).click();assert.equal((await download).suggestedFilename(),'notebook.ipynb');checks.push('Original notebook views, image outputs and download');
+ await page.setViewportSize({width:390,height:844});
+ for(const theme of ['dark','light']){
+  await page.goto(base);if(await page.locator('html').getAttribute('data-theme')!==theme)await page.locator('#theme-toggle').click();await page.locator('.step-indicator').first().waitFor();await overflow('home mobile '+theme);await axe('home mobile '+theme);await page.screenshot({path:path.join(root,`qa/home-mobile-${theme}.png`),fullPage:false});
+  for(const id of ['introduction-to-python','hypothesis-testing','arch-garch-and-gmm','factor-analysis','long-short-equity','var-and-cvar','the-dangers-of-overfitting']){await page.goto(base+'/'+id+'.html');await overflow('mobile '+id+' '+theme)}
+ }checks.push('390px mobile, dark/light themes, seven representative lessons');
+ await page.emulateMedia({reducedMotion:'reduce'});await page.goto(base);await page.locator('.step-indicator').first().waitFor();await page.getByRole('button',{name:'Next part →',exact:true}).click();await page.waitForFunction(()=>document.querySelector('.stepper-content h3')?.textContent.includes('สถิติ'));assert.match(await page.locator('.stepper-content h3').innerText(),/สถิติ/);checks.push('Reduced-motion stage navigation');
+ assert.equal(external.length,0,'Unexpected external requests');assert.equal(errors.length,0,'Browser runtime errors: '+errors.join('\n'));
+ const result={status:violations.length?'fail':'pass',checks,externalRequests:external,runtimeErrors:errors,accessibilityViolations:violations};fs.writeFileSync(path.join(root,'qa/browser-results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));await browser.close();if(violations.length)process.exitCode=1;
+})().catch(e=>{console.error(e);process.exit(1)});
