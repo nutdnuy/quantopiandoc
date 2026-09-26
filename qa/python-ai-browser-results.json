@@ -2,25 +2,25 @@
   "status": "pass",
   "lesson": "why-learn-python-with-ai",
   "date": "2026-09-26",
+  "revision": "Refocused opening essay after collected comments",
   "browser": "Codex in-app browser",
   "checks": {
-    "headline": "ทำไมเราต้องเรียน Python เมื่อ AI ก็ทำได้",
-    "homeLessonLinks": 54,
-    "firstLessonLink": "why-learn-python-with-ai.html",
-    "searchThaiTitle": true,
-    "nextLesson": "introduction-to-research.html",
-    "executedPython": "100.00 → 110.00 → 99.00 THB; mean 0.00%; cumulative -1.00%",
-    "activeViz": "lab-55",
-    "defaultEndingWealth": 99,
-    "keyboardIncrementEndingWealth": 99.9,
-    "firstSliderMaximumEndingWealth": 135,
-    "resetRestoresDefaults": true,
-    "mobileViewportCSSWidth": 390,
-    "mobileDocumentClientWidth": 370,
-    "mobileDocumentScrollWidth": 370,
-    "desktopOverflow": false,
-    "mobileOverflow": false,
+    "requestedOpeningVisible": true,
+    "sectionHeadings": [
+      "เข้าใจงานที่ AI ทำให้",
+      "ความเข้าใจโจทย์ยังเป็นงานของเรา",
+      "ปรับงานต่อได้ด้วยตัวเอง",
+      "เรียน Python ถึงระดับไหน",
+      "ก่อนเริ่มเรียน"
+    ],
+    "activeVizCount": 0,
+    "codeOutputCount": 0,
+    "codeBlockCount": 0,
+    "takeawayBoxCount": 0,
+    "kaggleInProse": false,
+    "portfolioInProse": false,
+    "horizontalOverflow": false,
     "consoleErrors": []
   },
-  "scope": "New lesson, home navigation, search, code output and Active Viz checked in browser. Existing lessons covered by structural and numerical checks; previous browser batch remains historical."
+  "scope": "Reloaded and inspected the revised lesson, visible opening and rendered sections. Full structural checks and 76 tests passed; other lesson browser checks were not repeated for this editorial change."
 }

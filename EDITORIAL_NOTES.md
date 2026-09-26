@@ -74,3 +74,10 @@ Added `why-learn-python-with-ai` before the Notebook introduction in Part 01, us
 The two-period example uses hypothetical capital of 100 THB with returns of +10% and −10%. Executed Python prints 100 → 110 → 99, a 0% arithmetic mean and −1% cumulative return. The new Active Viz labels the additive method as deliberately incorrect for cumulative returns, with controls, a comparison chart and a table. Existing lab IDs remain stable.
 
 The supplied references were adapted, not copied verbatim. Removed unverified current-events claims, simplified claims about LLM arithmetic hardware, legal absolutes, resource-price promises and hiring/earnings guarantees. No external research was performed. The prose was reviewed with no-ai-slop and parent editorial review.
+
+
+## Python and AI essay refocus — 2026-09-26
+
+Applied the next collected comments after Nuth authorized the batch. The opening follows Nuth's requested question. The chapter now addresses reasons for learning Python alongside AI and the appropriate depth of study. Removed the Kaggle and Notebook Portfolio sections, the returns tutorial and its Python output, the compound-audit Active Viz and the takeaway box. Retargeted objectives and the closing reflection to the essay's scope.
+
+The essay format permits a shorter prose chapter without Active Viz or a takeaway section; the other 53 practice lessons retain their existing content and lab IDs. Removed the now-unused compound-audit model, configuration, output and model tests. Added targeted page assertions for the requested removals and opening; build continues to validate the complete curriculum, local links and archived source integrity.

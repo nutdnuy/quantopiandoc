@@ -99,7 +99,6 @@ probes={
 'regression-model-instability':['print("First coefficients:", first.params.to_numpy())\nprint("Second coefficients:", second.params.to_numpy())\nprint("Out-of-sample MSE:", np.mean((y.iloc[cut:] - prediction)**2))'],
 'p-hacking-and-multiple-comparisons-bias':['print("Tests:", len(p_values))\nprint("Uncorrected / Bonferroni discoveries:", uncorrected, corrected)']}
 notes={
-'why-learn-python-with-ai':'ทุนสมมติ 100 ผลตอบแทน +10% และ −10% ต่อช่วง ไม่มีเงินฝากถอนหรือค่าธรรมเนียม; ใช้ตรวจผลตอบแทนสะสมกับค่าเฉลี่ย',
 'plotting-data':'ข้อมูลราคา Asset A/B จำลอง 101 วัน (100 returns): Histogram นับความถี่ของ return A, Scatter จับคู่ returns ในวันเดียวกัน และ Price index เริ่มที่ 100 ทั้งสองสินทรัพย์',
 'introduction-to-research':'Normal sample 500 ค่า จาก seed 42; เป็นข้อมูลจำลอง ไม่มีหน่วยตลาด',
 'statistical-moments':'ใช้ผลตอบแทนสมมติ 10 ค่าที่แสดงในข้อมูลตัวอย่าง; Pearson kurtosis เท่ากับ excess kurtosis + 3',

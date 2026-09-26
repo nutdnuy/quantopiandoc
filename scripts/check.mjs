@@ -8,7 +8,7 @@ assert.equal(sourceIds.length,53);assert.deepEqual([...ids].sort(),[...sourceIds
 const jsonFiles=fs.readdirSync(path.join(root,'content')).filter(f=>f.endsWith('.json'));assert.equal(jsonFiles.length,ids.length);
 const pages=fs.readdirSync(out).filter(f=>f.endsWith('.html'));assert.equal(pages.length,ids.length+manifest.notebooks+3);
 const errors=[];
-for(const id of ids){const d=JSON.parse(fs.readFileSync(path.join(root,'content',id+'.json')));assert.equal(d.id,id);assert.ok(d.body.length>=3500,`${id}: chapter too short`);assert.equal(d.objectives.length,3);assert.equal(d.takeaways.length,3);assert.ok(d.exercise?.length>30);assert.ok((d.body.match(/^## /gm)||[]).length>=3,`${id}: no structure`)}
+for(const id of ids){const d=JSON.parse(fs.readFileSync(path.join(root,'content',id+'.json')));assert.equal(d.id,id);assert.ok(d.body.length>=(d.format==='essay'?1500:3500),`${id}: chapter too short`);assert.equal(d.objectives.length,3);assert.equal(d.takeaways.length,d.format==='essay'?0:3);assert.ok(d.exercise?.length>30);assert.ok((d.body.match(/^## /gm)||[]).length>=3,`${id}: no structure`)}
 for(const page of pages){
  const html=fs.readFileSync(path.join(out,page),'utf8');
  if(!html.includes('lang="th"'))errors.push(`${page}: language missing`);

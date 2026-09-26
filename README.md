@@ -7,8 +7,8 @@ Investment Research with Python: ข้อมูล สถิติ Signal ก�
 ## สิ่งที่อยู่ในโปรเจกต์
 
 - 54 บทภาษาไทย จัดเป็น 7 หมวด ใช้หัวข้อตรงกับแนวคิดและคำว่า Signal
-- Active Viz 55 ชุด ครบทุกบท ปรับค่าดูผลคำนวณด้วยข้อมูลสมมติ
-- Output ที่รันจริงครบ 38 บล็อก Python ใน 29 บท พร้อม input fixtures, คำสั่งแสดงค่า และกราฟ
+- Active Viz 54 ชุด ครบ 53 บทภาคปฏิบัติ ปรับค่าดูผลคำนวณด้วยข้อมูลสมมติ
+- Output ที่รันจริงครบ 37 บล็อก Python ใน 28 บท พร้อม input fixtures, คำสั่งแสดงค่า และกราฟ
 - ต้นฉบับครบ 92 Notebook: 52 บทเรียน, 20 แบบฝึกหัด, 20 เฉลย พร้อม HTML เดิม 91 ไฟล์
 - หน้าอ่านต้นฉบับที่แสดงคำอธิบาย โค้ด ภาพ และข้อความผลลัพธ์เดิม โดยไม่โหลดสื่อภายนอก
 - ค้นหาไทย/อังกฤษ, Source library, บันทึกว่าอ่านแล้ว และกลับมาอ่านต่อ
@@ -92,8 +92,8 @@ npm run build
 
 All lesson charts use deterministic calculations or seeded hypothetical data. They are teaching examples, not market observations, forecasts, or evidence of strategy performance. No new Internet source or image generator was used.
 
-The 55 Active Viz configurations cover all 54 lessons. The opening Python-and-AI chapter compares compounded wealth with a deliberately incorrect sum-of-returns method. Statistical Moments has separate Skewness and Kurtosis panels. The Kurtosis comparison standardizes all distributions to mean zero and variance one and includes a tail zoom. Controls, metrics, axes, assumptions, and reset actions remain usable in both themes; charts scroll within their panel on narrow screens.
+The 54 Active Viz configurations cover the 53 practice lessons. The opening Python-and-AI essay explains why to learn Python and how much to learn; it has no code example, Active Viz or takeaway box. Statistical Moments has separate Skewness and Kurtosis panels. The Kurtosis comparison standardizes all distributions to mean zero and variance one and includes a tail zoom. Controls, metrics, axes, assumptions, and reset actions remain usable in both themes; charts scroll within their panel on narrow screens.
 
-To regenerate the 38 Python outputs, run `npm run build:outputs` with local NumPy, pandas, SciPy, statsmodels, and Matplotlib. Missing input data is supplied by explicit hypothetical fixtures shown with the example. The manifest stores the runtime and SHA-256 of every displayed code block; build fails if the code changes without fresh output. This reruns the Thai lesson examples only, not the archived Quantopian notebooks.
+To regenerate the 37 Python outputs, run `npm run build:outputs` with local NumPy, pandas, SciPy, statsmodels, and Matplotlib. Missing input data is supplied by explicit hypothetical fixtures shown with the example. The manifest stores the runtime and SHA-256 of every displayed code block; build fails if the code changes without fresh output. This reruns the Thai lesson examples only, not the archived Quantopian notebooks.
 
 `npm test` checks source integrity, lesson coverage, local links, numerical models, all Active Viz mappings, and output/code hashes. Browser verification is recorded separately in `qa/`.

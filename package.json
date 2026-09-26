@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "node scripts/serve.mjs",
-    "test": "node scripts/check.mjs && node --test qa/lab-models.test.mjs qa/python-ai-model.test.mjs && node qa/revision-check.mjs",
+    "test": "node scripts/check.mjs && node --test qa/lab-models.test.mjs qa/python-ai-lesson.test.mjs && node qa/revision-check.mjs",
     "check:site": "node qa/browser-check.cjs",
     "build:interactions": "node scripts/bundle.cjs",
     "build:outputs": "python3 scripts/render-code-outputs.py"

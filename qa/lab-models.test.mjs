@@ -3,7 +3,7 @@
 import test from 'node:test';
 import fs from 'node:fs';
 const curriculum=JSON.parse(fs.readFileSync(new URL('../data/curriculum.json',import.meta.url)));
-const lessonIds=curriculum.flatMap(g=>g.topics);
+const lessonIds=curriculum.flatMap(g=>g.topics).filter(id=>JSON.parse(fs.readFileSync(new URL('../content/'+id+'.json',import.meta.url))).format!=='essay');
 import assert from 'node:assert/strict';
 import {
   mean, variance, sd, corr, ranks, spearman, normalPdf, normalCdf,
@@ -96,7 +96,7 @@ function boundaryCases(lab) {
   return [...new Map(candidates.map(params => [JSON.stringify(params), params])).values()];
 }
 
-test('registry has unique configurations and covers every curriculum lesson', () => {
+test('registry has unique configurations and covers every practice lesson', () => {
   assert.equal(labs.length, lessonIds.length + 1);
   assert.equal(new Set(labs.map(lab => lab.id)).size, labs.length);
   assert.deepEqual([...new Set(labs.map(lab => lab.lesson))].sort(), [...lessonIds].sort());

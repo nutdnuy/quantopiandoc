@@ -1,12 +1,12 @@
 {
   "status": "pass",
   "lessons": 54,
-  "activeViz": 55,
-  "executedPythonOutputs": 38,
+  "activeViz": 54,
+  "executedPythonOutputs": 37,
   "checks": [
     "Requested title and Signal terminology",
     "No lesson source callouts",
-    "Every lesson has a configured Active Viz",
+    "Practice lessons have Active Viz; essays omit it",
     "Every Python block has exact-code-hash output",
     "Output figures exported locally"
   ]
