@@ -29,7 +29,7 @@ npm run dev
 
 จากนั้นเปิด `http://127.0.0.1:8765` หรือดับเบิลคลิก `Preview.command` บน Mac
 
-`dist/` เป็นเว็บที่สร้างแล้วและย้ายไปวางบน static hosting ได้ทั้งหมด ยังไม่ได้เผยแพร่หรือเปลี่ยนเว็บไซต์ออนไลน์ในการทำงานครั้งนี้
+`dist/` เป็นเว็บที่สร้างแล้วสำหรับเผยแพร่ผ่าน GitHub Pages ที่ https://nutdnuy.github.io/quantopiandoc/ โดย workflow **Publish book** จะ build ตรวจสอบ และเผยแพร่เมื่อ push เข้า `main`
 
 ## แก้เนื้อหา
 
