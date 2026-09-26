@@ -5,7 +5,7 @@
   "brand": "QuantCorner",
   "referenceUrl": "https://nutdnuy.github.io/robo-trade-notes/index.html",
   "referenceAccess": "Existing local artwork and provenance only; no Internet access for asset collection.",
-  "scope": "Four exact reference illustrations and two canonical QuantCorner marks; no generation, crop, retouch, recolor, or redraw.",
+  "scope": "Existing Quantara artwork and canonical QuantCorner marks, copied unchanged. Welcome uses the map and Quant Researcher illustration; Deltaris imagery remains available for existing lesson pages.",
   "loreBoundary": "Quantara kingdom and Deltaris Algorithmic Trading Masters are locally recorded owner-confirmed identities. No new city/persona lore is introduced. The reference map is presentation artwork, not an authoritative six-city map.",
   "assets": [
     {
@@ -83,6 +83,19 @@
       "provenance": "/Users/nuthdanai/Documents/LLM-Wiki/90 System/design-systems/assets/quantcorner-brand/README.md",
       "provenanceNote": "Canonical approved QuantCorner mark. Preserve paths, colors, proportions and clear space. Variant suffix describes the intended surface.",
       "rightsStatus": "Approved owner brand asset; no new public license assigned."
+    },
+    {
+      "path": "public/assets/quantara/researcher.webp",
+      "origin": "/Users/nuthdanai/Desktop/05_Work_with_AI_Agents/New_WEB/quantcorner-card-game/assets/characters/researcher.webp",
+      "role": "supporting-quant-researcher-illustration",
+      "sha256": "0a00db464f1d5e1a6edd1f8beff427eb790949d3dfc7b67e5f0d768072f86b68",
+      "bytes": 102404,
+      "width": 768,
+      "height": 1152,
+      "transformation": "none; byte-for-byte copy",
+      "provenance": "/Users/nuthdanai/Desktop/05_Work_with_AI_Agents/New_WEB/prototype/quantcorner-discovery-demo/WARRIOR-ART.md",
+      "provenanceNote": "Existing owner-requested Quant Researcher artwork. Local character registry is draft; used as a generic illustration without adding named lore or cities.",
+      "rightsStatus": "Owner-supplied original generated artwork; no new public license assigned."
     }
   ]
 }

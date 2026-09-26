@@ -29,7 +29,7 @@
  const lesson=$('[data-lesson]');if(lesson)save('qrl-last',{id:lesson.dataset.lesson});
  const last=readStore('qrl-last'),continueLink=$('#continue-link');
  if(continueLink&&last.id&&(window.RESEARCH_SEARCH||[]).some(x=>x.id===last.id)){continueLink.href=last.id+'.html';continueLink.textContent='Continue reading ↗'}
- const progress=$('#progress-note');if(progress&&Object.values(completed).filter(Boolean).length)progress.textContent=`อ่านแล้ว ${Object.values(completed).filter(Boolean).length} จาก 53 บท · เลือกทบทวนได้ทุกเมื่อ`;
+ const progress=$('#progress-note');if(progress&&Object.values(completed).filter(Boolean).length)progress.textContent=`อ่านแล้ว ${Object.values(completed).filter(Boolean).length} จาก 53 บท`;
  $('#library-filter')?.addEventListener('input',e=>{const q=e.target.value.trim().toLocaleLowerCase();let n=0;document.querySelectorAll('.library-row').forEach(row=>{row.hidden=!row.dataset.search.toLocaleLowerCase().includes(q);if(!row.hidden)n++});$('#library-count').textContent=n?`${n} topics`:'ไม่พบหัวข้อ ลองใช้คำค้นอื่น'});
  const sidebar=$('#book-sidebar'),frame=$('#book-frame'),toggle=$('#contents-toggle'),close=$('#contents-close'),backdrop=$('#sidebar-backdrop');
  const compact=window.matchMedia('(max-width: 900px)');
@@ -64,13 +64,5 @@
  });
  sidebar?.addEventListener('transitionend',e=>{if(e.target===sidebar&&e.propertyName==='transform'&&compact.matches&&mobileContents&&!sidebar.contains(document.activeElement))close.focus()});
  if(sidebar)syncContents();
- const prompts=[
-  ['READY TO ASK','“เครื่องมือพร้อมแล้ว วันนี้เราอยากรู้อะไรจากข้อมูล?”','เริ่มจากคำถามในบทแรก'],
-  ['DEFINE THE QUESTION','“ถ้าไอเดียนี้ใช้ได้ เราควรมองเห็นอะไรในข้อมูล?”','ลองกำหนดคำถามให้ตรวจสอบได้'],
-  ['CHECK THE EVIDENCE','“ผลที่เห็นยังอยู่ไหม เมื่อเปลี่ยนช่วงข้อมูล?”','ชวนอ่านเรื่องความไม่แน่นอนของค่าประมาณ'],
-  ['BEFORE YOU TRUST IT','“ถ้าใส่ต้นทุนการซื้อขายเข้าไป กฎนี้ยังน่าสนใจหรือเปล่า?”','ชวนอ่านเรื่อง Volume, Slippage และ Liquidity']
- ];
- let promptIndex=0;
- $('#machine-prompt')?.addEventListener('click',()=>{promptIndex=(promptIndex+1)%prompts.length;const[state,line,note]=prompts[promptIndex];$('#machine-state').textContent=state;$('#machine-line').textContent=line;$('#machine-note').textContent=note});
 
 })();

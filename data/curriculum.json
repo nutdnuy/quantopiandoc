@@ -1,9 +1,118 @@
 [
- {"id":"tools","number":"01","title":"เริ่มต้นจากคำถามและข้อมูล","label":"Research & Python","description":"วางคำถามวิจัยให้ชัด แล้วค่อยใช้ Python จัดข้อมูล คำนวณ และมองเห็นสิ่งที่ตัวเลขกำลังบอก","topics":["introduction-to-research","introduction-to-python","introduction-to-numpy","introduction-to-pandas","plotting-data"]},
- {"id":"statistics","number":"02","title":"อ่านข้อมูลด้วยภาษาของสถิติ","label":"Statistical foundations","description":"จากค่ากลางและการกระจาย สู่ความสัมพันธ์และการทดสอบสมมติฐาน เพื่อรู้ว่าเราสรุปอะไรจากข้อมูลได้บ้าง","topics":["means","random-variables","variance","statistical-moments","linear-correlation-analysis","spearman-rank-correlation","confidence-intervals","hypothesis-testing"]},
- {"id":"models","number":"03","title":"สร้างแบบจำลอง อธิบายสิ่งที่เปลี่ยนไป","label":"Models & time series","description":"เชื่อมความสัมพันธ์ระหว่างตัวแปรกับโครงสร้างตามเวลา พร้อมเข้าใจเงื่อนไขที่ทำให้แบบจำลองมีความหมาย","topics":["linear-regression","multiple-linear-regression","maximum-likelihood-estimation","residuals-analysis","violations-of-regression-models","autocorrelation-and-ar-models","integration-cointegration-and-stationarity","arch-garch-and-gmm","kalman-filters","pca"]},
- {"id":"factors","number":"04","title":"เปลี่ยนแนวคิดเป็นสัญญาณลงทุน","label":"Alpha & factor research","description":"กำหนดหุ้นที่จะศึกษา จัดอันดับด้วยปัจจัย และตรวจว่าสัญญาณสัมพันธ์กับผลตอบแทนในอนาคตอย่างไร","topics":["universe-selection","ranking-universes-by-factors","fundamental-factor-models","factor-analysis","case-study-traditional-value-factor"]},
- {"id":"strategies","number":"05","title":"ประกอบสัญญาณให้เป็นกลยุทธ์","label":"Strategy construction","description":"สำรวจการถือ Long–Short การซื้อขายเป็นคู่ และ Futures โดยผูกแนวคิดกับวิธีถือสถานะและข้อจำกัดของแต่ละตลาด","topics":["long-short-equity","introduction-to-pairs-trading","introduction-to-futures","futures-trading-considerations","mean-reversion-on-futures"]},
- {"id":"portfolio","number":"06","title":"มองพอร์ตผ่านผลตอบแทนและความเสี่ยง","label":"Portfolio & risk","description":"แยกผลจากตลาด ปัจจัย และการเลือกสินทรัพย์ ก่อนพิจารณาการป้องกันความเสี่ยง การกระจุกตัว และการขาดทุนปลายหาง","topics":["capm-and-arbitrage-pricing-theory","arbitrage-pricing-theory","estimating-covariance-matrices","factor-risk-exposure","factor-based-risk-management","portfolio-analysis","case-study-comparing-etfs","why-hedge-i","why-hedge-ii","beta-hedging","leverage","position-concentration-risk","var-and-cvar"]},
- {"id":"validation","number":"07","title":"ตรวจงานวิจัยก่อนเชื่อผลลัพธ์","label":"Robustness & execution","description":"กลับมาถามว่าผลที่ดีเกิดจากสัญญาณหรือความบังเอิญ และยังเหลืออะไรเมื่อเผชิญต้นทุนกับข้อจำกัดในการซื้อขาย","topics":["instability-of-estimates","regression-model-instability","model-misspecification","the-dangers-of-overfitting","p-hacking-and-multiple-comparisons-bias","introduction-to-volume-slippage-and-liquidity","market-impact-model"]}
+  {
+    "id": "tools",
+    "number": "01",
+    "title": "Notebook และ Python",
+    "label": "Research & Python",
+    "description": "ใช้ Notebook, NumPy และ pandas เตรียมข้อมูล แล้วสร้างกราฟด้วย Matplotlib",
+    "topics": [
+      "introduction-to-research",
+      "introduction-to-python",
+      "introduction-to-numpy",
+      "introduction-to-pandas",
+      "plotting-data"
+    ]
+  },
+  {
+    "id": "statistics",
+    "number": "02",
+    "title": "สถิติพื้นฐาน",
+    "label": "Statistical foundations",
+    "description": "ค่าเฉลี่ย การกระจาย ความสัมพันธ์ ช่วงความเชื่อมั่น และการทดสอบสมมติฐาน",
+    "topics": [
+      "means",
+      "random-variables",
+      "variance",
+      "statistical-moments",
+      "linear-correlation-analysis",
+      "spearman-rank-correlation",
+      "confidence-intervals",
+      "hypothesis-testing"
+    ]
+  },
+  {
+    "id": "models",
+    "number": "03",
+    "title": "แบบจำลองและอนุกรมเวลา",
+    "label": "Models & time series",
+    "description": "สร้างและตรวจแบบจำลอง Regression ศึกษา Stationarity, GARCH, Kalman filter และ PCA",
+    "topics": [
+      "linear-regression",
+      "multiple-linear-regression",
+      "maximum-likelihood-estimation",
+      "residuals-analysis",
+      "violations-of-regression-models",
+      "autocorrelation-and-ar-models",
+      "integration-cointegration-and-stationarity",
+      "arch-garch-and-gmm",
+      "kalman-filters",
+      "pca"
+    ]
+  },
+  {
+    "id": "factors",
+    "number": "04",
+    "title": "การวิจัยปัจจัยลงทุน",
+    "label": "Alpha & factor research",
+    "description": "เลือกกลุ่มหุ้น จัดอันดับด้วยปัจจัย และทดสอบความสัมพันธ์ระหว่างสัญญาณกับผลตอบแทน",
+    "topics": [
+      "universe-selection",
+      "ranking-universes-by-factors",
+      "fundamental-factor-models",
+      "factor-analysis",
+      "case-study-traditional-value-factor"
+    ]
+  },
+  {
+    "id": "strategies",
+    "number": "05",
+    "title": "การสร้างกลยุทธ์",
+    "label": "Strategy construction",
+    "description": "ศึกษา Long–Short Equity, Pairs Trading และ Mean Reversion ในตลาด Futures",
+    "topics": [
+      "long-short-equity",
+      "introduction-to-pairs-trading",
+      "introduction-to-futures",
+      "futures-trading-considerations",
+      "mean-reversion-on-futures"
+    ]
+  },
+  {
+    "id": "portfolio",
+    "number": "06",
+    "title": "การวิเคราะห์พอร์ตและความเสี่ยง",
+    "label": "Portfolio & risk",
+    "description": "วิเคราะห์ผลตอบแทนและความเสี่ยงจากปัจจัย ฝึก Hedge และวัดผลของ Leverage การกระจุกตัว และการขาดทุนปลายหาง",
+    "topics": [
+      "capm-and-arbitrage-pricing-theory",
+      "arbitrage-pricing-theory",
+      "estimating-covariance-matrices",
+      "factor-risk-exposure",
+      "factor-based-risk-management",
+      "portfolio-analysis",
+      "case-study-comparing-etfs",
+      "why-hedge-i",
+      "why-hedge-ii",
+      "beta-hedging",
+      "leverage",
+      "position-concentration-risk",
+      "var-and-cvar"
+    ]
+  },
+  {
+    "id": "validation",
+    "number": "07",
+    "title": "การตรวจสอบผลวิจัยและต้นทุนซื้อขาย",
+    "label": "Robustness & execution",
+    "description": "ตรวจความไม่แน่นอนของค่าประมาณ Overfitting และการทดสอบหลายสมมติฐาน ก่อนพิจารณา Slippage, Liquidity และ Market Impact",
+    "topics": [
+      "instability-of-estimates",
+      "regression-model-instability",
+      "model-misspecification",
+      "the-dangers-of-overfitting",
+      "p-hacking-and-multiple-comparisons-bias",
+      "introduction-to-volume-slippage-and-liquidity",
+      "market-impact-model"
+    ]
+  }
 ]

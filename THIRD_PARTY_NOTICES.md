@@ -54,3 +54,7 @@ The current edition combines existing Quantara fictional artwork, approved Quant
 ## Tabler Icons
 
 The search glyph is reused from the locally governed `quantitative-finance-notes/assets/icons/search.svg`, originating at Tabler commit `6d128ed935d4546607b1e4d5d08c8b27bdbe7758`. Geometry is unchanged; `currentColor`, inline SVG, sizing and decorative accessibility attributes are the only adaptations. Original MIT notice is in `notices/tabler-LICENSE.txt`.
+
+## Quant Researcher illustration
+
+`public/assets/quantara/researcher.webp` is copied unchanged from the owner's local QuantCorner card-game artwork. The original generation and WebP conversion are recorded in `prototype/quantcorner-discovery-demo/WARRIOR-ART.md`; exact source and SHA-256 are in `data/quantara-assets.json`. It is used as a supporting fictional illustration without adding character canon or a new public artwork license.

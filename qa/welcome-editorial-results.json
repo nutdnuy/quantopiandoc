@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-26",
+  "scope": "Welcome copy, seven curriculum summaries, and supporting Quantara illustrations",
+  "automated": [
+    "npm run build: 53 lessons, 92 Notebook views, 148 pages",
+    "npm test: coverage, schema, math rendering, local links/anchors, no remote resources, byte-identical source exports",
+    "git diff --check"
+  ],
+  "browser": {
+    "method": "Codex in-app browser via cua_repl",
+    "desktop": {
+      "width": 1280,
+      "scrollWidth": 1265
+    },
+    "mobile": {
+      "width": 375,
+      "scrollWidth": 360
+    },
+    "checks": [
+      "Updated heading and course copy rendered",
+      "No Algorithmic Trading Masters, Deltaris lore, or guild notice in home main content",
+      "Map and researcher images loaded",
+      "Study selector parts 2 and 7 display revised summaries",
+      "Continue reading opens the stored lesson",
+      "Browse lessons reaches the curriculum heading and seven groups",
+      "Viewport override reset and Welcome left open"
+    ]
+  },
+  "editorial": "Reviewed with the owner-invoked no-ai-slop skill and eval checklist; removed invented dialogue and marketing-style framing; corrected an overbroad claim about equations in every lesson.",
+  "preserved": "All 53 lesson bodies and all original source files unchanged.",
+  "not_run": [
+    "Full Playwright/axe suite was not rerun for this copy-focused change."
+  ]
+}
