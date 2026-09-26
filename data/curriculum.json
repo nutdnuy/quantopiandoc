@@ -54,7 +54,7 @@
     "number": "04",
     "title": "การวิจัยปัจจัยลงทุน",
     "label": "Alpha & factor research",
-    "description": "เลือกกลุ่มหุ้น จัดอันดับด้วยปัจจัย และทดสอบความสัมพันธ์ระหว่างสัญญาณกับผลตอบแทน",
+    "description": "เลือกกลุ่มหุ้น จัดอันดับด้วยปัจจัย และทดสอบความสัมพันธ์ระหว่างSignalกับผลตอบแทน",
     "topics": [
       "universe-selection",
       "ranking-universes-by-factors",

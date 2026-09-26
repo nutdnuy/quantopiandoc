@@ -1,0 +1,134 @@
+{
+  "date": "2026-09-26",
+  "status": "pass",
+  "method": "Codex in-app browser through cua_repl; real page navigation and native controls",
+  "desktop": {
+    "viewport": [
+      1280,
+      900
+    ],
+    "testedLessonIds": [
+      "introduction-to-research",
+      "introduction-to-python",
+      "introduction-to-numpy",
+      "introduction-to-pandas",
+      "plotting-data",
+      "means",
+      "random-variables",
+      "variance",
+      "statistical-moments",
+      "linear-correlation-analysis",
+      "spearman-rank-correlation",
+      "confidence-intervals",
+      "hypothesis-testing",
+      "linear-regression",
+      "multiple-linear-regression",
+      "maximum-likelihood-estimation",
+      "residuals-analysis",
+      "violations-of-regression-models",
+      "autocorrelation-and-ar-models",
+      "integration-cointegration-and-stationarity",
+      "arch-garch-and-gmm",
+      "kalman-filters",
+      "pca",
+      "universe-selection",
+      "ranking-universes-by-factors",
+      "fundamental-factor-models",
+      "factor-analysis",
+      "case-study-traditional-value-factor",
+      "long-short-equity",
+      "introduction-to-pairs-trading",
+      "introduction-to-futures",
+      "futures-trading-considerations",
+      "mean-reversion-on-futures",
+      "capm-and-arbitrage-pricing-theory",
+      "arbitrage-pricing-theory",
+      "estimating-covariance-matrices",
+      "factor-risk-exposure",
+      "factor-based-risk-management",
+      "portfolio-analysis",
+      "case-study-comparing-etfs",
+      "why-hedge-i",
+      "why-hedge-ii",
+      "beta-hedging",
+      "leverage",
+      "position-concentration-risk",
+      "var-and-cvar",
+      "instability-of-estimates",
+      "regression-model-instability",
+      "model-misspecification",
+      "the-dangers-of-overfitting",
+      "p-hacking-and-multiple-comparisons-bias",
+      "introduction-to-volume-slippage-and-liquidity",
+      "market-impact-model"
+    ],
+    "lessons": 53,
+    "checks": [
+      "Rendered charts present",
+      "First slider keyboard End changes calculated metrics",
+      "Reset restores exact initial metrics",
+      "No document horizontal overflow",
+      "No ActiveLab error fallback"
+    ]
+  },
+  "mobileLight": {
+    "viewport": [
+      375,
+      812
+    ],
+    "testedLessonIds": [
+      "introduction-to-research",
+      "plotting-data",
+      "statistical-moments",
+      "hypothesis-testing",
+      "arch-garch-and-gmm",
+      "pca",
+      "case-study-traditional-value-factor",
+      "mean-reversion-on-futures",
+      "portfolio-analysis",
+      "var-and-cvar",
+      "the-dangers-of-overfitting",
+      "market-impact-model"
+    ],
+    "documentScrollWidth": 360,
+    "checks": [
+      "No document overflow",
+      "Every Active Viz control has a label",
+      "No invalid SVG path coordinates",
+      "No ActiveLab error fallback"
+    ]
+  },
+  "mobileDark": {
+    "viewport": [
+      375,
+      812
+    ],
+    "testedLessonIds": [
+      "introduction-to-research",
+      "plotting-data",
+      "statistical-moments",
+      "arch-garch-and-gmm",
+      "case-study-traditional-value-factor",
+      "portfolio-analysis",
+      "var-and-cvar",
+      "market-impact-model"
+    ],
+    "checks": [
+      "Dark theme persists across routes",
+      "No document overflow or error fallback",
+      "Kurtosis slider 6 to 7 changes Pearson kurtosis 6 to 5 and excess 3 to 2"
+    ]
+  },
+  "additionalChecks": [
+    "Kurtosis keyboard End selects df 30 and Pearson kurtosis 3.231",
+    "Spearman outlier dropdown changes measured correlation",
+    "Inspected code output with all three Matplotlib panels; horizontal scrolling on mobile",
+    "Inspected standardized distributions and tail zoom",
+    "Active Viz deep-link reaches the panel after React mounts",
+    "No console errors in the inspected Statistical Moments tab",
+    "Theme restored to light and temporary viewport override reset"
+  ],
+  "limitations": [
+    "Full axe accessibility suite was not run; labels, keyboard controls, focus, themes, SVG validity and overflow were checked directly."
+  ]
+}

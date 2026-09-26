@@ -1,19 +1,21 @@
 # QuantCorner Research Lab
 
-การวิจัยและพัฒนากลยุทธ์การลงทุนเชิงปริมาณด้วย Python — จากคำถามแรก สู่ข้อมูล สัญญาณ กลยุทธ์ และความเสี่ยง
+Investment Research with Python: ข้อมูล สถิติ Signal กลยุทธ์ และความเสี่ยง
 
 โปรเจกต์เว็บไซต์บทเรียนภาษาไทยที่เรียบเรียงจาก **Quantopian Lecture Series ในสำเนา quantopiandoc ที่มีอยู่ในเครื่อง** เท่านั้น ไม่มีการค้นอินเทอร์เน็ตเพื่อเพิ่มเนื้อหาระหว่างสร้างฉบับนี้
 
 ## สิ่งที่อยู่ในโปรเจกต์
 
-- 53 บทภาษาไทย จัดใหม่เป็น 7 ช่วงการเรียน
+- 53 บทภาษาไทย จัดเป็น 7 หมวด ใช้หัวข้อตรงกับแนวคิดและคำว่า Signal
+- Active Viz 54 ชุด ครบทุกบท ปรับค่าดูผลคำนวณด้วยข้อมูลสมมติ
+- Output ที่รันจริงครบ 37 บล็อก Python ใน 28 บท พร้อม input fixtures, คำสั่งแสดงค่า และกราฟ
 - ต้นฉบับครบ 92 Notebook: 52 บทเรียน, 20 แบบฝึกหัด, 20 เฉลย พร้อม HTML เดิม 91 ไฟล์
 - หน้าอ่านต้นฉบับที่แสดงคำอธิบาย โค้ด ภาพ และข้อความผลลัพธ์เดิม โดยไม่โหลดสื่อภายนอก
 - ค้นหาไทย/อังกฤษ, Source library, บันทึกว่าอ่านแล้ว และกลับมาอ่านต่อ
 - Quantara fantasy-world edition ตามหน้า Robo Trade ของ Nuth: ภาพนักสำรวจ Quant Researcher แผนที่ และตรา QuantCorner ที่อนุมัติแล้ว พร้อมหน้าอ่านพื้นขาว สารบัญด้านซ้าย ธีมมืดให้เลือก และฟอนต์ไทยในเครื่อง
 - เว็บสแตติกที่เปิดผ่าน local server หรือ `dist/index.html` ได้ โดยไม่ต้องเชื่อม API
 
-บทภาษาไทยเป็นการเรียบเรียงเนื้อหาสำคัญใหม่ ไม่ใช่คำแปลทุกเซลล์ของ Notebook ต้นฉบับ ทุกหัวข้อมีลิงก์กลับไปอ่านรายละเอียดเดิมครบ รวมถึงชื่อผู้เขียนเดิม
+บทภาษาไทยเป็นการเรียบเรียงเนื้อหาสำคัญใหม่ ไม่ใช่คำแปลทุกเซลล์ของ Notebook ต้นฉบับ หน้าบทเรียนอ่านได้ต่อเนื่องโดยไม่มีกล่องชวนอ่านต้นฉบับ เครดิตและสำเนาเดิมยังเก็บไว้ใน About และคลังไฟล์
 
 ## เปิดในเครื่อง
 
@@ -43,6 +45,9 @@ npm run dev
 | `public/style.css` | รูปแบบพื้นฐานของบทเรียน สมการ และส่วนโต้ตอบ |
 | `public/quantara.css` | รูปแบบหนังสือ Quantara, sidebar และหน้าจอมือถือ |
 | `public/app.js` | สารบัญ ค้นหา ธีม ความคืบหน้า และกรอง Source library |
+| `src/lab-math.mjs`, `src/lab-models.mjs` | Numerical functions and deterministic teaching models |
+| `src/lab-registry.mjs`, `src/ActiveLab.jsx`, `public/labs.css` | Topic mapping, accessible controls, SVG charts and tables |
+| `data/code-outputs.json`, `scripts/render-code-outputs.py` | Executed Python outputs, fixtures, runtime versions and exact code hashes |
 | `src/components/` | React Bits ที่ปรับเข้ากับการใช้งานของเว็บนี้ |
 | `public/interactions.js` | bundle ที่เตรียมไว้สำหรับ build แบบออฟไลน์ |
 | `qa/` | ผลตรวจจริงและสคริปต์ตรวจหน้าเว็บ |
@@ -81,3 +86,13 @@ npm run build
 การออกแบบใช้โลกแฟนตาซี **Quantara** ตามหน้า Robo Trade ของ QuantCorner หน้าแรกอธิบายเนื้อหาและวิธีอ่าน ใช้แผนที่กับภาพนักสำรวจ Quant Researcher จากไฟล์เดิมในเครื่องประกอบ ภาพและตรา QuantCorner คัดลอกโดยไม่แก้เนื้อภาพ; ที่มาและ hash อยู่ใน `data/quantara-assets.json`
 
 แผนที่ `learning-atlas.png` ใช้ฉบับเดียวกับหน้าอ้างอิงเพื่อรักษาบรรยากาศ ไม่ใช้ยืนยันจำนวนหรือตำแหน่งเมือง เนื้อหาบทเรียนและสมการยังแยกจากภาพโลกสมมติ ไม่มีการเพิ่มข้อเท็จจริงตลาดจากภาพประกอบ
+
+## Active Viz and Python outputs
+
+All lesson charts use deterministic calculations or seeded hypothetical data. They are teaching examples, not market observations, forecasts, or evidence of strategy performance. No new Internet source or image generator was used.
+
+The 54 Active Viz configurations cover all 53 lessons. Statistical Moments has separate Skewness and Kurtosis panels. The Kurtosis comparison standardizes all distributions to mean zero and variance one and includes a tail zoom. Controls, metrics, axes, assumptions, and reset actions remain usable in both themes; charts scroll within their panel on narrow screens.
+
+To regenerate the 37 Python outputs, run `npm run build:outputs` with local NumPy, pandas, SciPy, statsmodels, and Matplotlib. Missing input data is supplied by explicit hypothetical fixtures shown with the example. The manifest stores the runtime and SHA-256 of every displayed code block; build fails if the code changes without fresh output. This reruns the Thai lesson examples only, not the archived Quantopian notebooks.
+
+`npm test` checks source integrity, lesson coverage, local links, numerical models, all Active Viz mappings, and output/code hashes. Browser verification is recorded separately in `qa/`.

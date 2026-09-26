@@ -1,0 +1,451 @@
+{
+  "runtime": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.6",
+    "matplotlib": "3.9.4"
+  },
+  "lessons": {
+    "instability-of-estimates": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "96f26972f6c934c10c10cb8258aedfc95e2752583479f03db436b70a9db1a5d4",
+          "probe": "",
+          "text": "5 -0.7241617968547684 0.7952470698739671\n25 -0.001558612277767004 0.8682083189183676\n100 -0.05412186073933181 1.0180992442816441\n500 -0.048964563895276245 1.021657216035643",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "integration-cointegration-and-stationarity": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "76aef93639cde3664228c862a36c07fe3821c39bcfb938d533ce2fed99a092ac",
+          "probe": "print(\"Random-walk length / differenced length:\", len(x), len(recovered))\nprint(\"First differences:\", recovered[:5])\nprint(\"Equal to innovations[1:]:\", np.allclose(recovered, innovation[1:]))",
+          "text": "Random-walk length / differenced length: 500 499\nFirst differences: [ 0.298746 -0.274138 -0.890592 -0.454671 -0.991647]\nEqual to innovations[1:]: True",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "introduction-to-numpy": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "1851373c6c47b8e72e926ab1aa3409abb070107b6758ee55ccd4ca79b6a95cef",
+          "probe": "",
+          "text": "(2, 3)\n[ 0.01 -0.02  0.03]\n[-0.02  0.  ]",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        },
+        {
+          "codeHash": "db15f0165ad030e280a52ce9f4b6a78f64a48266fa4da413a14ebebe38eca19a",
+          "probe": "print(\"Portfolio returns:\", portfolio_returns)\nprint(\"Portfolio mean:\", portfolio_mean)",
+          "text": "Portfolio returns: [ 0.014 -0.012  0.022]\nPortfolio mean: 0.008",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        },
+        {
+          "codeHash": "cf6d58995483d7a8318e67c422289e415ed125694e3ecc65ab6e5bfef6fed97f",
+          "probe": "",
+          "text": "0.00031600000000000004 0.000316",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "introduction-to-pandas": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "ae0f1d240f1fb7badf469eb1c737d4f1ce726b83d571551f4b1dbb0f8107a0d8",
+          "probe": "",
+          "text": "2020-01-01    100.0\n2020-01-02    102.0\n2020-01-03    101.0\n2020-01-04    104.0\nFreq: D, Name: Asset A, dtype: float64",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        },
+        {
+          "codeHash": "f57d39352f2b01c3ffffc590e9f0839f780d0a204b3e4d0d2f1e837a2e943567",
+          "probe": "print(pd.DataFrame({\"return\": simple_returns, \"change\": price_changes, \"rolling_mean\": rolling_mean, \"rolling_std\": rolling_std}))",
+          "text": "              return  change  rolling_mean  rolling_std\n2020-01-01       NaN     NaN           NaN          NaN\n2020-01-02  0.020000     2.0           NaN          NaN\n2020-01-03 -0.009804    -1.0    101.000000     1.000000\n2020-01-04  0.029703     3.0    102.333333     1.527525",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "introduction-to-python": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "cdbe9cc5d990b5d5300fa32a2788abedb0d22c359860961a2b4ff8b2c1cac850",
+          "probe": "",
+          "text": "ผลตอบแทน: 3.00%",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        },
+        {
+          "codeHash": "70a0e55e0f0af20cf6ca4cea5715d70d08e9d04a406f3c89eb0e1e6091a3d9c8",
+          "probe": "",
+          "text": "ราคาสูงขึ้น",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        },
+        {
+          "codeHash": "1b3babc2792c3a055b50d85077d818e9b794eadda41a70a89b1a1f2c75b5ea4a",
+          "probe": "",
+          "text": "[0.030000000000000027, -0.01941747572815533, 0.02970297029702973]",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        },
+        {
+          "codeHash": "c38060b294de1d4314f65e64c1d2e516a225b75e5c2039e000235734911169e7",
+          "probe": "print(simple_return(100, 103))",
+          "text": "0.030000000000000027",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "introduction-to-research": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "141a08c292d3b01c3354447b398ce40b7c5ffb3ba980274fb2f853f95b2112b0",
+          "probe": "print(\"Observations:\", len(observations))\nprint(\"Mean / sample SD:\", observations.mean(), observations.std(ddof=1))",
+          "text": "Observations: 500\nMean / sample SD: -0.013126150466933863 0.959934119283608",
+          "images": [],
+          "caption": "Normal sample 500 ค่า จาก seed 42; เป็นข้อมูลจำลอง ไม่มีหน่วยตลาด"
+        },
+        {
+          "codeHash": "86aa180616c821c0121cca61e10b8a4dc8f9a483577752fbf224c195fecebb79",
+          "probe": "",
+          "text": "",
+          "images": [
+            {
+              "src": "assets/code-outputs/introduction-to-research-2-1.png",
+              "alt": "Normal sample 500 ค่า จาก seed 42; เป็นข้อมูลจำลอง ไม่มีหน่วยตลาด",
+              "wide": false
+            }
+          ],
+          "caption": "Normal sample 500 ค่า จาก seed 42; เป็นข้อมูลจำลอง ไม่มีหน่วยตลาด"
+        }
+      ]
+    },
+    "linear-correlation-analysis": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "be78957b929c5186a48e7601c7e89afbf351f6f9418d3eb1aa8dbee809bbc5e7",
+          "probe": "",
+          "text": "[[1.       0.782856]\n [0.782856 1.      ]]",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "linear-regression": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "e6cc53f32cb8cf5687faad98e5706876ae597ee97bdfcd0b984559b625e2c7ae",
+          "probe": "",
+          "text": "[0.204109 1.55944 ]",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "long-short-equity": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "18e911435208a777d6c58f6992267596a6b05f20923fd674aa9b23917193706d",
+          "probe": "print(\"Weights:\", weights)\nprint(\"Net / gross exposure:\", sum(weights.values()), sum(abs(w) for w in weights.values()))",
+          "text": "Weights: {'A': 0.5, 'B': 0.0, 'C': 0.0, 'D': -0.5}\nNet / gross exposure: 0.0 1.0",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "maximum-likelihood-estimation": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "5f89ca624339da2f922674abde65c0472f22a10716581d9a93a2493d13cc4b89",
+          "probe": "",
+          "text": "1.9950374179539017 0.47163527567628877",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "means": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "bb4f0cd03eeb98831d46b30a8e13d2cb1f45a085cf29b64ea447056d92b3ddf5",
+          "probe": "",
+          "text": "0.0 -0.020204102886728803 96.0",
+          "images": [],
+          "caption": "ผลตอบแทน +20% และ −20% ทำให้ทุน 100 เหลือ 96 แม้ arithmetic mean เท่ากับ 0"
+        }
+      ]
+    },
+    "multiple-linear-regression": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "4cc57cfa084b1d6f6fd7909fb81a2912e7e1cc33036357faafa137c5167f12a9",
+          "probe": "",
+          "text": "[ 0.090523  1.202606 -0.537103]",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "p-hacking-and-multiple-comparisons-bias": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "0132caf0f21ee954e19151926fb592f616b0784b3a1f22b62da2e9c5e773543d",
+          "probe": "print(\"Tests:\", len(p_values))\nprint(\"Uncorrected / Bonferroni discoveries:\", uncorrected, corrected)",
+          "text": "Tests: 190\nUncorrected / Bonferroni discoveries: 7 0",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "pca": {
+      "setup": "import numpy as np\nrng = np.random.default_rng(42)\nz = rng.normal(size=(200, 3))\nreturns = np.column_stack([z[:, 0], 0.7*z[:, 0] + 0.7*z[:, 1],\n                           0.4*z[:, 0] + 0.8*z[:, 2]]) * 0.01",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "d9f4bb15a8c3658556b1281eda7d36295d54441ba4ba1e049512e0c253ec106e",
+          "probe": "print(\"Eigenvalues:\", values)\nprint(\"Explained variance:\", explained)\nprint(\"Total share:\", explained.sum())",
+          "text": "Eigenvalues: [0.000193 0.000052 0.000026]\nExplained variance: [0.711518 0.191844 0.096638]\nTotal share: 0.9999999999999999",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "plotting-data": {
+      "setup": "import numpy as np\nimport pandas as pd\nrng = np.random.default_rng(42)\nnoise = rng.normal(size=(100, 2))\nr = np.column_stack([0.01 * noise[:, 0],\n                     0.01 * (0.6 * noise[:, 0] + 0.8 * noise[:, 1])])\nprices = pd.DataFrame(np.vstack([np.ones(2), np.cumprod(1 + r, axis=0)]) * 100,\n                      index=pd.date_range(\"2020-01-01\", periods=101),\n                      columns=[\"Asset A\", \"Asset B\"])",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "2336f1e402f3babcf456b244068feb5d73590f62f03c9442b10d2712e3ab24bd",
+          "probe": "",
+          "text": "",
+          "images": [
+            {
+              "src": "assets/code-outputs/plotting-data-1-1.png",
+              "alt": "ข้อมูลราคา Asset A/B จำลอง 101 วัน (100 returns): Histogram นับความถี่ของ return A, Scatter จับคู่ returns ในวันเดียวกัน และ Price index เริ่มที่ 100 ทั้งสองสินทรัพย์",
+              "wide": true
+            }
+          ],
+          "caption": "ข้อมูลราคา Asset A/B จำลอง 101 วัน (100 returns): Histogram นับความถี่ของ return A, Scatter จับคู่ returns ในวันเดียวกัน และ Price index เริ่มที่ 100 ทั้งสองสินทรัพย์"
+        }
+      ]
+    },
+    "position-concentration-risk": {
+      "setup": "import numpy as np\nimport pandas as pd\nrng = np.random.default_rng(16)\nz = rng.normal(size=(200, 3))\nreturns = pd.DataFrame(np.column_stack([z[:, 0],\n                       0.7*z[:, 0] + 0.7*z[:, 1],\n                       0.4*z[:, 0] + 0.8*z[:, 2]]) * 0.01,\n                       columns=[\"A\", \"B\", \"C\"])",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "211c016c7d733b891c28255fc4c0fbc35b010959f1b78b3305147b4d6aeb4177",
+          "probe": "print(\"Equal weights:\", weights)\nprint(\"Portfolio variance / SD:\", portfolio_variance, portfolio_volatility)\nprint(\"Direct variance:\", portfolio_returns.var(ddof=1))",
+          "text": "Equal weights: [0.333333 0.333333 0.333333]\nPortfolio variance / SD: 5.9654909408969254e-05 0.007723659068664881\nDirect variance: 5.965490940896926e-05",
+          "images": [],
+          "caption": "Variance จาก covariance matrix ตรงกับ variance ของผลตอบแทนพอร์ตที่คำนวณโดยตรง"
+        }
+      ]
+    },
+    "random-variables": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "b18c359c5d58e422f18e7a40b8806bfd82c76d24c24b0a2fd927f75d119a3804",
+          "probe": "print(\"Normal sample mean / SD:\", mu, sigma)\nprint(\"Jarque-Bera statistic / p-value:\", normality.statistic, normality.pvalue)\nprint(\"Dice mean / Binomial mean:\", dice.mean(), wins.mean())",
+          "text": "Normal sample mean / SD: -0.0010302029614925891 0.02011038307429016\nJarque-Bera statistic / p-value: 0.22910195013492193 0.8917664794030499\nDice mean / Binomial mean: 3.43 5.015",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "ranking-universes-by-factors": {
+      "setup": "import pandas as pd\nfactor_today = pd.Series([1, 2, 3, 4, 5, 6, 7, 8], index=list(\"ABCDEFGH\"))\nforward_return = pd.Series([-0.02, 0.01, -0.01, 0.03, 0.02, 0.01, 0.04, 0.05],\n                           index=list(\"ABCDEFGH\"))",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "99bb574733966c7d01f192308f7c594b27d95a7f6849fc4679b4bb0ed91ce9c0",
+          "probe": "print(paired)\nprint(\"Rank IC / p-value:\", ic, p_value)",
+          "text": "   factor  forward\nA       1    -0.02\nB       2     0.01\nC       3    -0.01\nD       4     0.03\nE       5     0.02\nF       6     0.01\nG       7     0.04\nH       8     0.05\nRank IC / p-value: 0.8383383833392813 0.009323115735056045",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "regression-model-instability": {
+      "setup": "import numpy as np\nimport pandas as pd\nrng = np.random.default_rng(12)\nx = pd.Series(rng.normal(size=200))\nbeta = np.r_[np.ones(100), np.full(100, 2.0)]\ny = pd.Series(0.2 + beta * x.to_numpy() + rng.normal(0, 0.3, 200))",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "1b10501ccf2a13da9b7dabd089e9386d5360d283547e960e05332e9f317cf3c4",
+          "probe": "print(\"First coefficients:\", first.params.to_numpy())\nprint(\"Second coefficients:\", second.params.to_numpy())\nprint(\"Out-of-sample MSE:\", np.mean((y.iloc[cut:] - prediction)**2))",
+          "text": "First coefficients: [0.233103 0.993614]\nSecond coefficients: [0.197321 1.983325]\nOut-of-sample MSE: 1.0311475428451768",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "residuals-analysis": {
+      "setup": "import numpy as np\nrng = np.random.default_rng(14)\nfeatures = np.linspace(-2, 2, 200)\ntarget = 0.2 + 1.5 * features + (0.2 + np.abs(features)) * rng.normal(size=200)",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "296f4029ebb74834fc7716b9ac890acb7bde24263794701be67ff13c6b122f5c",
+          "probe": "print(\"Coefficients:\", fit.params)\nprint(\"Breusch-Pagan LM / p-value:\", lm_stat, lm_pvalue)",
+          "text": "Coefficients: [0.195457 1.482019]\nBreusch-Pagan LM / p-value: 1.048710615995252 0.3058042305393008",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        },
+        {
+          "codeHash": "a9a71764e56f87db5a3824d5a0d5a9c8e207b79c5d99772ef8ce0fed1b29d065",
+          "probe": "print(result)",
+          "text": "     lb_stat  lb_pvalue\n5   4.705886   0.452818\n10  5.625468   0.845687",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "spearman-rank-correlation": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "18d8a5715234549d840b3567aecec4aa697663e33ed50324086e4301e112304d",
+          "probe": "print(\"Pearson:\", pearson.statistic)\nprint(\"Spearman / rank correlation:\", spearman.statistic, manual)",
+          "text": "Pearson: 0.8900571787848452\nSpearman / rank correlation: 0.9798214955373885 0.9798214955373885",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "statistical-moments": {
+      "setup": "import numpy as np\nreturns = np.array([-0.08, -0.02, -0.01, 0.00, 0.01, 0.01, 0.02, 0.02, 0.03, 0.04])",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "940a2b4816d607b53050f21e910ba6b7612f3ed74cc665eb69635a93f4bc638d",
+          "probe": "print(\"Skewness:\", skewness)\nprint(\"Excess kurtosis:\", excess)\nprint(\"Pearson kurtosis:\", pearson_kurtosis)",
+          "text": "Skewness: -1.6865134792235563\nExcess kurtosis: 3.630368509712138\nPearson kurtosis: 6.630368509712138",
+          "images": [],
+          "caption": "ใช้ผลตอบแทนสมมติ 10 ค่าที่แสดงในข้อมูลตัวอย่าง; Pearson kurtosis เท่ากับ excess kurtosis + 3"
+        }
+      ]
+    },
+    "the-dangers-of-overfitting": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "185a4e7c31300f2de1aa6f4e5e557ad3b5129faabb2333ef4e442c34a472c812",
+          "probe": "",
+          "text": "1 0.10561776101479736 0.10160735976848993\n2 0.004628418465251085 0.01135846402399305\n9 1.3335755714001912e-28 0.01855279971823889",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "universe-selection": {
+      "setup": "import numpy as np\nimport pandas as pd\nrng = np.random.default_rng(22)\neligible = pd.DataFrame(rng.random((30, 3)) > 0.25,\n                        index=pd.date_range(\"2020-01-01\", periods=30),\n                        columns=[\"A\", \"B\", \"C\"])",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "f3c955f62146fd08d1b7acd45be08410748da5b47cbd34372f43303780f5b29c",
+          "probe": "print(\"Eligible days (last 5 rows):\")\nprint(history_count.tail())\nprint(\"Smoothed membership (last 5 rows):\")\nprint(smoothed.tail())",
+          "text": "Eligible days (last 5 rows):\n               A     B     C\n2020-01-26  19.0  17.0  16.0\n2020-01-27  19.0  17.0  17.0\n2020-01-28  19.0  17.0  17.0\n2020-01-29  20.0  17.0  17.0\n2020-01-30  20.0  17.0  17.0\nSmoothed membership (last 5 rows):\n               A     B     C\n2020-01-26  True  True  True\n2020-01-27  True  True  True\n2020-01-28  True  True  True\n2020-01-29  True  True  True\n2020-01-30  True  True  True",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "var-and-cvar": {
+      "setup": "import numpy as np\nrng = np.random.default_rng(46)\nportfolio_returns = rng.normal(0.0003, 0.01, 500)\nportfolio_returns[::50] -= 0.04",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "fa7abbeb20d2f45c52884defeccd22bfc027478ba7872a45309321032c42a777",
+          "probe": "print(\"Historical VaR / ES:\", historical_var, historical_es)\nprint(\"Normal VaR:\", normal_var)",
+          "text": "Historical VaR / ES: 1902.8130015325762 3027.3203877043875\nNormal VaR: 1956.0782762494462",
+          "images": [],
+          "caption": "ผลขาดทุนคำนวณจากทุน 100,000 และผลตอบแทนจำลอง 500 ช่วง; ES ในโค้ดนี้ใช้ค่าเฉลี่ย observations ที่เกิน VaR cutoff"
+        }
+      ]
+    },
+    "variance": {
+      "setup": "import numpy as np\nreturns = np.array([-0.02, -0.01, 0.00, 0.01, 0.02, 0.08])",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "dc80d4c9654ff1ea7399a1a9911652074d88fd17a03370c341fe53ba1ef40b71",
+          "probe": "print(\"Range / mean absolute deviation:\", spread, mean_abs_dev)\nprint(\"Sample variance / SD:\", sample_variance, sample_std)\nprint(\"Downside all / conditional:\", downside_all, downside_cond)",
+          "text": "Range / mean absolute deviation: 0.1 0.024444444444444446\nSample variance / SD: 0.0012666666666666666 0.03559026084010437\nDownside all / conditional: 8.333333333333333e-05 0.00025",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    },
+    "violations-of-regression-models": {
+      "setup": "import numpy as np\nrng = np.random.default_rng(14)\nfeatures = np.linspace(-2, 2, 200)\ntarget = 0.2 + 1.5 * features + (0.2 + np.abs(features)) * rng.normal(size=200)",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "019ab27ac0dee573563a72c1f2fa2d54403b62dbeec736e0472c16a9b3f7b847",
+          "probe": "print(\"OLS coefficients:\", ordinary.params)\nprint(\"OLS standard errors:\", ordinary.bse)\nprint(\"HC1 standard errors:\", robust.bse)",
+          "text": "OLS coefficients: [0.195457 1.482019]\nOLS standard errors: [0.102393 0.088233]\nHC1 standard errors: [0.102393 0.122141]",
+          "images": [],
+          "caption": "OLS, HC1 และ HAC ใช้ coefficients เดียวกัน แต่ประมาณ standard errors ต่างกัน"
+        },
+        {
+          "codeHash": "ecd77a0e055ef3f4b8fa7cb1fe2284299ae7d83743408c26cdbb09d2b294bf70",
+          "probe": "print(\"HAC standard errors:\", hac.bse)",
+          "text": "HAC standard errors: [0.091059 0.114327]",
+          "images": [],
+          "caption": "OLS, HC1 และ HAC ใช้ coefficients เดียวกัน แต่ประมาณ standard errors ต่างกัน"
+        }
+      ]
+    },
+    "why-hedge-ii": {
+      "setup": "import numpy as np\nB = np.array([[1.2, 0.3], [0.8, -0.2]])\nF = np.diag([0.02**2, 0.01**2])\nspecific_variance = np.array([0.01**2, 0.012**2])\nw = np.array([0.6, 0.4])",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "8a25351456a965de07fb1ec22533445a700fff9da61fbabcee9282e1196b5d69",
+          "probe": "print(\"Factor exposures:\", exposure)\nprint(\"Common / specific / total variance:\", common_variance, specific_risk_variance, total_variance)\nprint(\"Common share:\", common_share)",
+          "text": "Factor exposures: [1.04 0.1 ]\nCommon / specific / total variance: 0.00043364000000000006 5.9040000000000004e-05 0.0004926800000000001\nCommon share: 0.8801656247462856",
+          "images": [],
+          "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
+        }
+      ]
+    }
+  }
+}

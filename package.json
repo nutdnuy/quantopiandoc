@@ -7,9 +7,10 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "node scripts/serve.mjs",
-    "test": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs && node qa/lab-models.test.mjs && node qa/revision-check.mjs",
     "check:site": "node qa/browser-check.cjs",
-    "build:interactions": "node scripts/bundle.cjs"
+    "build:interactions": "node scripts/bundle.cjs",
+    "build:outputs": "python3 scripts/render-code-outputs.py"
   },
   "engines": {
     "node": ">=22"

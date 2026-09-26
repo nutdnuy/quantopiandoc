@@ -1,0 +1,354 @@
+{
+  "date": "2026-09-26",
+  "skill": "no-ai-slop",
+  "scope": "All 53 authored Thai lessons; immutable source artifacts preserved",
+  "reviews": [
+    {
+      "group": 1,
+      "report": {
+        "count": 23,
+        "checks": "IDs, subtitles, schema keys, objectives/takeaways count, code blocks, equations, section counts, Python syntax and terminology all pass",
+        "lessons": [
+          {
+            "id": "introduction-to-research",
+            "title": "Investment Research with Python",
+            "body_before": 4775,
+            "body_after": 4608,
+            "headings": 6,
+            "code_blocks": 2,
+            "equations": 2
+          },
+          {
+            "id": "introduction-to-python",
+            "title": "Python สำหรับงานวิจัยการลงทุน",
+            "body_before": 4974,
+            "body_after": 4647,
+            "headings": 6,
+            "code_blocks": 4,
+            "equations": 0
+          },
+          {
+            "id": "introduction-to-numpy",
+            "title": "NumPy และการคำนวณพอร์ตด้วย array",
+            "body_before": 4953,
+            "body_after": 4812,
+            "headings": 6,
+            "code_blocks": 3,
+            "equations": 23
+          },
+          {
+            "id": "introduction-to-pandas",
+            "title": "pandas และข้อมูลอนุกรมเวลา",
+            "body_before": 4856,
+            "body_after": 4695,
+            "headings": 6,
+            "code_blocks": 2,
+            "equations": 0
+          },
+          {
+            "id": "plotting-data",
+            "title": "กราฟสำหรับสำรวจข้อมูลการลงทุน",
+            "body_before": 5533,
+            "body_after": 5273,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 6
+          },
+          {
+            "id": "means",
+            "title": "ค่าเฉลี่ยและค่ากลางของข้อมูล",
+            "body_before": 4859,
+            "body_after": 4736,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 17
+          },
+          {
+            "id": "random-variables",
+            "title": "ตัวแปรสุ่มและการแจกแจงความน่าจะเป็น",
+            "body_before": 5689,
+            "body_after": 5512,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 27
+          },
+          {
+            "id": "variance",
+            "title": "Variance และการวัดการกระจาย",
+            "body_before": 5566,
+            "body_after": 5407,
+            "headings": 7,
+            "code_blocks": 1,
+            "equations": 19
+          },
+          {
+            "id": "statistical-moments",
+            "title": "Skewness, Kurtosis และ Statistical Moments",
+            "body_before": 5377,
+            "body_after": 5305,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 9
+          },
+          {
+            "id": "linear-correlation-analysis",
+            "title": "Pearson Correlation และความสัมพันธ์เชิงเส้น",
+            "body_before": 4537,
+            "body_after": 4413,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 17
+          },
+          {
+            "id": "spearman-rank-correlation",
+            "title": "Spearman Rank Correlation",
+            "body_before": 5380,
+            "body_after": 5178,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 21
+          },
+          {
+            "id": "confidence-intervals",
+            "title": "Confidence Intervals และ Standard Error",
+            "body_before": 5700,
+            "body_after": 5557,
+            "headings": 7,
+            "code_blocks": 0,
+            "equations": 30
+          },
+          {
+            "id": "hypothesis-testing",
+            "title": "การทดสอบสมมติฐาน",
+            "body_before": 5988,
+            "body_after": 5757,
+            "headings": 7,
+            "code_blocks": 0,
+            "equations": 48
+          },
+          {
+            "id": "linear-regression",
+            "title": "Linear Regression",
+            "body_before": 4756,
+            "body_after": 4797,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 34
+          },
+          {
+            "id": "multiple-linear-regression",
+            "title": "Multiple Linear Regression",
+            "body_before": 4905,
+            "body_after": 4923,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 28
+          },
+          {
+            "id": "maximum-likelihood-estimation",
+            "title": "Maximum Likelihood Estimation",
+            "body_before": 4947,
+            "body_after": 4835,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 24
+          },
+          {
+            "id": "residuals-analysis",
+            "title": "การวิเคราะห์ Residual",
+            "body_before": 5662,
+            "body_after": 5528,
+            "headings": 6,
+            "code_blocks": 2,
+            "equations": 17
+          },
+          {
+            "id": "violations-of-regression-models",
+            "title": "เมื่อสมมติฐาน Regression ไม่ตรงกับข้อมูล",
+            "body_before": 6152,
+            "body_after": 5912,
+            "headings": 7,
+            "code_blocks": 2,
+            "equations": 7
+          },
+          {
+            "id": "autocorrelation-and-ar-models",
+            "title": "Autocorrelation และ AR Models",
+            "body_before": 5683,
+            "body_after": 5579,
+            "headings": 6,
+            "code_blocks": 0,
+            "equations": 28
+          },
+          {
+            "id": "integration-cointegration-and-stationarity",
+            "title": "Stationarity, Integration และ Cointegration",
+            "body_before": 4913,
+            "body_after": 4909,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 36
+          },
+          {
+            "id": "arch-garch-and-gmm",
+            "title": "ARCH, GARCH และ GMM",
+            "body_before": 5670,
+            "body_after": 5645,
+            "headings": 6,
+            "code_blocks": 0,
+            "equations": 32
+          },
+          {
+            "id": "kalman-filters",
+            "title": "Kalman Filter และการประมาณสถานะ",
+            "body_before": 5259,
+            "body_after": 5230,
+            "headings": 7,
+            "code_blocks": 0,
+            "equations": 37
+          },
+          {
+            "id": "pca",
+            "title": "Principal Component Analysis (PCA)",
+            "body_before": 5348,
+            "body_after": 5249,
+            "headings": 6,
+            "code_blocks": 1,
+            "equations": 26
+          }
+        ]
+      }
+    },
+    {
+      "group": 2,
+      "report": {
+        "lessons": 17,
+        "python_blocks": 7,
+        "display_math_blocks": 39,
+        "unchanged_original_inline_math_and_code_spans": 243,
+        "headings": 112,
+        "original_body_characters": 92596,
+        "edited_body_characters": 90337
+      }
+    },
+    {
+      "group": 3,
+      "report": {
+        "status": "pass",
+        "scope": "portfolio",
+        "lessonCount": 13,
+        "equationsAndCodePreserved": true,
+        "pythonFencesSyntaxChecked": 3,
+        "mathTokensPreserved": 286,
+        "thaiSignalTermRemaining": 0,
+        "originalSourceDirectionsRemaining": 0,
+        "files": [
+          {
+            "id": "capm-and-arbitrage-pricing-theory",
+            "bodyCharactersBefore": 5268,
+            "bodyCharactersAfter": 5202,
+            "h2Count": 6,
+            "sourceFileSha256": "db5566599e9380a2f76f7526c34b65a7ff44aa0ceaa1228f99f98b918e1e88ad",
+            "editedFileSha256": "c4237dccea9c9b4354df593b1606e6c98778fe3742f466c573a321c847ccbc2c"
+          },
+          {
+            "id": "arbitrage-pricing-theory",
+            "bodyCharactersBefore": 5094,
+            "bodyCharactersAfter": 4901,
+            "h2Count": 6,
+            "sourceFileSha256": "8d328842dfb17f34da435febc3777bb88c7e7912a69c63bb5304b0c4edbf5abc",
+            "editedFileSha256": "fe88b48c7f45b046ffe60421732690febf9fe12438113954bedaa04c8df3ac62"
+          },
+          {
+            "id": "estimating-covariance-matrices",
+            "bodyCharactersBefore": 5572,
+            "bodyCharactersAfter": 5428,
+            "h2Count": 6,
+            "sourceFileSha256": "95b617d8a03253ec78628445b10639df51052c45c5ef74851bae6dc82dba5254",
+            "editedFileSha256": "f005a3b0acf26b0ae882a82394e82ac936ca81865072ef0a352ac91db62271fd"
+          },
+          {
+            "id": "factor-risk-exposure",
+            "bodyCharactersBefore": 5539,
+            "bodyCharactersAfter": 5435,
+            "h2Count": 6,
+            "sourceFileSha256": "cee4cfb06e4b8cbfb3ceb348c8f17c71e6f1cb9dbc95cfc575b21054433fed1f",
+            "editedFileSha256": "4b783393779462d5793a9c7ea6b773d3244a0a1d06ebb8de3607ae9a10ff7dbf"
+          },
+          {
+            "id": "factor-based-risk-management",
+            "bodyCharactersBefore": 5655,
+            "bodyCharactersAfter": 5365,
+            "h2Count": 6,
+            "sourceFileSha256": "2021f8563e5a90f544d933c30c0fe75a64a5b9db8eec92a6da4129a7ff50adfa",
+            "editedFileSha256": "bbeebfe527347c8bb5deac0bf86e0016afecd752c9172d5c95d231e9e830dcd8"
+          },
+          {
+            "id": "portfolio-analysis",
+            "bodyCharactersBefore": 5548,
+            "bodyCharactersAfter": 5190,
+            "h2Count": 6,
+            "sourceFileSha256": "ccee9c69bb78658e7d6b96c7d44a4452795f75f24efc0f2955a5b1eb09c40330",
+            "editedFileSha256": "e1157822155db88a01e3ad6781463a7470736b86f3c0196bd263c5dc05f156d5"
+          },
+          {
+            "id": "case-study-comparing-etfs",
+            "bodyCharactersBefore": 5248,
+            "bodyCharactersAfter": 5047,
+            "h2Count": 6,
+            "sourceFileSha256": "0f01e0f26f7e446683823f162de3536d075d1c477e2e446096aa5c532c809772",
+            "editedFileSha256": "3004e065e280d5c204b8f62d6165e15c8be1a79351a7b1637b036f416e3450b9"
+          },
+          {
+            "id": "why-hedge-i",
+            "bodyCharactersBefore": 5450,
+            "bodyCharactersAfter": 5268,
+            "h2Count": 6,
+            "sourceFileSha256": "c447010fad21fa5e4caf61bee254e60a2c25751db9f61fceb9f63bb955c84ee3",
+            "editedFileSha256": "f1f4e84087d5bc84ce019a79f41882d455314bf39b830d2fb57929db506a9043"
+          },
+          {
+            "id": "why-hedge-ii",
+            "bodyCharactersBefore": 5700,
+            "bodyCharactersAfter": 5485,
+            "h2Count": 6,
+            "sourceFileSha256": "4177202035b707422246ed2037596eb263ea06e519a8529a181876fc4f4eaf30",
+            "editedFileSha256": "92db475aca6a1856980727cb21081d83acf6915d37579d456897d48730448b70"
+          },
+          {
+            "id": "beta-hedging",
+            "bodyCharactersBefore": 5598,
+            "bodyCharactersAfter": 5545,
+            "h2Count": 6,
+            "sourceFileSha256": "79674fd84d1b0064210c37364f84194e871a4f36b86c60eea68e47ae6b28403b",
+            "editedFileSha256": "9d7fe8b705c7569fd3cc93e361b5a566898ce71af7d6c17cfbef427b4bc83887"
+          },
+          {
+            "id": "leverage",
+            "bodyCharactersBefore": 4405,
+            "bodyCharactersAfter": 4260,
+            "h2Count": 6,
+            "sourceFileSha256": "835cba1bfe2186bfb7a383c137689bc4bd30a4e2099acfb09eee5245986a36fe",
+            "editedFileSha256": "e425c1ef8f8035f5d6ef1d4769e5ca19daa2ce24667c02a4871fa90f2d939a6d"
+          },
+          {
+            "id": "position-concentration-risk",
+            "bodyCharactersBefore": 5312,
+            "bodyCharactersAfter": 5223,
+            "h2Count": 6,
+            "sourceFileSha256": "80af95c24a12baf78cb0c964bd896fd7c2deb3585dc29aa609ca63df36da52aa",
+            "editedFileSha256": "fdf63906350c37d230c71e19d0731b74b15bdebaaecb4a607408f47c3c3c864b"
+          },
+          {
+            "id": "var-and-cvar",
+            "bodyCharactersBefore": 5524,
+            "bodyCharactersAfter": 5287,
+            "h2Count": 6,
+            "sourceFileSha256": "0a04c123a5035ce84b148ca10d26c23affa024da73439b79c122ab74a9c4ba01",
+            "editedFileSha256": "b946e0160e89c64211dcb9b4e2dc5b204f0324f3b9eb97176b54c34fdde914e7"
+          }
+        ]
+      }
+    }
+  ]
+}

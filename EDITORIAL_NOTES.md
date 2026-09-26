@@ -58,3 +58,10 @@ Local records explicitly confirm the Quantara kingdom and Deltaris as home to Al
 ## Welcome content and language — 2026-09-26
 
 The Welcome page now introduces quantitative investment research with Python and the seven actual curriculum parts. Removed copied Deltaris/Algorithmic Trading Masters lore, guild jokes, maker labels, and the automaton dialogue. Existing Quantara map and Quant Researcher artwork remain as supporting illustration. The researcher registry is draft; the page assigns no city, biography, or named persona. Edited welcome copy and group summaries using the owner-invoked no-ai-slop skill: concrete subjects, direct reading guidance, and preserved notebook limitations. No lesson body, equation, source artifact, topic ID, or lesson order was changed.
+
+
+## Batch reader feedback — 2026-09-26
+
+Applied Nuth's collected feedback after explicit instruction to proceed. Reviewed all 53 lesson drafts with no-ai-slop using three scoped editorial agents and parent review. The first lesson is titled Investment Research with Python. Technical English is retained when clearer than a strained Thai heading. Signal replaces the Thai translation throughout the authored lessons and curriculum. Removed lesson source-reading callouts and narrative instructions to consult originals; preserved archived sources and attribution outside the lesson reading flow.
+
+Added 54 deterministic Active Viz configurations, one or more per lesson, with visible assumptions and hypothetical-data labels. Python examples have 37 executed outputs in 28 lessons; missing inputs are explicit synthetic fixtures. Code hashes prevent stale outputs. Static Matplotlib figures and interactive SVG charts are calculated, not image-generated. The original 183 source artifacts remain unchanged. These additions do not establish empirical strategy performance.

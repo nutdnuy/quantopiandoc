@@ -5,36 +5,36 @@
   "lessons": [
     {
       "id": "introduction-to-research",
-      "title": "เริ่มงานวิจัยด้วย Notebook ที่เล่าเหตุผลได้",
+      "title": "Investment Research with Python",
       "group": "tools",
-      "characters": 4775,
+      "characters": 4608,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Introduction_to_Research/notebook.ipynb"
       ]
     },
     {
       "id": "introduction-to-python",
-      "title": "Python สำหรับเริ่มต้นงานวิจัย",
+      "title": "Python สำหรับงานวิจัยการลงทุน",
       "group": "tools",
-      "characters": 4974,
+      "characters": 4647,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Introduction_to_Python/notebook.ipynb"
       ]
     },
     {
       "id": "introduction-to-numpy",
-      "title": "NumPy: จากชุดตัวเลขสู่คณิตศาสตร์ของพอร์ต",
+      "title": "NumPy และการคำนวณพอร์ตด้วย array",
       "group": "tools",
-      "characters": 4953,
+      "characters": 4812,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Introduction_to_NumPy/notebook.ipynb"
       ]
     },
     {
       "id": "introduction-to-pandas",
-      "title": "pandas: จัดข้อมูลให้เวลาและตัวเลขตรงกัน",
+      "title": "pandas และข้อมูลอนุกรมเวลา",
       "group": "tools",
-      "characters": 4856,
+      "characters": 4695,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Introduction_to_Pandas/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Introduction_to_Pandas/notebook.ipynb",
@@ -43,9 +43,9 @@
     },
     {
       "id": "plotting-data",
-      "title": "อ่านข้อมูลผ่านกราฟ ก่อนเชื่อสิ่งที่เห็น",
+      "title": "กราฟสำหรับสำรวจข้อมูลการลงทุน",
       "group": "tools",
-      "characters": 5533,
+      "characters": 5273,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Plotting_Data/answers/notebook.ipynb",
         "Quantopian Lecture - Part3/Plotting_Data/notebook.ipynb",
@@ -54,9 +54,9 @@
     },
     {
       "id": "means",
-      "title": "ค่าเฉลี่ยแบบไหนตอบคำถามที่เราถาม",
+      "title": "ค่าเฉลี่ยและค่ากลางของข้อมูล",
       "group": "statistics",
-      "characters": 4859,
+      "characters": 4736,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Means/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Means/notebook.ipynb",
@@ -65,9 +65,9 @@
     },
     {
       "id": "random-variables",
-      "title": "ตัวแปรสุ่ม: ภาษาสำหรับอธิบายความไม่แน่นอน",
+      "title": "ตัวแปรสุ่มและการแจกแจงความน่าจะเป็น",
       "group": "statistics",
-      "characters": 5689,
+      "characters": 5512,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Random_Variables/answers/notebook.ipynb",
         "Quantopian Lecture - Part3/Random_Variables/notebook.ipynb",
@@ -76,9 +76,9 @@
     },
     {
       "id": "variance",
-      "title": "วัดการกระจายให้ตรงกับความเสี่ยงที่สนใจ",
+      "title": "Variance และการวัดการกระจาย",
       "group": "statistics",
-      "characters": 5566,
+      "characters": 5407,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Variance/answers/notebook.ipynb",
         "Quantopian Lecture - Part3/Variance/notebook.ipynb",
@@ -87,9 +87,9 @@
     },
     {
       "id": "statistical-moments",
-      "title": "มองรูปร่างความเสี่ยงด้วย Skewness และ Kurtosis",
+      "title": "Skewness, Kurtosis และ Statistical Moments",
       "group": "statistics",
-      "characters": 5377,
+      "characters": 5258,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Statistical_Moments/answers/notebook.ipynb",
         "Quantopian Lecture - Part3/Statistical_Moments/notebook.ipynb",
@@ -98,9 +98,9 @@
     },
     {
       "id": "linear-correlation-analysis",
-      "title": "Correlation: วัดการเคลื่อนไหวร่วมโดยไม่อ่านเกินข้อมูล",
+      "title": "Pearson Correlation และความสัมพันธ์เชิงเส้น",
       "group": "statistics",
-      "characters": 4537,
+      "characters": 4413,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Linear_Correlation_Analysis/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Linear_Correlation_Analysis/notebook.ipynb",
@@ -109,9 +109,9 @@
     },
     {
       "id": "spearman-rank-correlation",
-      "title": "วัดความสัมพันธ์จากอันดับด้วย Spearman",
+      "title": "Spearman Rank Correlation",
       "group": "statistics",
-      "characters": 5380,
+      "characters": 5178,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Spearman_Rank_Correlation/answers/notebook.ipynb",
         "Quantopian Lecture - Part3/Spearman_Rank_Correlation/notebook.ipynb",
@@ -120,9 +120,9 @@
     },
     {
       "id": "confidence-intervals",
-      "title": "รายงานค่าประมาณพร้อมความไม่แน่นอน",
+      "title": "Confidence Intervals และ Standard Error",
       "group": "statistics",
-      "characters": 5700,
+      "characters": 5557,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Confidence_Intervals/answers/notebook.ipynb",
         "Quantopian Lecture - Part1/Confidence_Intervals/notebook.ipynb",
@@ -131,9 +131,9 @@
     },
     {
       "id": "hypothesis-testing",
-      "title": "เปลี่ยนความสงสัยให้เป็นสมมติฐานที่ตรวจสอบได้",
+      "title": "การทดสอบสมมติฐาน",
       "group": "statistics",
-      "characters": 5988,
+      "characters": 5757,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Hypothesis_Testing/answers/notebook.ipynb",
         "Quantopian Lecture - Part1/Hypothesis_Testing/notebook.ipynb",
@@ -142,9 +142,9 @@
     },
     {
       "id": "linear-regression",
-      "title": "Linear regression: จากความสัมพันธ์สู่สมการที่ตรวจได้",
+      "title": "Linear Regression",
       "group": "models",
-      "characters": 4756,
+      "characters": 4797,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Linear_Regression/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Linear_Regression/notebook.ipynb",
@@ -153,18 +153,18 @@
     },
     {
       "id": "multiple-linear-regression",
-      "title": "Multiple regression: แยกบทบาทของหลายปัจจัย",
+      "title": "Multiple Linear Regression",
       "group": "models",
-      "characters": 4905,
+      "characters": 4923,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Multiple_Linear_Regression/notebook.ipynb"
       ]
     },
     {
       "id": "maximum-likelihood-estimation",
-      "title": "Maximum likelihood: เลือกพารามิเตอร์ที่อธิบายข้อมูลได้มากที่สุด",
+      "title": "Maximum Likelihood Estimation",
       "group": "models",
-      "characters": 4947,
+      "characters": 4835,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Maximum_Likelihood_Estimation/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Maximum_Likelihood_Estimation/notebook.ipynb",
@@ -173,9 +173,9 @@
     },
     {
       "id": "residuals-analysis",
-      "title": "ฟังสิ่งที่โมเดลยังอธิบายไม่ได้",
+      "title": "การวิเคราะห์ Residual",
       "group": "models",
-      "characters": 5662,
+      "characters": 5528,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Residuals_Analysis/notebook.ipynb"
       ]
@@ -184,25 +184,25 @@
       "id": "violations-of-regression-models",
       "title": "เมื่อสมมติฐาน Regression ไม่ตรงกับข้อมูล",
       "group": "models",
-      "characters": 6152,
+      "characters": 5912,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Violations_of_Regression_Models/notebook.ipynb"
       ]
     },
     {
       "id": "autocorrelation-and-ar-models",
-      "title": "เมื่ออดีตยังมีอิทธิพลต่อค่าถัดไป",
+      "title": "Autocorrelation และ AR Models",
       "group": "models",
-      "characters": 5683,
+      "characters": 5579,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Autocorrelation_and_AR_Models/notebook.ipynb"
       ]
     },
     {
       "id": "integration-cointegration-and-stationarity",
-      "title": "ความนิ่งของอนุกรมเวลาและความสัมพันธ์ระยะยาว",
+      "title": "Stationarity, Integration และ Cointegration",
       "group": "models",
-      "characters": 4913,
+      "characters": 4909,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Integration_Cointegration_and_Stationarity/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Integration_Cointegration_and_Stationarity/notebook.ipynb",
@@ -211,36 +211,36 @@
     },
     {
       "id": "arch-garch-and-gmm",
-      "title": "เมื่อความผันผวนมีความทรงจำ",
+      "title": "ARCH, GARCH และ GMM",
       "group": "models",
-      "characters": 5670,
+      "characters": 5645,
       "sourcePaths": [
         "Quantopian Lecture - Part1/ARCH_GARCH_and_GMM/notebook.ipynb"
       ]
     },
     {
       "id": "kalman-filters",
-      "title": "Kalman filter: ปรับความเชื่อเมื่อข้อมูลใหม่มาถึง",
+      "title": "Kalman Filter และการประมาณสถานะ",
       "group": "models",
-      "characters": 5259,
+      "characters": 5230,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Kalman_Filters/notebook.ipynb"
       ]
     },
     {
       "id": "pca",
-      "title": "มองปัจจัยร่วมที่ซ่อนอยู่ด้วย PCA",
+      "title": "Principal Component Analysis (PCA)",
       "group": "models",
-      "characters": 5348,
+      "characters": 5249,
       "sourcePaths": [
         "Quantopian Lecture - Part3/PCA/notebook.ipynb"
       ]
     },
     {
       "id": "universe-selection",
-      "title": "กำหนดสนามลงทุนก่อนออกแบบสัญญาณ",
+      "title": "Universe Selection: กำหนดกลุ่มสินทรัพย์ที่จะศึกษา",
       "group": "factors",
-      "characters": 5608,
+      "characters": 5394,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Universe_Selection/answers/notebook.ipynb",
         "Quantopian Lecture - Part3/Universe_Selection/notebook.ipynb",
@@ -249,54 +249,54 @@
     },
     {
       "id": "ranking-universes-by-factors",
-      "title": "จัดอันดับหุ้นแล้ววัดว่าสัญญาณบอกอะไร",
+      "title": "จัดอันดับหุ้นและประเมิน Factor",
       "group": "factors",
-      "characters": 5422,
+      "characters": 5256,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Ranking_Universes_by_Factors/notebook.ipynb"
       ]
     },
     {
       "id": "fundamental-factor-models",
-      "title": "เปลี่ยนข้อมูลบริษัทให้เป็นแบบจำลองปัจจัย",
+      "title": "Fundamental Factor Models: คุณลักษณะบริษัทและผลตอบแทนปัจจัย",
       "group": "factors",
-      "characters": 5985,
+      "characters": 5837,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Fundamental_Factor_Models/notebook.ipynb"
       ]
     },
     {
       "id": "factor-analysis",
-      "title": "สัญญาณลงทุนมีข้อมูลจริงแค่ไหน",
+      "title": "Factor Analysis: ประเมินผลตอบแทน IC และ Turnover",
       "group": "factors",
-      "characters": 6165,
+      "characters": 6066,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Factor_Analysis/notebook.ipynb"
       ]
     },
     {
       "id": "case-study-traditional-value-factor",
-      "title": "จากความถูกแพงสู่พอร์ต Value แบบ 130/30",
+      "title": "สร้างพอร์ต Value 130/30 จากอัตราส่วนพื้นฐาน",
       "group": "factors",
-      "characters": 5694,
+      "characters": 5495,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Case_Study_Traditional_Value_Factor/notebook.ipynb"
       ]
     },
     {
       "id": "long-short-equity",
-      "title": "Long–short equity: เปลี่ยนการจัดอันดับให้เป็นพอร์ต",
+      "title": "Long–Short Equity: จัดอันดับและกำหนดน้ำหนักพอร์ต",
       "group": "strategies",
-      "characters": 4885,
+      "characters": 4856,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Long-Short_Equity/notebook.ipynb"
       ]
     },
     {
       "id": "introduction-to-pairs-trading",
-      "title": "Pairs trading: ทดลองกับส่วนต่างที่มีเหตุผล",
+      "title": "Pairs Trading: สร้างและทดสอบ Spread",
       "group": "strategies",
-      "characters": 4733,
+      "characters": 4584,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Introduction_to_Pairs_Trading/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Introduction_to_Pairs_Trading/notebook.ipynb",
@@ -305,9 +305,9 @@
     },
     {
       "id": "introduction-to-futures",
-      "title": "Futures: เข้าใจสัญญาก่อนวิเคราะห์ราคา",
+      "title": "Futures: หน่วยสัญญา Margin และการ Roll",
       "group": "strategies",
-      "characters": 4850,
+      "characters": 4798,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Introduction_to_Futures/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Introduction_to_Futures/notebook.ipynb",
@@ -316,18 +316,18 @@
     },
     {
       "id": "futures-trading-considerations",
-      "title": "สิ่งที่ต้องคิดก่อนทดสอบกลยุทธ์ Futures",
+      "title": "ข้อมูลและข้อกำหนดสำหรับทดสอบกลยุทธ์ Futures",
       "group": "strategies",
-      "characters": 5528,
+      "characters": 5288,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Futures_Trading_Considerations/notebook.ipynb"
       ]
     },
     {
       "id": "mean-reversion-on-futures",
-      "title": "Mean reversion ใน futures: หาแรงผูกจากเศรษฐกิจจริง",
+      "title": "Mean Reversion ใน Futures: ส่วนต่างราคาที่สัมพันธ์ทางเศรษฐกิจ",
       "group": "strategies",
-      "characters": 5241,
+      "characters": 5209,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Mean_Reversion_on_Futures/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Mean_Reversion_on_Futures/notebook.ipynb",
@@ -336,63 +336,63 @@
     },
     {
       "id": "capm-and-arbitrage-pricing-theory",
-      "title": "ความเสี่ยงแบบใดควรได้รับผลตอบแทนชดเชย",
+      "title": "CAPM และ APT: ผลตอบแทนคาดหมายกับความเสี่ยง",
       "group": "portfolio",
-      "characters": 5268,
+      "characters": 5202,
       "sourcePaths": [
         "Quantopian Lecture - Part1/CAPM_and_Arbitrage_Pricing_Theory/notebook.ipynb"
       ]
     },
     {
       "id": "arbitrage-pricing-theory",
-      "title": "จากความเสี่ยงหลายด้านสู่ผลตอบแทนที่คาดหมาย",
+      "title": "Arbitrage Pricing Theory และค่าชดเชยความเสี่ยง",
       "group": "portfolio",
-      "characters": 5094,
+      "characters": 4901,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Arbitrage_Pricing_Theory/notebook.ipynb"
       ]
     },
     {
       "id": "estimating-covariance-matrices",
-      "title": "วัดความเสี่ยงร่วมด้วย Covariance ที่เสถียรขึ้น",
+      "title": "การประมาณ Covariance Matrix และ Shrinkage",
       "group": "portfolio",
-      "characters": 5572,
+      "characters": 5428,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Estimating_Covariance_Matrices/notebook.ipynb"
       ]
     },
     {
       "id": "factor-risk-exposure",
-      "title": "เปิดดูความเสี่ยงที่ซ่อนอยู่ในผลตอบแทน",
+      "title": "Factor Exposure และสัดส่วนความเสี่ยงของพอร์ต",
       "group": "portfolio",
-      "characters": 5539,
+      "characters": 5435,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Factor_Risk_Exposure/notebook.ipynb"
       ]
     },
     {
       "id": "factor-based-risk-management",
-      "title": "สร้างพอร์ตโดยกำหนดความเสี่ยงที่ยอมรับได้",
+      "title": "กำหนดน้ำหนักพอร์ตด้วย Factor Risk Model",
       "group": "portfolio",
-      "characters": 5655,
+      "characters": 5365,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Factor_Based_Risk_Management/notebook.ipynb"
       ]
     },
     {
       "id": "portfolio-analysis",
-      "title": "อ่านผลลัพธ์ของพอร์ตให้ลึกกว่าผลตอบแทน",
+      "title": "วิเคราะห์ผลตอบแทนและความเสี่ยงของพอร์ต",
       "group": "portfolio",
-      "characters": 5548,
+      "characters": 5190,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Portfolio_Analysis/notebook.ipynb"
       ]
     },
     {
       "id": "case-study-comparing-etfs",
-      "title": "เปรียบเทียบ ETF ด้วยคำถามทางสถิติ",
+      "title": "การเปรียบเทียบ ETF ด้วยสถิติ",
       "group": "portfolio",
-      "characters": 5248,
+      "characters": 5047,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Case_Study_Comparing_ETFs/answers/notebook.ipynb",
         "Quantopian Lecture - Part1/Case_Study_Comparing_ETFs/questions/notebook.ipynb"
@@ -400,45 +400,45 @@
     },
     {
       "id": "why-hedge-i",
-      "title": "ทำไมการ Hedge จึงช่วยให้การเดิมพันเป็นอิสระขึ้น",
+      "title": "Market Hedge, Sector Hedge และ Breadth",
       "group": "portfolio",
-      "characters": 5450,
+      "characters": 5268,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Why_Hedge_I/notebook.ipynb"
       ]
     },
     {
       "id": "why-hedge-ii",
-      "title": "เมื่อหลายกลยุทธ์รวมกัน ความเสี่ยงร่วมไปกองอยู่ตรงไหน",
+      "title": "ความเสี่ยงร่วมในพอร์ตหลายกลยุทธ์",
       "group": "portfolio",
-      "characters": 5700,
+      "characters": 5485,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Why_Hedge_II/notebook.ipynb"
       ]
     },
     {
       "id": "beta-hedging",
-      "title": "ลดการพึ่งพาตลาดด้วย Beta Hedging",
+      "title": "ลด Market Exposure ด้วย Beta Hedging",
       "group": "portfolio",
-      "characters": 5598,
+      "characters": 5545,
       "sourcePaths": [
         "Quantopian Lecture - Part1/Beta_Hedging/notebook.ipynb"
       ]
     },
     {
       "id": "leverage",
-      "title": "Leverage: ขยายผลตอบแทนพร้อมภาระและความเสี่ยง",
+      "title": "Leverage: ผลตอบแทน ต้นทุนกู้ และความเสี่ยง",
       "group": "portfolio",
-      "characters": 4405,
+      "characters": 4260,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Leverage/notebook.ipynb"
       ]
     },
     {
       "id": "position-concentration-risk",
-      "title": "ถือหลายตัวแล้ว ความเสี่ยงกระจายจริงหรือยัง",
+      "title": "การกระจุกตัวและการกระจายความเสี่ยงของพอร์ต",
       "group": "portfolio",
-      "characters": 5312,
+      "characters": 5223,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Position_Concentration_Risk/answers/notebook.ipynb",
         "Quantopian Lecture - Part3/Position_Concentration_Risk/notebook.ipynb",
@@ -447,18 +447,18 @@
     },
     {
       "id": "var-and-cvar",
-      "title": "วัดหางขาดทุนด้วย VaR และ Expected Shortfall",
+      "title": "VaR และ Expected Shortfall สำหรับผลขาดทุนส่วนหาง",
       "group": "portfolio",
-      "characters": 5524,
+      "characters": 5287,
       "sourcePaths": [
         "Quantopian Lecture - Part3/VaR_and_CVaR/notebook.ipynb"
       ]
     },
     {
       "id": "instability-of-estimates",
-      "title": "ค่าประมาณเปลี่ยนได้ แม้สูตรยังเหมือนเดิม",
+      "title": "ความไม่แน่นอนของค่าเฉลี่ยและ Sharpe Ratio",
       "group": "validation",
-      "characters": 4630,
+      "characters": 4539,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Instability_of_Estimates/answers/notebook.ipynb",
         "Quantopian Lecture - Part2/Instability_of_Estimates/notebook.ipynb",
@@ -467,54 +467,54 @@
     },
     {
       "id": "regression-model-instability",
-      "title": "เมื่อสมการเดิมเปลี่ยนไปตามข้อมูลที่เลือก",
+      "title": "ความไม่เสถียรของแบบจำลอง Regression",
       "group": "validation",
-      "characters": 5796,
+      "characters": 5638,
       "sourcePaths": [
         "Quantopian Lecture - Part3/Regression_Model_Instability/notebook.ipynb"
       ]
     },
     {
       "id": "model-misspecification",
-      "title": "เมื่อแบบจำลองตอบผิด เพราะตั้งคำถามผิดตั้งแต่ต้น",
+      "title": "Model Misspecification: ข้อผิดพลาดในการกำหนดแบบจำลอง",
       "group": "validation",
-      "characters": 4994,
+      "characters": 4951,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Model_Misspecification/notebook.ipynb"
       ]
     },
     {
       "id": "the-dangers-of-overfitting",
-      "title": "เมื่อโมเดลจำอดีตเก่งเกินไป",
+      "title": "Overfitting และการประเมินด้วยข้อมูลใหม่",
       "group": "validation",
-      "characters": 5858,
+      "characters": 5563,
       "sourcePaths": [
         "Quantopian Lecture - Part3/The_Dangers_of_Overfitting/notebook.ipynb"
       ]
     },
     {
       "id": "p-hacking-and-multiple-comparisons-bias",
-      "title": "เมื่อการลองมากครั้งทำให้ความบังเอิญดูเป็นสัญญาณ",
+      "title": "p-Hacking และผลบวกเท็จจากการทดสอบหลายครั้ง",
       "group": "validation",
-      "characters": 5963,
+      "characters": 5766,
       "sourcePaths": [
         "Quantopian Lecture - Part3/p-Hacking_and_Multiple_Comparisons_Bias/notebook.ipynb"
       ]
     },
     {
       "id": "introduction-to-volume-slippage-and-liquidity",
-      "title": "จากสัญญาณถึงคำสั่งซื้อขาย: Volume, slippage และ liquidity",
+      "title": "Volume, Slippage และ Liquidity ในการซื้อขาย",
       "group": "validation",
-      "characters": 4776,
+      "characters": 4712,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Introduction_to_Volume_Slippage_and_Liquidity/notebook.ipynb"
       ]
     },
     {
       "id": "market-impact-model",
-      "title": "Market impact: แบบจำลองต้นทุนที่เปลี่ยนตามขนาดคำสั่ง",
+      "title": "Market Impact: ประเมินต้นทุนตามขนาดและเวลาของคำสั่ง",
       "group": "validation",
-      "characters": 6468,
+      "characters": 6385,
       "sourcePaths": [
         "Quantopian Lecture - Part2/Market_Impact_Model/notebook.ipynb"
       ]
