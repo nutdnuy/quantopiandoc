@@ -65,3 +65,12 @@ The Welcome page now introduces quantitative investment research with Python and
 Applied Nuth's collected feedback after explicit instruction to proceed. Reviewed all 53 lesson drafts with no-ai-slop using three scoped editorial agents and parent review. The first lesson is titled Investment Research with Python. Technical English is retained when clearer than a strained Thai heading. Signal replaces the Thai translation throughout the authored lessons and curriculum. Removed lesson source-reading callouts and narrative instructions to consult originals; preserved archived sources and attribution outside the lesson reading flow.
 
 Added 54 deterministic Active Viz configurations, one or more per lesson, with visible assumptions and hypothetical-data labels. Python examples have 37 executed outputs in 28 lessons; missing inputs are explicit synthetic fixtures. Code hashes prevent stale outputs. Static Matplotlib figures and interactive SVG charts are calculated, not image-generated. The original 183 source artifacts remain unchanged. These additions do not establish empirical strategy performance.
+
+
+## Python and AI opening lesson — 2026-09-26
+
+Added `why-learn-python-with-ai` before the Notebook introduction in Part 01, using Nuth's supplied text and attachment. The lesson focuses on reading code, checking intent, inputs and formulas, briefing an Agent, and using Kaggle Notebooks for practice and a reviewable portfolio. It is a new companion lesson, not an archived Quantopian lecture; its context is recorded in `data/additional-lessons.json`.
+
+The two-period example uses hypothetical capital of 100 THB with returns of +10% and −10%. Executed Python prints 100 → 110 → 99, a 0% arithmetic mean and −1% cumulative return. The new Active Viz labels the additive method as deliberately incorrect for cumulative returns, with controls, a comparison chart and a table. Existing lab IDs remain stable.
+
+The supplied references were adapted, not copied verbatim. Removed unverified current-events claims, simplified claims about LLM arithmetic hardware, legal absolutes, resource-price promises and hiring/earnings guarantees. No external research was performed. The prose was reviewed with no-ai-slop and parent editorial review.

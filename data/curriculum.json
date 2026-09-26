@@ -4,8 +4,9 @@
     "number": "01",
     "title": "Notebook และ Python",
     "label": "Research & Python",
-    "description": "ใช้ Notebook, NumPy และ pandas เตรียมข้อมูล แล้วสร้างกราฟด้วย Matplotlib",
+    "description": "อ่านโค้ดและตรวจ Logic ที่ AI เขียน แล้วใช้ Notebook, NumPy และ pandas เตรียมข้อมูลและสร้างกราฟ",
     "topics": [
+      "why-learn-python-with-ai",
       "introduction-to-research",
       "introduction-to-python",
       "introduction-to-numpy",

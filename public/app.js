@@ -29,7 +29,7 @@
  const lesson=$('[data-lesson]');if(lesson)save('qrl-last',{id:lesson.dataset.lesson});
  const last=readStore('qrl-last'),continueLink=$('#continue-link');
  if(continueLink&&last.id&&(window.RESEARCH_SEARCH||[]).some(x=>x.id===last.id)){continueLink.href=last.id+'.html';continueLink.textContent='Continue reading ↗'}
- const progress=$('#progress-note');if(progress&&Object.values(completed).filter(Boolean).length)progress.textContent=`อ่านแล้ว ${Object.values(completed).filter(Boolean).length} จาก 53 บท`;
+ const progress=$('#progress-note');if(progress&&Object.values(completed).filter(Boolean).length)progress.textContent=`อ่านแล้ว ${Object.values(completed).filter(Boolean).length} จาก ${(window.RESEARCH_SEARCH||[]).length} บท`;
  $('#library-filter')?.addEventListener('input',e=>{const q=e.target.value.trim().toLocaleLowerCase();let n=0;document.querySelectorAll('.library-row').forEach(row=>{row.hidden=!row.dataset.search.toLocaleLowerCase().includes(q);if(!row.hidden)n++});$('#library-count').textContent=n?`${n} topics`:'ไม่พบหัวข้อ ลองใช้คำค้นอื่น'});
  const sidebar=$('#book-sidebar'),frame=$('#book-frame'),toggle=$('#contents-toggle'),close=$('#contents-close'),backdrop=$('#sidebar-backdrop');
  const compact=window.matchMedia('(max-width: 900px)');

@@ -174,6 +174,21 @@ export function runLab(kind,p){
   const size=p.size/100,time=p.time/100,participation=size/time,cost=.1*participation**2*10000;
   return result([chart('Volume Share Slippage','Order / interval volume (%)','Model cost (bp)',[line('C = 0.1 × participation²',linspace(0,.5).map(q=>[q*100,.1*q*q*10000]))],{vLines:[{x:participation*100,label:'Selected participation'}]})],metrics(['X / ADV',num(p.size,1)+'%'],['Execution time',num(p.time,0)+'% of day'],['X / (ADV × T)',pct(participation)],['Model cost',num(cost,2)+' bp']), 'สาธิตสูตร Volume Share Slippage C = 0.1|X/(VT)|² โดย C เป็นสัดส่วนราคา สมมติ volume สม่ำเสมอตลอดวัน; coefficient 0.1 ใช้เพื่ออธิบายรูปแบบเดิม ไม่ใช่ calibration ของตลาดปัจจุบัน กราฟแสดง participation ถึง 50%');
  }
+ case 'compound-audit': {
+  const start=100,returns=[p.r1/100,p.r2/100],compounded=wealth(returns,start);
+  // Deliberately incorrect for cumulative returns: add period returns to the initial capital.
+  const additive=[start,start*(1+returns[0]),start*(1+sum(returns))];
+  const cumulative=compounded.at(-1)/start-1,average=mean(returns),wrongCumulative=sum(returns);
+  return result(
+   [chart('ตรวจผลการทบต้น','ช่วง','มูลค่า (หน่วยเงิน)',[
+    line('ทบต้น (วิธีถูก)',compounded.map((value,i)=>[i,value])),
+    line('บวกผลตอบแทน (วิธีผิด)',additive.map((value,i)=>[i,value]))
+   ],{xTicks:[[0,'เริ่มต้น'],[1,'ช่วง 1'],[2,'ช่วง 2']]})],
+   metrics(['มูลค่าปลายทาง',num(compounded.at(-1),2)+' หน่วยเงิน'],['ผลตอบแทนสะสม',pct(cumulative)],['ค่าเฉลี่ยต่อช่วง',pct(average)],['ใช้ผลบวกเป็นผลสะสม (ผิด)',pct(wrongCumulative)]),
+   'ตัวอย่างสมมติ ทุนเริ่มต้น 100 หน่วยเงิน ผลตอบแทนสองช่วง ไม่มีเงินฝากถอนหรือค่าธรรมเนียม วิธีทบต้นใช้ 100 × (1 + r₁) × (1 + r₂) โดย r เป็นสัดส่วน เส้นบวกผลตอบแทนจงใจแสดงวิธีผิดที่ใช้ 100 × (1 + r₁ + r₂) โค้ดของทั้งสองวิธีรันได้ จึงต้องตรวจสูตรและความหมายของผลลัพธ์ด้วย ค่าเฉลี่ยเลขคณิตเป็นค่าเฉลี่ยต่อช่วง ไม่ใช่ผลตอบแทนสะสม',
+   {columns:['ช่วง','ผลตอบแทนช่วง (%)','ทบต้น (หน่วยเงิน)','บวกผลตอบแทน (วิธีผิด; หน่วยเงิน)'],rows:compounded.map((value,i)=>[i,i===0?'—':num(returns[i-1]*100,2),num(value,2),num(additive[i],2)])}
+  );
+ }
  default: throw new Error('Unknown lab kind: '+kind);
  }
 }

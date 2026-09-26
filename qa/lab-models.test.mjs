@@ -1,6 +1,9 @@
 // Run with: node --test qa/lab-models.test.mjs
 // Financial examples below are hypothetical; expected answers are hand-calculated.
 import test from 'node:test';
+import fs from 'node:fs';
+const curriculum=JSON.parse(fs.readFileSync(new URL('../data/curriculum.json',import.meta.url)));
+const lessonIds=curriculum.flatMap(g=>g.topics);
 import assert from 'node:assert/strict';
 import {
   mean, variance, sd, corr, ranks, spearman, normalPdf, normalCdf,
@@ -93,10 +96,10 @@ function boundaryCases(lab) {
   return [...new Map(candidates.map(params => [JSON.stringify(params), params])).values()];
 }
 
-test('registry covers 54 unique configurations across all 53 lessons', () => {
-  assert.equal(labs.length, 54);
-  assert.equal(new Set(labs.map(lab => lab.id)).size, 54);
-  assert.equal(new Set(labs.map(lab => lab.lesson)).size, 53);
+test('registry has unique configurations and covers every curriculum lesson', () => {
+  assert.equal(labs.length, lessonIds.length + 1);
+  assert.equal(new Set(labs.map(lab => lab.id)).size, labs.length);
+  assert.deepEqual([...new Set(labs.map(lab => lab.lesson))].sort(), [...lessonIds].sort());
   assert.equal(lessonLabs('statistical-moments').length, 2);
 });
 

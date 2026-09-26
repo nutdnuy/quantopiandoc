@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "lessons": 53,
-  "activeViz": 54,
-  "executedPythonOutputs": 37,
+  "lessons": 54,
+  "activeViz": 55,
+  "executedPythonOutputs": 38,
   "checks": [
     "Requested title and Signal terminology",
     "No lesson source callouts",

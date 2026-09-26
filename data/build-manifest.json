@@ -1,8 +1,16 @@
 {
   "sourceCommit": "b1faf19ba390d6aa74429e759c3acc1ab8779932",
-  "topics": 53,
+  "topics": 54,
+  "sourceTopics": 53,
   "notebooks": 92,
   "lessons": [
+    {
+      "id": "why-learn-python-with-ai",
+      "title": "ทำไมเราต้องเรียน Python เมื่อ AI ก็ทำได้",
+      "group": "tools",
+      "characters": 6594,
+      "sourcePaths": []
+    },
     {
       "id": "introduction-to-research",
       "title": "Investment Research with Python",

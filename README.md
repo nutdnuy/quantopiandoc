@@ -2,13 +2,13 @@
 
 Investment Research with Python: ข้อมูล สถิติ Signal กลยุทธ์ และความเสี่ยง
 
-โปรเจกต์เว็บไซต์บทเรียนภาษาไทยที่เรียบเรียงจาก **Quantopian Lecture Series ในสำเนา quantopiandoc ที่มีอยู่ในเครื่อง** เท่านั้น ไม่มีการค้นอินเทอร์เน็ตเพื่อเพิ่มเนื้อหาระหว่างสร้างฉบับนี้
+โปรเจกต์เว็บไซต์บทเรียนภาษาไทยที่เรียบเรียงจาก **Quantopian Lecture Series ในสำเนา quantopiandoc ที่มีอยู่ในเครื่อง** พร้อมบทนำ Python กับ AI จากข้อความที่ Nuth ส่งมา ไม่มีการค้นอินเทอร์เน็ตเพื่อเพิ่มเนื้อหาระหว่างสร้างฉบับนี้
 
 ## สิ่งที่อยู่ในโปรเจกต์
 
-- 53 บทภาษาไทย จัดเป็น 7 หมวด ใช้หัวข้อตรงกับแนวคิดและคำว่า Signal
-- Active Viz 54 ชุด ครบทุกบท ปรับค่าดูผลคำนวณด้วยข้อมูลสมมติ
-- Output ที่รันจริงครบ 37 บล็อก Python ใน 28 บท พร้อม input fixtures, คำสั่งแสดงค่า และกราฟ
+- 54 บทภาษาไทย จัดเป็น 7 หมวด ใช้หัวข้อตรงกับแนวคิดและคำว่า Signal
+- Active Viz 55 ชุด ครบทุกบท ปรับค่าดูผลคำนวณด้วยข้อมูลสมมติ
+- Output ที่รันจริงครบ 38 บล็อก Python ใน 29 บท พร้อม input fixtures, คำสั่งแสดงค่า และกราฟ
 - ต้นฉบับครบ 92 Notebook: 52 บทเรียน, 20 แบบฝึกหัด, 20 เฉลย พร้อม HTML เดิม 91 ไฟล์
 - หน้าอ่านต้นฉบับที่แสดงคำอธิบาย โค้ด ภาพ และข้อความผลลัพธ์เดิม โดยไม่โหลดสื่อภายนอก
 - ค้นหาไทย/อังกฤษ, Source library, บันทึกว่าอ่านแล้ว และกลับมาอ่านต่อ
@@ -36,7 +36,8 @@ npm run dev
 | ตำแหน่ง | ใช้ทำอะไร |
 |---|---|
 | `content/*.json` | บทภาษาไทย: title, intro, objectives, body (Markdown), takeaways, exercise |
-| `data/curriculum.json` | ลำดับการเรียน 7 หมวด และ ID ของทั้ง 53 หัวข้อ |
+| `data/additional-lessons.json` | ที่มาของบทเพิ่มเติมจากข้อความประกอบที่ Nuth ส่งมา |
+| `data/curriculum.json` | ลำดับการเรียน 7 หมวด และ ID ของทั้ง 54 หัวข้อ |
 | `sources/quantopian/` | ต้นฉบับ Notebook และ HTML ที่เก็บโดยไม่แก้ไข |
 | `data/extracted-sources.json` | ข้อความและโค้ดที่สกัดจาก Notebook เพื่อใช้เรียบเรียง |
 | `scripts/build.mjs` | แปลงเนื้อหาเป็นหน้าเว็บและสร้างหน้าต้นฉบับ |
@@ -66,7 +67,7 @@ Source repository: `nutdnuy/quantopiandoc`
 
 Source commit: `b1faf19ba390d6aa74429e759c3acc1ab8779932`
 
-ทุกหัวข้อจับคู่กับ source paths ใน `data/build-manifest.json` ไฟล์ต้นฉบับและ exported copies ตรวจเทียบ byte-for-byte ด้วย `npm test`
+53 หัวข้อจาก Quantopian จับคู่กับ source paths ใน `data/build-manifest.json` ไฟล์ต้นฉบับและ exported copies ตรวจเทียบ byte-for-byte ด้วย `npm test`
 
 ไม่มีไฟล์ LICENSE ระดับ repository ในสำเนาที่ได้รับ ชื่อผู้เขียนและข้อความระบุสิทธิ์ภายในบทเรียนยังคงอยู่ใน Notebook และหน้าต้นฉบับ ไม่ได้กำหนดใบอนุญาตใหม่ให้เนื้อหา Quantopian
 
@@ -91,8 +92,8 @@ npm run build
 
 All lesson charts use deterministic calculations or seeded hypothetical data. They are teaching examples, not market observations, forecasts, or evidence of strategy performance. No new Internet source or image generator was used.
 
-The 54 Active Viz configurations cover all 53 lessons. Statistical Moments has separate Skewness and Kurtosis panels. The Kurtosis comparison standardizes all distributions to mean zero and variance one and includes a tail zoom. Controls, metrics, axes, assumptions, and reset actions remain usable in both themes; charts scroll within their panel on narrow screens.
+The 55 Active Viz configurations cover all 54 lessons. The opening Python-and-AI chapter compares compounded wealth with a deliberately incorrect sum-of-returns method. Statistical Moments has separate Skewness and Kurtosis panels. The Kurtosis comparison standardizes all distributions to mean zero and variance one and includes a tail zoom. Controls, metrics, axes, assumptions, and reset actions remain usable in both themes; charts scroll within their panel on narrow screens.
 
-To regenerate the 37 Python outputs, run `npm run build:outputs` with local NumPy, pandas, SciPy, statsmodels, and Matplotlib. Missing input data is supplied by explicit hypothetical fixtures shown with the example. The manifest stores the runtime and SHA-256 of every displayed code block; build fails if the code changes without fresh output. This reruns the Thai lesson examples only, not the archived Quantopian notebooks.
+To regenerate the 38 Python outputs, run `npm run build:outputs` with local NumPy, pandas, SciPy, statsmodels, and Matplotlib. Missing input data is supplied by explicit hypothetical fixtures shown with the example. The manifest stores the runtime and SHA-256 of every displayed code block; build fails if the code changes without fresh output. This reruns the Thai lesson examples only, not the archived Quantopian notebooks.
 
 `npm test` checks source integrity, lesson coverage, local links, numerical models, all Active Viz mappings, and output/code hashes. Browser verification is recorded separately in `qa/`.

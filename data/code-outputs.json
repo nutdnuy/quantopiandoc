@@ -446,6 +446,19 @@
           "caption": "ผลจากการรันโค้ดด้วยข้อมูลตัวอย่างที่ระบุ ตัวเลขใน array ของ NumPy แสดงทศนิยมไม่เกิน 6 ตำแหน่ง"
         }
       ]
+    },
+    "why-learn-python-with-ai": {
+      "setup": "",
+      "dataStatus": "ข้อมูลสมมติ ใช้เพื่อสาธิตการคำนวณ",
+      "outputs": [
+        {
+          "codeHash": "a2df954061d74efc4e499304b23f457c58651fcc04b0020a0932287a4ef87da1",
+          "probe": "",
+          "text": "Start: 100.00 THB\nPeriod 1: 110.00 THB\nPeriod 2: 99.00 THB\nMean return per period: 0.00%\nCumulative return: -1.00%",
+          "images": [],
+          "caption": "ทุนสมมติ 100 ผลตอบแทน +10% และ −10% ต่อช่วง ไม่มีเงินฝากถอนหรือค่าธรรมเนียม; ใช้ตรวจผลตอบแทนสะสมกับค่าเฉลี่ย"
+        }
+      ]
     }
   }
 }

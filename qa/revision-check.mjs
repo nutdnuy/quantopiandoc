@@ -23,8 +23,8 @@ for(const id of ids){
   for(const img of o.images)assert.ok(fs.existsSync(path.join(root,'dist',img.src)),id+': missing figure');codeCount++;
  }
 }
-assert.equal(new Set(labs.map(l=>l.lesson)).size,53);
-assert.equal(labCount,54);assert.equal(codeCount,37);
+assert.equal(new Set(labs.map(l=>l.lesson)).size,ids.length);
+assert.equal(labCount,labs.length);assert.equal(codeCount,Object.values(outputs.lessons).reduce((n,l)=>n+l.outputs.length,0));
 assert.equal(JSON.parse(fs.readFileSync(path.join(root,'content/introduction-to-research.json'))).title,'Investment Research with Python');
-const result={status:'pass',lessons:53,activeViz:labCount,executedPythonOutputs:codeCount,checks:['Requested title and Signal terminology','No lesson source callouts','Every lesson has a configured Active Viz','Every Python block has exact-code-hash output','Output figures exported locally']};
+const result={status:'pass',lessons:ids.length,activeViz:labCount,executedPythonOutputs:codeCount,checks:['Requested title and Signal terminology','No lesson source callouts','Every lesson has a configured Active Viz','Every Python block has exact-code-hash output','Output figures exported locally']};
 fs.writeFileSync(path.join(root,'qa/revision-results.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));

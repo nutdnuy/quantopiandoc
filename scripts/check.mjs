@@ -2,9 +2,11 @@ import fs from 'node:fs';import path from 'node:path';import assert from 'node:a
 const root=path.resolve(import.meta.dirname,'..'),out=path.join(root,'dist');
 const groups=JSON.parse(fs.readFileSync(path.join(root,'data/curriculum.json'))),ids=groups.flatMap(g=>g.topics);
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'data/build-manifest.json')));
-assert.equal(ids.length,53);assert.equal(new Set(ids).size,53);assert.equal(manifest.notebooks,92);assert.equal(manifest.mathErrors.length,0);
-const jsonFiles=fs.readdirSync(path.join(root,'content')).filter(f=>f.endsWith('.json'));assert.equal(jsonFiles.length,53);
-const pages=fs.readdirSync(out).filter(f=>f.endsWith('.html'));assert.equal(pages.length,148);
+const sourceIds=JSON.parse(fs.readFileSync(path.join(root,'data/extracted-sources.json'))).map(s=>s.id);
+const addedIds=JSON.parse(fs.readFileSync(path.join(root,'data/additional-lessons.json'))).map(s=>s.id);
+assert.equal(sourceIds.length,53);assert.deepEqual([...ids].sort(),[...sourceIds,...addedIds].sort());assert.equal(new Set(ids).size,ids.length);assert.equal(manifest.notebooks,92);assert.equal(manifest.mathErrors.length,0);
+const jsonFiles=fs.readdirSync(path.join(root,'content')).filter(f=>f.endsWith('.json'));assert.equal(jsonFiles.length,ids.length);
+const pages=fs.readdirSync(out).filter(f=>f.endsWith('.html'));assert.equal(pages.length,ids.length+manifest.notebooks+3);
 const errors=[];
 for(const id of ids){const d=JSON.parse(fs.readFileSync(path.join(root,'content',id+'.json')));assert.equal(d.id,id);assert.ok(d.body.length>=3500,`${id}: chapter too short`);assert.equal(d.objectives.length,3);assert.equal(d.takeaways.length,3);assert.ok(d.exercise?.length>30);assert.ok((d.body.match(/^## /gm)||[]).length>=3,`${id}: no structure`)}
 for(const page of pages){
@@ -23,5 +25,5 @@ for(const page of pages){
 let sourceFiles=0;const sourceRoot=path.join(root,'sources');
 function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const p=path.join(d,e.name);if(e.isDirectory())walk(p);else{const a=fs.readFileSync(p),b=fs.readFileSync(path.join(out,path.relative(root,p)));assert.ok(a.equals(b),'Source export changed '+p);sourceFiles++}}}walk(sourceRoot);assert.equal(sourceFiles,183);
 assert.deepEqual(errors,[]);
-const result={status:'pass',topics:53,notebooks:92,pages:148,sourceFiles,checks:['curriculum coverage','chapter schema and minimum substance','math rendering','local file links and lesson anchors','no remote resource URLs','byte-identical source export']};
+const result={status:'pass',topics:ids.length,notebooks:manifest.notebooks,pages:pages.length,sourceFiles,checks:['curriculum coverage','chapter schema and minimum substance','math rendering','local file links and lesson anchors','no remote resource URLs','byte-identical source export']};
 fs.writeFileSync(path.join(root,'qa/structural-results.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

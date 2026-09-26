@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "topics": 53,
+  "topics": 54,
   "notebooks": 92,
-  "pages": 148,
+  "pages": 149,
   "sourceFiles": 183,
   "checks": [
     "curriculum coverage",
