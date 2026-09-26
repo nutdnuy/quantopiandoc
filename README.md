@@ -10,7 +10,7 @@
 - ต้นฉบับครบ 92 Notebook: 52 บทเรียน, 20 แบบฝึกหัด, 20 เฉลย พร้อม HTML เดิม 91 ไฟล์
 - หน้าอ่านต้นฉบับที่แสดงคำอธิบาย โค้ด ภาพ และข้อความผลลัพธ์เดิม โดยไม่โหลดสื่อภายนอก
 - ค้นหาไทย/อังกฤษ, Source library, บันทึกว่าอ่านแล้ว และกลับมาอ่านต่อ
-- Quantsera / QuantCorner shared Design System: Material 2, dark/light themes, local Thai fonts
+- Quantara fantasy-world edition ตามหน้า Robo Trade ของ Nuth: โรงช่าง Deltaris, ภาพช่างและหุ่นกล, แผนที่ และตรา QuantCorner ที่อนุมัติแล้ว พร้อมหน้าอ่านพื้นขาว สารบัญด้านซ้าย ธีมมืดให้เลือก และฟอนต์ไทยในเครื่อง
 - เว็บสแตติกที่เปิดผ่าน local server หรือ `dist/index.html` ได้ โดยไม่ต้องเชื่อม API
 
 บทภาษาไทยเป็นการเรียบเรียงเนื้อหาสำคัญใหม่ ไม่ใช่คำแปลทุกเซลล์ของ Notebook ต้นฉบับ ทุกหัวข้อมีลิงก์กลับไปอ่านรายละเอียดเดิมครบ รวมถึงชื่อผู้เขียนเดิม
@@ -38,8 +38,11 @@ npm run dev
 | `sources/quantopian/` | ต้นฉบับ Notebook และ HTML ที่เก็บโดยไม่แก้ไข |
 | `data/extracted-sources.json` | ข้อความและโค้ดที่สกัดจาก Notebook เพื่อใช้เรียบเรียง |
 | `scripts/build.mjs` | แปลงเนื้อหาเป็นหน้าเว็บและสร้างหน้าต้นฉบับ |
-| `public/style.css` | รูปแบบหน้าเว็บและธีม |
-| `public/app.js` | ค้นหา ธีม ความคืบหน้า และกรอง Source library |
+| `public/assets/quantara/` | ภาพ Quantara จากเว็บอ้างอิงและตรา QuantCorner แบบไม่แก้ไขภาพ |
+| `data/quantara-assets.json` | ที่มา บทบาท และ SHA-256 ของภาพ/ตราที่นำมาใช้ |
+| `public/style.css` | รูปแบบพื้นฐานของบทเรียน สมการ และส่วนโต้ตอบ |
+| `public/quantara.css` | รูปแบบหนังสือ Quantara, sidebar และหน้าจอมือถือ |
+| `public/app.js` | สารบัญ ค้นหา ธีม ความคืบหน้า และกรอง Source library |
 | `src/components/` | React Bits ที่ปรับเข้ากับการใช้งานของเว็บนี้ |
 | `public/interactions.js` | bundle ที่เตรียมไว้สำหรับ build แบบออฟไลน์ |
 | `qa/` | ผลตรวจจริงและสคริปต์ตรวจหน้าเว็บ |
@@ -72,3 +75,9 @@ npm run build
 ```
 
 ไม่มีการเรียก `npm install` อัตโนมัติ เวอร์ชันที่ใช้ครั้งนี้และ notices อยู่ใน `THIRD_PARTY_NOTICES.md` และ `notices/`
+
+## Quantara edition
+
+การออกแบบใช้โลกแฟนตาซี **Quantara** ตามหน้า Robo Trade ของ QuantCorner พร้อมภาพโรงช่าง Deltaris, Algorithmic Trading Masters, หุ่นกลทองเหลือง และแผนที่จากสำเนาเว็บอ้างอิงในเครื่อง ภาพทั้งสี่และตรา QuantCorner คัดลอกโดยไม่แก้เนื้อภาพ; ที่มาและ hash อยู่ใน `data/quantara-assets.json`
+
+แผนที่ `learning-atlas.png` ใช้ฉบับเดียวกับหน้าอ้างอิงเพื่อรักษาบรรยากาศ ไม่ใช้ยืนยันจำนวนหรือตำแหน่งเมือง เนื้อหาบทเรียนและสมการยังแยกจากภาพโลกสมมติ ไม่มีการเพิ่มข้อเท็จจริงตลาดจากภาพประกอบ

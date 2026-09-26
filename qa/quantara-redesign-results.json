@@ -1,0 +1,42 @@
+{
+  "edition": "Quantara book design",
+  "date": "2026-09-26",
+  "status": "pass",
+  "reference": "https://nutdnuy.github.io/robo-trade-notes/index.html",
+  "contentBaseline": "1ad2397",
+  "scope": "Presentation and navigation only; existing Thai lesson JSON and original sources unchanged.",
+  "structuralVerification": {
+    "command": "npm run build && npm test",
+    "pages": 148,
+    "thaiLessons": 53,
+    "notebookViews": 92,
+    "byteIdenticalSourceFiles": 183,
+    "mathRenderingErrors": 0,
+    "localFileAndLessonAnchorErrors": 0
+  },
+  "browserVerification": {
+    "method": "Codex in-app browser via cua_repl; DOM inspection, real UI actions, and screenshots",
+    "origin": "http://localhost:8765/",
+    "widths": [1280, 375, 320],
+    "checks": [
+      "Light Welcome layout, all four Quantara illustrations loaded, and 53 sidebar chapter links",
+      "Desktop hide/show contents and chapter group disclosure",
+      "Thai search (39 results for ความเสี่ยง), English search (19 for regression), and empty result state",
+      "Search Escape and focus restoration, including search opened from mobile drawer",
+      "Research-desk prompt cycle and React study-stage navigation",
+      "Mark-read persistence across reload; test completion was returned to unread",
+      "Dark/light theme switching and visible mobile rendering",
+      "Mobile drawer focus enters close button after transition, Tab stays in drawer, Escape restores opener",
+      "320px drawer brand and close control fit without overlap",
+      "375px representative lesson checks: introduction-to-python, hypothesis-testing, arch-garch-and-gmm, factor-analysis, long-short-equity, var-and-cvar, the-dangers-of-overfitting; no horizontal page overflow or math fallback",
+      "Source Factor Analysis view has 62 cells, 8 stored figures, and original notebook/HTML download links",
+      "Source library filter for Python and empty state",
+      "No warning or error entries in the inspected browser log"
+    ],
+    "limitations": [
+      "The external Playwright/axe suite was not rerun for this redesign; this record describes the actual in-app browser checks.",
+      "Existing original notebook output is preserved, not re-executed.",
+      "No remote publication was performed."
+    ]
+  }
+}

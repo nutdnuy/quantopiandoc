@@ -48,3 +48,9 @@ The corrections below follow the definitions and equations already in the local 
 - The source snapshot contains 92 notebooks and 91 HTML previews. Ranking Universes by Factors has no original HTML preview; its reading page is generated from its Notebook.
 - Python code syntax is checked separately from execution. Snippets that require existing data are examples, not self-contained programs.
 - No claim is made that old Quantopian APIs or data feeds are available today.
+
+## Quantara presentation clarification — 2026-09-26
+
+The owner clarified that “Quantara Design” means the established fictional Quantara world shown in the Robo Trade reference, not the Quantsera brand interpretation used in the first local draft. The current presentation reuses the exact Deltaris workshop, master-and-golem, city-card and learning-atlas illustrations, with the canonical approved QuantCorner marks. No lesson mathematics, source attribution or original Quantopian artifact is changed by this visual correction.
+
+Local records explicitly confirm the Quantara kingdom and Deltaris as home to Algorithmic Trading Masters who build brass golems. The presentation introduces no new city, named character, ruler or historical event. The exact reference `learning-atlas.png` is retained for visual continuity; the source project later revised a duplicate northern settlement in another map version. This illustration is not used to make claims about six-city geography. Exact copies, origins and hashes are listed in `data/quantara-assets.json`.

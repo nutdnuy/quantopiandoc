@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "recordedOn": "2026-09-26",
+  "edition": "Quantara fantasy-world edition",
+  "brand": "QuantCorner",
+  "referenceUrl": "https://nutdnuy.github.io/robo-trade-notes/index.html",
+  "referenceAccess": "Existing local artwork and provenance only; no Internet access for asset collection.",
+  "scope": "Four exact reference illustrations and two canonical QuantCorner marks; no generation, crop, retouch, recolor, or redraw.",
+  "loreBoundary": "Quantara kingdom and Deltaris Algorithmic Trading Masters are locally recorded owner-confirmed identities. No new city/persona lore is introduced. The reference map is presentation artwork, not an authoritative six-city map.",
+  "assets": [
+    {
+      "path": "public/assets/quantara/deltaris-workshop-v2.png",
+      "origin": "/Users/nuthdanai/Desktop/02_Quant_Investment/robo-trade-notes-backtest-draft/public/images/deltaris-workshop-v2.png",
+      "role": "hero-workshop",
+      "sha256": "874c15b08d9c62a2781b3bdcdfde146daee210e1fc435a72449d3fd97e45a78c",
+      "bytes": 3248312,
+      "width": 1536,
+      "height": 1024,
+      "transformation": "none; byte-for-byte copy",
+      "provenance": "/Users/nuthdanai/Desktop/02_Quant_Investment/robo-trade-notes-backtest-draft/references/deltaris-workshop-generation.json",
+      "provenanceNote": "Original fictional Deltaris workshop illustration generated with built-in image_gen on 2026-09-24; source metadata records original generation and unedited copy.",
+      "rightsStatus": "Owner-supplied or original generated artwork as documented locally; no independent CC, MIT, or other public artwork license is asserted."
+    },
+    {
+      "path": "public/assets/quantara/deltaris-masters.png",
+      "origin": "/Users/nuthdanai/Desktop/02_Quant_Investment/robo-trade-notes-backtest-draft/public/images/deltaris-masters.png",
+      "role": "master-and-brass-golem",
+      "sha256": "a2314a3aa6e0bdeaf21da282d9461f5bd6684516591f1fa7161d8d4e562c69f3",
+      "bytes": 2525425,
+      "width": 1024,
+      "height": 1536,
+      "transformation": "none; byte-for-byte copy",
+      "provenance": "/Users/nuthdanai/Desktop/02_Quant_Investment/robo-trade-notes-backtest-draft/references/atlas-assets.json",
+      "provenanceNote": "Owner-supplied character reference and website illustration; atlas manifest records attachment provenance and byte equality.",
+      "rightsStatus": "Owner-supplied or original generated artwork as documented locally; no independent CC, MIT, or other public artwork license is asserted."
+    },
+    {
+      "path": "public/assets/quantara/learning-atlas.png",
+      "origin": "/Users/nuthdanai/Desktop/02_Quant_Investment/robo-trade-notes-backtest-draft/public/images/learning-atlas.png",
+      "role": "reference-edition-map",
+      "sha256": "105dc2e068db1bfb77ab614226359ba7bf68e4c2f136196c3e475d6703fd774f",
+      "bytes": 4102681,
+      "width": 1536,
+      "height": 1024,
+      "transformation": "none; byte-for-byte copy",
+      "provenance": "/Users/nuthdanai/Desktop/02_Quant_Investment/robo-trade-notes-backtest-draft/references/atlas-assets.json",
+      "provenanceNote": "Exact map used by the owner-selected Robo Trade reference. Historical initial candidate; later card-game map metadata records removal of an extra northern settlement in a different v2 asset. Reused here for visual continuity, not as authoritative six-city geography.",
+      "rightsStatus": "Owner-supplied or original generated artwork as documented locally; no independent CC, MIT, or other public artwork license is asserted."
+    },
+    {
+      "path": "public/assets/quantara/deltaris-card.png",
+      "origin": "/Users/nuthdanai/Desktop/02_Quant_Investment/robo-trade-notes-backtest-draft/public/images/deltaris-card.png",
+      "role": "deltaris-city-card",
+      "sha256": "19075a14f7b50c037acea0d8d0f402be5b8d93d2db585bbbb55558f95c490983",
+      "bytes": 3411068,
+      "width": 1024,
+      "height": 1536,
+      "transformation": "none; byte-for-byte copy",
+      "provenance": "/Users/nuthdanai/Desktop/02_Quant_Investment/robo-trade-notes-backtest-draft/references/atlas-assets.json",
+      "provenanceNote": "Owner-supplied original generated city illustration; matching source also recorded in quantcorner-card-game/output/cards/city-concepts/manifest.json.",
+      "rightsStatus": "Owner-supplied or original generated artwork as documented locally; no independent CC, MIT, or other public artwork license is asserted."
+    },
+    {
+      "path": "public/assets/quantara/quantcorner-mark-light.svg",
+      "origin": "/Users/nuthdanai/Documents/LLM-Wiki/90 System/design-systems/assets/quantcorner-brand/quantcorner-mark-light.svg",
+      "role": "approved-quantcorner-brand-mark",
+      "intendedSurface": "light",
+      "sha256": "4ef73633892d648259b5fd05ce37feb01778ef22222309e2b937435f66967c05",
+      "bytes": 589,
+      "transformation": "none; byte-for-byte copy",
+      "provenance": "/Users/nuthdanai/Documents/LLM-Wiki/90 System/design-systems/assets/quantcorner-brand/README.md",
+      "provenanceNote": "Canonical approved QuantCorner mark. Preserve paths, colors, proportions and clear space. Variant suffix describes the intended surface.",
+      "rightsStatus": "Approved owner brand asset; no new public license assigned."
+    },
+    {
+      "path": "public/assets/quantara/quantcorner-mark-dark.svg",
+      "origin": "/Users/nuthdanai/Documents/LLM-Wiki/90 System/design-systems/assets/quantcorner-brand/quantcorner-mark-dark.svg",
+      "role": "approved-quantcorner-brand-mark",
+      "intendedSurface": "dark",
+      "sha256": "dfa3b9389c7524aa41b8685f9ee428bedbeb49d343e2485d8d7d4342bd35ec77",
+      "bytes": 589,
+      "transformation": "none; byte-for-byte copy",
+      "provenance": "/Users/nuthdanai/Documents/LLM-Wiki/90 System/design-systems/assets/quantcorner-brand/README.md",
+      "provenanceNote": "Canonical approved QuantCorner mark. Preserve paths, colors, proportions and clear space. Variant suffix describes the intended surface.",
+      "rightsStatus": "Approved owner brand asset; no new public license assigned."
+    }
+  ]
+}

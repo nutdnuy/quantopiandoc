@@ -1,0 +1,391 @@
+/* Quantara book skin. Load after style.css; artwork and lesson content stay intact. */
+html { scroll-padding-top: 0; }
+
+:root:not([data-theme="dark"]),
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #fff;
+  --surface: #fff;
+  --surface2: #f6f6f6;
+  --surface-high: #fff;
+  --text: rgba(0, 0, 0, .87);
+  --muted: rgba(0, 0, 0, .6);
+  --line: rgba(0, 0, 0, .13);
+  --primary: #6200ee;
+  --secondary: #007d71;
+  --secondary-text: #006f65;
+  --on-primary: #fff;
+  --selected: rgba(98, 0, 238, .055);
+  --code: #f6f6f6;
+  --header: rgba(255, 255, 255, .98);
+  --focus: #6200ee;
+  --button-shadow: 0 2px 3px #0002;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121212;
+  --surface: #1e1e1e;
+  --surface2: #232323;
+  --surface-high: #252525;
+  --text: rgba(255, 255, 255, .87);
+  --muted: rgba(255, 255, 255, .6);
+  --line: rgba(255, 255, 255, .16);
+  --primary: #bb86fc;
+  --secondary: #03dac6;
+  --secondary-text: #03dac6;
+  --on-primary: #000;
+  --selected: rgba(187, 134, 252, .1);
+  --code: #191919;
+  --header: rgba(18, 18, 18, .98);
+  --focus: #03dac6;
+  --button-shadow: 0 2px 3px #0004;
+}
+
+.book-page {
+  --book-sidebar-width: 276px;
+  --book-measure: 870px;
+  --book-gutter: 48px;
+  min-width: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Roboto, 'Noto Sans Thai', sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.book-page :is(a, button, input, summary):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.book-page :is(section, h2, h3, [tabindex="-1"]) {
+  scroll-margin-top: 104px;
+}
+
+.book-frame {
+  min-width: 0;
+  min-height: 100vh;
+  margin-left: var(--book-sidebar-width);
+}
+
+/* The fixed contents column remains a quiet, independently scrollable book index. */
+.book-page .book-sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 50;
+  display: block;
+  width: var(--book-sidebar-width);
+  height: 100vh;
+  height: 100dvh;
+  padding: 32px 20px 32px 24px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  border-right: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.book-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  margin-bottom: 36px;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.book-brand:hover { color: var(--text); }
+.book-brand img { flex: 0 0 40px; width: 40px; height: 40px; object-fit: contain; }
+.book-brand > span { min-width: 0; font-size: 18px; font-weight: 500; }
+.book-brand small { display: block; margin-top: 2px; font-size: 12px; font-weight: 400; color: var(--muted); }
+.book-page .book-brand .brand-light { display: block; }
+.book-page .book-brand .brand-dark { display: none; }
+:root[data-theme="dark"] .book-page .book-brand .brand-light { display: none; }
+:root[data-theme="dark"] .book-page .book-brand .brand-dark { display: block; }
+
+.book-page #contents-close { display: none; }
+.sidebar-label { margin: 0 8px 12px; color: var(--muted); font-size: 11px; line-height: 1.6; letter-spacing: .06em; }
+.book-contents { min-width: 0; }
+.book-home { display: flex; align-items: center; min-height: 48px; padding: 12px 8px; margin-bottom: 8px; font-size: 14px; line-height: 1.65; border-radius: 4px; }
+.book-home[aria-current="page"] { background: var(--selected); color: var(--primary); font-weight: 500; }
+.book-home:hover { background: var(--code); }
+.book-part { margin: 0 0 4px; border: 0; }
+.book-part > summary { display: grid; grid-template-columns: 20px minmax(0, 1fr) 12px; align-items: start; gap: 8px; min-height: 48px; padding: 12px 8px; border-radius: 4px; color: var(--muted); font-size: 13px; line-height: 1.7; list-style: none; cursor: pointer; }
+.book-part > summary::-webkit-details-marker { display: none; }
+.book-part > summary::marker { content: ''; }
+.book-part > summary:hover { background: var(--code); color: var(--primary); }
+.book-part[open] > summary { color: var(--text); }
+.part-no { padding-top: 2px; font: 10px/2 'Roboto Mono', monospace; color: var(--muted); }
+.disclosure-marker { font-size: 0; line-height: 1.5; text-align: center; }
+.disclosure-marker::after { content: '+'; font-size: 15px; line-height: 1.5; }
+.book-part[open] > summary .disclosure-marker::after { content: '−'; }
+.book-chapters { list-style: none; padding: 0 0 12px; margin: 0; }
+.book-chapters a { display: grid; grid-template-columns: 24px minmax(0, 1fr); align-items: start; gap: 8px; min-height: 48px; padding: 10px 8px; border-radius: 4px; color: var(--muted); font-size: 13px; line-height: 1.75; overflow-wrap: anywhere; }
+.book-chapters .chapter-number { padding-top: 2px; font: 10px/2 'Roboto Mono', monospace; }
+.book-chapters strong { font-weight: 400; }
+.book-chapters a:hover { color: var(--primary); background: var(--code); }
+.book-chapters a[aria-current="page"] { color: var(--primary); background: var(--selected); }
+.book-chapters a[aria-current="page"] strong { font-weight: 500; }
+.book-toc { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.book-toc ul { list-style: none; padding: 0; margin: 0; }
+.book-toc a { display: block; min-height: 48px; padding: 12px 8px; border-radius: 4px; color: var(--muted); font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.book-toc a:hover, .book-toc a[aria-current="location"] { color: var(--primary); background: var(--selected); }
+.sidebar-footer { margin: 24px 8px 0; padding-top: 16px; border-top: 1px solid var(--line); font-size: 12px; }
+.sidebar-footer a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; color: var(--muted); }
+.sidebar-footer a:hover { color: var(--primary); }
+.sidebar-footer > span { display: block; margin-top: 12px; color: var(--muted); font-size: 11px; }
+.sidebar-footer p { margin: 8px 0 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
+
+/* Align toolbar and article to the same readable measure. */
+.book-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 80px;
+  padding: 12px max(var(--book-gutter), calc((100% - var(--book-measure)) / 2));
+  background: var(--header);
+  border-bottom: 1px solid var(--line);
+}
+
+.book-toolbar #contents-toggle { flex: none; min-height: 48px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--primary); font-size: 13px; line-height: 1.5; white-space: nowrap; }
+.book-toolbar #contents-toggle:hover { background: var(--code); }
+.toolbar-page { flex: 1; min-width: 0; color: var(--muted); font-size: 12px; line-height: 1.6; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.toolbar-actions { display: flex; align-items: center; gap: 4px; margin-left: auto; flex: none; }
+.toolbar-actions .text-button { min-height: 48px; min-width: 48px; padding: 8px 12px; font-size: 13px; }
+.toolbar-actions kbd { font-size: 10px; }
+.book-page #sidebar-backdrop { display: none; }
+
+.book-page #main {
+  display: block;
+  width: 100%;
+  max-width: calc(var(--book-measure) + 2 * var(--book-gutter));
+  min-width: 0;
+  margin: 0 auto;
+  padding: 40px var(--book-gutter) 72px;
+}
+
+.book-page .reading-layout { grid-template-columns: none; gap: 0; }
+.book-page .lesson-content { width: 100%; max-width: none; min-width: 0; }
+.book-page .library-main, .book-page .source-reading { min-width: 0; }
+.book-page .source-reading .notebook-output { max-width: 100%; height: auto; }
+.book-page .library-row { gap: 24px; }
+.book-page .library-row > div:first-child { min-width: 0; }
+.book-page .library-links { flex: 0 1 auto; }
+.book-page .library-row h2 { overflow-wrap: anywhere; }
+
+/* Welcome: retain the source composition and the full uncropped illustrations. */
+.quantara-hero { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: center; gap: 32px; padding-bottom: 40px; border-bottom: 1px solid var(--line); }
+.quantara-hero-copy { grid-column: 1; grid-row: 1; min-width: 0; }
+.quantara-hero-art { grid-column: 2; grid-row: 1; display: block; width: 100%; height: auto; border-radius: 4px; }
+.quantara-kicker { display: block; margin-bottom: 20px; font-size: 11px; line-height: 1.6; letter-spacing: .12em; color: var(--muted); }
+.quantara-kicker::before { content: none; }
+.welcome-page .quantara-hero h1 { margin: 0 0 24px; font: 500 clamp(36px, 3.7vw, 52px)/1.14 Roboto, 'Noto Sans Thai', sans-serif; letter-spacing: -1.3px; }
+.quantara-hero-thai { margin: 0 0 24px; font-size: 16px; line-height: 1.95; color: var(--muted); }
+.quantara-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 24px; }
+.quantara-hero-actions a { display: inline-flex; align-items: center; gap: 16px; min-height: 48px; font-size: 13px; color: var(--primary); }
+.quantara-hero-actions a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.quantara-scene-label { position: absolute; right: 0; bottom: 14px; font-size: 10px; line-height: 1.5; letter-spacing: .08em; color: var(--muted); }
+.quantara-dispatch { display: flex; align-items: baseline; gap: 20px; padding: 18px 0 32px; color: var(--muted); }
+.quantara-dispatch > span { flex: none; font-size: 10px; letter-spacing: .04em; }
+.quantara-dispatch p { margin: 0; font-size: 13px; line-height: 1.85; }
+.deltaris-workshop { display: grid; grid-template-columns: minmax(220px, .8fr) minmax(0, 1fr); align-items: start; gap: 48px; padding-top: 48px; margin: 0 0 64px; border-top: 1px solid var(--line); }
+.deltaris-portrait-panel, .deltaris-workshop-copy { min-width: 0; }
+.deltaris-masters { margin: 0; }
+.deltaris-masters img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: contain; }
+.deltaris-masters figcaption { padding-top: 20px; margin-top: 16px; border-top: 1px solid var(--line); }
+.deltaris-masters figcaption strong { display: block; font-size: 15px; line-height: 1.7; font-weight: 500; }
+.deltaris-masters figcaption span { display: block; margin-top: 8px; font-size: 14px; line-height: 1.9; color: var(--muted); }
+.atlas-eyebrow { display: block; font-size: 11px; line-height: 1.7; letter-spacing: .06em; color: var(--muted); }
+.deltaris-workshop-copy h2 { margin: 16px 0 24px; font: 500 clamp(28px, 3vw, 38px)/1.25 Roboto, 'Noto Sans Thai', sans-serif; letter-spacing: -.7px; }
+.deltaris-lead { font-size: 18px; line-height: 1.95; }
+.deltaris-workshop-copy > p:not(.deltaris-lead):not(.atlas-eyebrow):not(.progress-note) { font-size: 16px; line-height: 1.95; color: var(--muted); }
+.machine-console { padding: 24px; background: var(--code); border: 1px solid var(--line); border-radius: 4px; }
+.machine-console-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 10px; line-height: 1.7; color: var(--muted); }
+.machine-state-light { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+.machine-state-light.is-awake { background: var(--secondary-text); }
+.machine-reply { min-height: 144px; padding: 16px 0; }
+.machine-state { font-size: 11px; letter-spacing: .03em; color: var(--muted); }
+.machine-reply p { margin: 12px 0; font-size: 16px; line-height: 1.9; }
+.machine-reply small { display: block; font-size: 12px; line-height: 1.8; color: var(--muted); }
+.machine-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.machine-actions > button { min-height: 48px; max-width: 100%; padding: 10px 16px; border: 1px solid var(--primary); border-radius: 4px; background: var(--primary); color: var(--on-primary); box-shadow: var(--button-shadow); font-size: 13px; line-height: 1.7; }
+.machine-actions > button:hover { box-shadow: 0 3px 6px #0003; }
+.machine-actions > button:active { box-shadow: none; }
+.machine-actions > button.machine-reset { background: var(--surface); color: var(--primary); box-shadow: none; }
+.guild-guide-link { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; min-height: 48px; padding: 8px 0; margin-top: 24px; font-size: 16px; color: var(--primary); }
+.guild-guide-link small { width: 100%; font-size: 13px; line-height: 1.8; color: var(--muted); }
+.quantara-world { padding-top: 40px; border-top: 1px solid var(--line); }
+.quantara-section-heading h2 { margin: 0 0 24px; font: 500 32px/1.4 Roboto, 'Noto Sans Thai', sans-serif; }
+.quantara-section-heading p { font-size: 16px; line-height: 1.9; color: var(--muted); }
+.quantara-map-layout { display: grid; grid-template-columns: minmax(0, 1fr) 220px; align-items: start; gap: 24px; }
+.atlas-map { min-width: 0; margin: 0; }
+.atlas-map > img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.atlas-map figcaption { padding: 12px 0; font-size: 10px; line-height: 1.7; letter-spacing: .08em; color: var(--muted); }
+.quantara-city-passport { min-width: 0; padding-left: 24px; border-left: 1px solid var(--line); }
+.passport-city-art { display: block; width: 100%; height: auto; max-height: 260px; object-fit: contain; object-position: left; }
+.quantara-city-passport h3 { margin: 16px 0 12px; font-size: 24px; font-weight: 500; }
+.quantara-city-passport p { font-size: 14px; line-height: 1.9; color: var(--muted); }
+.quantara-city-passport > a { display: flex; align-items: center; gap: 12px; min-height: 48px; font-size: 14px; color: var(--primary); }
+
+.research-introduction { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line); }
+.research-introduction h2 { font-size: 32px; line-height: 1.6; margin-bottom: 20px; }
+.research-introduction > p:last-child { max-width: 680px; color: var(--muted); line-height: 2; }
+
+/* Keep the existing React controls; only adapt their surrounding book width. */
+.book-page #path-explorer { max-width: none; margin: 64px 0 0; }
+.book-page .curriculum { max-width: none; margin: 0; padding: 64px 0 16px; }
+.book-page .curriculum .section-heading { margin-bottom: 32px; }
+.book-page .curriculum-group { grid-template-columns: 32px minmax(0, .85fr) minmax(0, 1.2fr); gap: 24px; padding: 32px 0 40px; }
+.book-page .group-intro, .book-page .lesson-list { min-width: 0; }
+.book-page .group-intro h3 { font-size: 23px; line-height: 1.65; }
+.book-page .lesson-list strong { line-height: 1.8; }
+.book-page .curriculum .section-heading h2 { font-size: 28px; }
+
+/* Lesson opening pairs the existing introduction with an intact notebook scene. */
+.book-page .lesson-header { margin-bottom: 48px; }
+.lesson-opening { display: grid; grid-template-columns: minmax(0, 1fr) 240px; align-items: start; gap: 32px; }
+.lesson-heading-copy { min-width: 0; }
+.book-page .lesson-header .eyebrow { margin-bottom: 16px; font-size: 11px; line-height: 1.7; }
+.book-page .english-title { margin-bottom: 12px; font-size: 14px; line-height: 1.7; }
+.book-page .lesson-header h1 { margin: 0 0 24px; font-size: clamp(30px, 2.8vw, 40px); line-height: 1.5; letter-spacing: -.025em; }
+.book-page .lead { margin-bottom: 0; font-size: 17px; line-height: 2; }
+.lesson-scene { min-width: 0; margin: 8px 0 0; }
+.lesson-scene img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.lesson-scene figcaption { padding-top: 12px; font-size: 10px; line-height: 1.8; letter-spacing: .07em; color: var(--muted); }
+.book-page .learning-objectives { margin-top: 32px; padding: 24px 28px; background: var(--code); }
+.book-page .learning-objectives li { line-height: 1.95; }
+.book-page .prose { font-size: 17px; line-height: 2; }
+.book-page .prose p { margin-bottom: 24px; }
+.book-page .prose h2 { margin: 48px 0 24px; font-size: 28px; font-weight: 500; line-height: 1.6; scroll-margin-top: 104px; }
+.book-page .prose h3 { margin: 32px 0 20px; font-size: 21px; line-height: 1.65; scroll-margin-top: 104px; }
+.book-page .prose :is(pre, .table-wrap) { max-width: 100%; }
+.book-page .prose blockquote { background: var(--code); }
+.book-page .takeaways { background: var(--code); }
+.book-page .prose .takeaways h2 { margin: 0 0 20px; font-size: 23px; }
+.book-page .original-prose { font-size: 16px; line-height: 1.9; }
+.book-page .completion-count { white-space: normal; }
+.book-page .lesson-pagination > a { min-width: 0; overflow-wrap: anywhere; }
+
+.book-footer { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; width: 100%; max-width: calc(var(--book-measure) + 2 * var(--book-gutter)); margin: 0 auto; padding: 32px var(--book-gutter) 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.8; }
+.book-footer p { margin: 0; }
+.book-footer a { display: inline-flex; align-items: center; min-height: 48px; color: var(--text); }
+.book-footer a:hover { color: var(--primary); }
+.book-footer .design-credit { margin-top: 0; }
+
+@media (min-width: 901px) {
+  .book-page.contents-hidden .book-sidebar { visibility: hidden; pointer-events: none; transform: translateX(-100%); }
+  .book-page.contents-hidden .book-frame { margin-left: 0; }
+}
+
+@media (min-width: 1280px) {
+  .book-page .prose { font-size: 18px; }
+  .book-page .original-prose { font-size: 16px; }
+}
+
+@media (max-width: 1200px) {
+  .book-page { --book-gutter: 32px; }
+  .book-toolbar { gap: 16px; }
+  .toolbar-page { display: none; }
+  .toolbar-actions kbd { display: none; }
+  .quantara-hero { gap: 24px; }
+  .quantara-hero-thai .wide-only { display: none; }
+  .quantara-dispatch { display: block; }
+  .quantara-dispatch p { margin-top: 8px; }
+  .deltaris-workshop { gap: 32px; }
+  .quantara-map-layout { grid-template-columns: minmax(0, 1fr) 180px; }
+  .quantara-city-passport { padding-left: 16px; }
+  .lesson-opening { grid-template-columns: minmax(0, 1fr) 220px; gap: 24px; }
+  .book-page .curriculum-group { grid-template-columns: 28px minmax(0, 1fr); gap: 16px 20px; }
+  .book-page .curriculum-group .lesson-list { grid-column: 2; }
+  .book-page .group-intro h3, .book-page .group-intro > p:not(.eyebrow) { max-width: none; }
+}
+
+@media (max-width: 900px) {
+  .book-page .book-frame { margin-left: 0; }
+  .book-page .book-sidebar { width: min(320px, calc(100vw - 48px)); padding: 24px 20px 32px; visibility: hidden; transform: translateX(-100%); pointer-events: none; transition: transform 180ms ease, visibility 180ms; }
+  .book-page.contents-open { overflow: hidden; }
+  .book-page.contents-open .book-sidebar { visibility: visible; transform: translateX(0); pointer-events: auto; box-shadow: 8px 0 32px #0002; }
+  .book-page.contents-open #sidebar-backdrop { position: fixed; inset: 0; z-index: 40; display: block; width: 100%; height: 100%; margin: 0; padding: 0; border: 0; border-radius: 0; background: #0006; }
+  .book-page #contents-close { position: absolute; top: 24px; right: 12px; display: inline-flex; align-items: center; justify-content: center; min-width: 48px; min-height: 48px; padding: 8px; border: 0; border-radius: 4px; background: transparent; color: var(--muted); font-size: 13px; }
+  .book-page #contents-close:hover { background: var(--code); color: var(--primary); }
+  .book-brand { padding-right: 48px; margin-bottom: 32px; }
+  .book-brand > span { font-size: 17px; }
+  .book-toolbar { min-height: 72px; padding-top: 12px; padding-bottom: 12px; }
+  .book-page #main { padding-top: 32px; }
+  .book-page .library-row { display: block; }
+  .book-page .library-links { justify-content: flex-start; margin-top: 20px; }
+}
+
+@media (max-width: 700px) {
+  .lesson-opening { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .lesson-scene { width: 100%; max-width: 300px; margin: 0; }
+  .book-page .lesson-header h1 { font-size: 32px; }
+  .book-page .lesson-header { margin-bottom: 40px; }
+  .book-page .section-heading { display: block; }
+  .book-footer { display: block; }
+  .book-footer > :last-child { margin-top: 16px; }
+}
+
+@media (max-width: 600px) {
+  .book-page { --book-gutter: 24px; }
+  .book-toolbar { gap: 8px; }
+  .book-toolbar #contents-toggle { padding: 10px 12px; font-size: 12px; }
+  .toolbar-actions .text-button { padding: 8px; font-size: 12px; }
+  .book-page #main { padding-top: 28px; padding-bottom: 48px; }
+  .quantara-hero { display: flex; flex-direction: column; align-items: stretch; gap: 24px; padding-bottom: 32px; }
+  .quantara-hero-copy { order: 0; }
+  .quantara-hero-art { order: 1; }
+  .welcome-page .quantara-hero h1 { font-size: 42px; line-height: 1.12; }
+  .quantara-kicker { margin-bottom: 16px; }
+  .quantara-hero-thai { margin-bottom: 12px; }
+  .quantara-scene-label { bottom: 8px; font-size: 9px; }
+  .quantara-dispatch { padding: 16px 0 28px; }
+  .deltaris-workshop { grid-template-columns: minmax(0, 1fr); gap: 32px; padding-top: 32px; margin-bottom: 48px; }
+  .deltaris-masters img { max-height: 440px; }
+  .deltaris-workshop-copy h2 { font-size: 32px; }
+  .machine-console { padding: 20px; }
+  .quantara-world { padding-top: 32px; }
+  .quantara-section-heading h2 { font-size: 28px; }
+  .quantara-map-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .quantara-city-passport { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 0 20px; padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .passport-city-art { grid-row: 1 / 4; max-height: none; }
+  .quantara-city-passport h3 { margin: 0 0 8px; }
+  .quantara-city-passport p { margin: 0 0 8px; }
+  .quantara-city-passport > a { grid-column: 2; font-size: 13px; }
+  .book-page #path-explorer { margin-top: 48px; }
+  .book-page .curriculum { padding-top: 48px; }
+  .book-page .curriculum-group { grid-template-columns: 24px minmax(0, 1fr); gap: 16px 12px; }
+  .book-page .lesson-list a { grid-template-columns: 24px minmax(0, 1fr) 28px; gap: 8px; }
+  .book-page .learning-objectives { padding: 20px; }
+  .book-page .prose h2 { font-size: 26px; margin-top: 40px; }
+  .book-page .prose h3 { font-size: 21px; }
+  .book-page .prose pre { padding: 16px; }
+}
+
+@media (max-width: 400px) {
+  .book-page { --book-gutter: 20px; }
+  .quantara-hero-actions { gap: 8px 16px; }
+  .book-page .lesson-header h1 { font-size: 30px; }
+  .quantara-city-passport { grid-template-columns: 84px minmax(0, 1fr); gap: 0 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .book-page, .book-page *, .book-page *::before, .book-page *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
+
+@media print {
+  .book-page { --bg: #fff; --surface: #fff; --surface2: #f6f6f6; --text: #222; --muted: #555; --line: #ddd; --primary: #6200ee; --code: #f6f6f6; }
+  .book-page .book-sidebar, .book-toolbar, .book-page #sidebar-backdrop, .book-footer, .quantara-hero-actions, .quantara-dispatch, .machine-console, .guild-guide-link, .completion-row { display: none !important; }
+  .book-page .book-frame { margin: 0 !important; }
+  .book-page #main { max-width: none; padding: 0; }
+  .book-page .prose { font-size: 12pt; }
+  .quantara-hero, .deltaris-workshop, .lesson-opening { break-inside: avoid; }
+  .lesson-scene { max-width: 240px; }
+  .quantara-city-passport { border: 0; }
+}

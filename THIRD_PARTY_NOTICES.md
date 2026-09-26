@@ -30,18 +30,26 @@ Adaptations: semantic token colors, native buttons and links, visible keyboard f
 
 React, React DOM, Motion, Framer Motion, Motion DOM, Motion Utils, and Scheduler were bundled from installed local dependencies. Applicable notices are retained in `notices/` and `public/interactions.js.LEGAL.txt`. See `data/runtime-versions.json` for the actual installed versions used.
 
-## Quantsera brand assets
+## Quantara reference artwork and QuantCorner marks
 
-The approved, unmodified transparent lockups are copied from the canonical local brand pack:
+The current edition follows the owner's explicit reference to the Quantara fantasy world in the local Robo Trade website. Quantara is not an alternative spelling of Quantsera. Existing illustrations are copied unchanged to `public/assets/quantara/`:
 
-- `quantsera-horizontal-transparent-offwhite.svg`
-- `quantsera-horizontal-transparent-black.svg`
+- `deltaris-workshop-v2.png`: original generated fictional workshop illustration; generation metadata dated 2026-09-24.
+- `deltaris-masters.png`: owner-supplied master-and-golem artwork.
+- `learning-atlas.png`: exact reference-edition map, used for atmosphere rather than authoritative city geography.
+- `deltaris-card.png`: owner-supplied original generated Deltaris city artwork.
 
-No logo generation, tracing, path edits, recoloring, or animation. Only CSS width with natural aspect ratio and theme-specific selection is applied. The design credit identifies the Design System; the course name remains QuantCorner Research Lab.
+Exact local origins, source provenance records, dimensions and SHA-256 values are in `data/quantara-assets.json`. Local metadata documents owner-supplied/original generated artwork. No independent CC, MIT or other public license is assigned to these illustrations by this project. Existing provenance remains the evidence for this reuse; dependency licenses below do not apply to the artwork.
+
+The approved `quantcorner-mark-light.svg` and `quantcorner-mark-dark.svg` come from the canonical local QuantCorner brand pack. Their suffixes identify the intended light or dark surface. Files are copied byte-for-byte; paths, colors and proportions are unchanged. Preserve the canonical clear-space rules. No logo is generated, traced, recolored or animated.
+
+## Earlier visual interpretation
+
+The initial local draft interpreted the request using the shared Quantsera / QuantCorner Material 2 foundation and approved Quantsera transparent lockups (`quantsera-horizontal-transparent-offwhite.svg` and `quantsera-horizontal-transparent-black.svg`). The owner subsequently clarified the intended Quantara fantasy-world reference. That earlier interpretation is superseded for the current presentation; retained files or records do not establish Quantsera as the identity of this edition.
 
 ## Design scope
 
-Uses the shared Quantsera / QuantCorner Material 2 foundation, local typography, native accessible controls, and the three documented React Bits families. No remote component registry, image generator, external analytics, or market data provider was used. Quantara was not found among local design-system names; the local Quantsera/QuantCorner system is the documented interpretation of that request.
+The current edition combines existing Quantara fictional artwork, approved QuantCorner marks, local typography, native accessible controls and the documented React Bits interactions. Course prose, equations and data remain distinct from narrative illustration. Asset collection used existing local files only: no Internet fetch, new image generation, external analytics or market-data request. Local verification of the six copied files is recorded in the asset manifest.
 
 ## Tabler Icons
 
